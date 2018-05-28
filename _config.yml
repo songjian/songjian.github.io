@@ -1,0 +1,50 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: rouge
+markdown: kramdown
+disqus: dbyll
+google_analytics: dbyll
+title: Code Order
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: 码序
+
+description: 软件外包开发
+author:
+  organization: 青岛码序科技有限公司
+  name: 宋健
+  email: oldsong@codeorder.cn
+  github: songjian
+  twitter: songjian
+  pinterest: songjian
+  linkedin: songjian
+  qq: 1840540766
+  bio: 码序提供网站和软件的外包开发服务。
+  email_md5: 1ec03caac1ef5fe5e92646f9f09e3fc5
+
+boss: 宋健
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+tools_path: tools.html
+contact_path: contact.html
+case_presentation_path: case-presentation.html
+jobs_path: jobs.html
+icp: 互联网ICP备案：鲁ICP备18022850号
+
+mission: 帮助客户实现IT价值
+
+# set it as url of an image
+# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
+
+BASE_PATH: ""
+
+plugins:
+  - jekyll-paginate
