@@ -14,9 +14,9 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: 码序
+      title: 软件开发咨询 QQ:724385768
 
-description: 软件外包开发
+description: 码序提供网站和软件的外包开发服务。
 author:
   organization: 青岛码序科技有限公司
   name: 宋健
@@ -37,7 +37,8 @@ tools_path: tools.html
 contact_path: contact.html
 case_presentation_path: case-presentation.html
 jobs_path: jobs.html
-icp: 互联网ICP备案：鲁ICP备18022850号-1
+icp_prefix: 互联网ICP备案：
+icp_code: 鲁ICP备18022850号-1
 
 mission: 帮助客户实现IT价值
 
