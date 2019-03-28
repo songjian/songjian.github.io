@@ -6,7 +6,8 @@ exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
 disqus: dbyll
-google_analytics: dbyll
+google_analytics: 
+baidu_tongji: 0121a6d4c2cf565d0d51f5d16f2641b5
 title: Code Order
 
 defaults:
@@ -14,20 +15,22 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: 码序
+      title: 后台管理程序、pc端网站、手机端网站、微信小程序
 
 description: 码序提供网站和软件的外包开发服务。
 author:
   organization: 青岛码序科技有限公司
   name: 宋健
-  email: oldsong@codeorder.cn
+  email: songjian@codeorder.cn
   github: songjian
-  twitter: songjian
-  pinterest: songjian
+  twitter: 
+  pinterest: 
   linkedin: songjian
   qq: 1840540766
+  qq2: 724385768
   bio: 码序提供网站和软件的外包开发服务。
   email_md5: 1ec03caac1ef5fe5e92646f9f09e3fc5
+  tel: 15725234024
 
 boss: 宋健
 rss_path: feed.xml
