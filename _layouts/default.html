@@ -1,17 +1,18 @@
----
-theme :
-  name : dbyll
----
-{% include default.html %}
+<!doctype html>
+<html>
+<head>
+  {% include head.html %}
+</head>
+<body>
 
-{% if site.baidu_tongji %}
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?{{ site.baidu_tongji }}";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-{% endif %}
+  <div class="container">
+    {% include header.html %}
+
+    <div class="post-container">
+      {{ content }}
+    </div>
+  </div>
+
+{%- include footer.html -%}
+</body>
+</html>
