@@ -1,0 +1,14 @@
+I"k<p>trader1_trial_version.ex4是自动平仓程序，即由使用者开仓，程序监控仓单，根据设定好的条件平仓。</p>
+
+<p>适用场景</p>
+<ol>
+  <li>超短线交易（分钟级）</li>
+  <li>短线交易（30分钟到10小时）</li>
+  <li>逻辑（有交易逻辑，例如：某订单被平仓，在某品种开仓）交易</li>
+</ol>
+
+<p>**试用版没有使用期限，只是对交易手数（0.01，1k）和平仓条件做了固定化处理。您可以尽情的体验。</p>
+
+<p>下载：<a href="/assets/trial/trader1_trial_version.ex4">trader1_trial_version.ex4</a><br />
+运行平台：mt4</p>
+:ET
