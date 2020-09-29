@@ -6,3 +6,4 @@ _site
 
 Thumbs.db
 Gemfile.lock
+.jekyll-cache
