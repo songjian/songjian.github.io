@@ -7,3 +7,6 @@ published: true
 ---
 
 ![青岛](/assets/media/album/IMGP0037__640_F080_00200_040_DAL18-55_K-r.jpg)
+ok!
+
+这篇文章废了
