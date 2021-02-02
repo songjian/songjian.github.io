@@ -6,4 +6,4 @@ categories: [相册]
 published: true
 ---
 
-![青岛](/assets/media/album/IMG_2891.jpg)
+![青岛](/assets/album/IMG_2891.jpg)
