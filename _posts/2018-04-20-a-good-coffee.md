@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 手冲咖啡~😊
+title: ~粮食~😊
 categories: [日常]
 image: /assets/album/IMG_2186.jpg
 ---
