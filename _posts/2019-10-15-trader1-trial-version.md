@@ -1,6 +1,6 @@
 ---
 layout: post
-title: trader1_trial_version.ex4
+title: mt4
 categories: trial
 ---
 trader1_trial_version.ex4是自动平仓程序，即由使用者开仓，程序监控仓单，根据设定好的条件平仓。
