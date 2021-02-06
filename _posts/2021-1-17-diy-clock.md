@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DIY电子钟
+title: 电子钟
 categories: [DIY]
 image: /assets/img/clock.jpg
 ---
