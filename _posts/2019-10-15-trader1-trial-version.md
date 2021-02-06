@@ -17,3 +17,4 @@ trader1_trial_version.ex4是自动平仓程序，即由使用者开仓，程序�
 下载：[trader1_trial_version.ex4](/assets/trial/trader1_trial_version.ex4)  
 
 运行平台：mt4
+
