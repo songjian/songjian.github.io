@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 电子钟
-categories: [DIY]
+categories: [创客,单片机]
 image: /assets/img/clock.jpg
 ---
 
 ![电子钟](/assets/img/clock.jpg)
 
-老婆说晚上看不到时间，所以做了一个发光的电子钟
+给老婆做了个电子钟,方便晚上看时间
