@@ -21,3 +21,4 @@ sudo mkdir -p /var/lib/gitea
 ```bash
 docker run -d --name=gitea -p 10022:22 -p 10080:3000 -v ~/gitea_data:/data gitea/gitea:latest
 ```
+
