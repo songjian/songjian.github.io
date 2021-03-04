@@ -1,1 +1,0 @@
-[MSDN, 我告诉你](http://msdn.itellyou.cn/)
