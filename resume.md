@@ -60,11 +60,16 @@ Part 2: 公益组织相关网站开发 - 技术负责人
 
 ## 技能
 
-语言: Ruby\\Python\\PHP\\JS
-
-框架: Rails\\Laravel\\Vue
-
-工具: Vim\\Bash\\Git
+* 极客、热爱技术、热爱开源
+* Ruby on Rails: 精通
+* Laravel: 精通
+* Python: 掌握
+* Docker: 掌握
+* Linux: 掌握
+* Vim: 精通
+* Vue: 掌握
+* Bash: 掌握
+* Git: 掌握
 
 ## 教育经历
 
