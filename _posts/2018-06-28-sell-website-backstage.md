@@ -1,10 +1,9 @@
 ---
 layout: post
 title:  "网站后台 ￥499 一套"
-date:   2018-06-28 10:57:25 +0800
-categories: codeorder sell
-published: false
+categories: [产品]
 ---
+
 适合做企业网站和资讯站后台。
 
 目录：
@@ -39,8 +38,3 @@ published: false
 
 ![新建/编辑文章](/assets/img/codeorder-system-4.png)
 
-<a name="contact_us"></a>
-## 联系我们
-
-* QQ: 724385768
-* 微信: shen2louweb

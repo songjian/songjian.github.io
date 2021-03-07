@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "网站定制开发流程"
-categories: codeorder provide services
+title:  网站定制开发流程
+categories: [服务]
 ---
 开发流程：
 
@@ -27,8 +27,3 @@ categories: codeorder provide services
 * 视频点播网站
 * 大型综合社区网站
 
-联系我们：
-
-* QQ: 724385768
-
-[codeorder-url]: http://codeorder.cn

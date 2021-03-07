@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "企业网站 ￥2699 - ￥4199 一套"
-date:   2018-06-28 14:01:25 +0800
-categories: codeorder sell
+title:  企业网站 ￥2699 - ￥4199 一套
+categories: [产品]
 ---
 报价：
 
@@ -15,6 +14,3 @@ categories: codeorder sell
 
 合计： ￥ 2699 - ￥ 4199
 
-联系我们：
-
-* QQ: 724385768
