@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "猎头系统"
-categories: codeorder provide products
+title:  猎头系统
+categories: [产品]
 ---
+
 管理端：
 
 * 超级管理员端
@@ -22,13 +23,3 @@ categories: codeorder provide products
 * 客户管理
 * 职位管理
 
-版本：
-
-* 免费版（可管理10名猎头、100个客户和1000份简历）
-* 付费版（根据实际需要付费）
-
-联系我们：
-
-* QQ: 724385768
-
-[codeorder-url]: http://codeorder.cn
