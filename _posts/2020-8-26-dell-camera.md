@@ -2,7 +2,7 @@
 layout: post
 title: Dell 笔记本摄像头 Diy Windows Hello人脸解锁
 categories: [DIY]
-image: /assets/img/dd-command.png
+image: /assets/img/dell-camera.jpg
 ---
 
 在Bilibili上看到的视频，就跟着做了一下
