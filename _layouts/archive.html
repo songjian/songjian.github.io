@@ -4,7 +4,7 @@ title: Archive
 ---
 
 {% assign postsByDate =
-    site.posts | group_by_exp:"post", "post.date | date: '%B %Y'" %}
+    site.posts | group_by_exp:"post", "post.date | date: '%Y 年'" %}
 {% for year in postsByDate %}
   <h2 class = "archive-date" id = "date-{{post.date | date: "%B %Y"}}">{{ year.name }}</h2>
     <ul>
