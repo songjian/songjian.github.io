@@ -15,5 +15,5 @@ image: /assets/img/dell-camera.jpg
 ![接口定义图](/assets/img/dell-camera.png)
 
 **驱动下载**
-* [https://www.dell.com/support/home/zh-cn/product-support/product/alienware-17-laptop/drivers](https://www.dell.com/support/home/zh-cn/product-support/product/alienware-17-laptop/drivers)
-* 找到“Realtek IR Camera Driver”下载
+1. 访问[https://www.dell.com/support/home/zh-cn/product-support/product/alienware-17-laptop/drivers](https://www.dell.com/support/home/zh-cn/product-support/product/alienware-17-laptop/drivers)
+2. 找到“Realtek IR Camera Driver”下载
