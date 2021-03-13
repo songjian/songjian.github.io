@@ -2,10 +2,9 @@
 layout: post
 title: Gogs安装记录
 categories: [技术文章]
-image: /assets/img/gogs.png
 ---
 
-Gogs是一款极易搭建的自助 Git 服务，和Gitlab类似，但是资源消耗少很多。
+轻量化的git服务，类似gitlab，资源消耗更少。
 
 **安装步骤**
 
