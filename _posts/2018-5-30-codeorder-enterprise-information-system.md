@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "码序企业信息化系统"
-categories: 里程碑 产品
+title:  码序企业信息化系统
+categories: [里程碑, 产品]
 ---
+
 适合做企业网站和资讯站后台。
 
 目录：
@@ -37,8 +38,3 @@ categories: 里程碑 产品
 
 ![新建/编辑文章](/assets/img/codeorder-system-4.png)
 
-<a name="contact_us"></a>
-
-## 咨询
-
-001@codeorder.cn
