@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>宋健的博客</title>
+		<description>编程、生活、项目、Diy</description>
+		<link>/</link>
+		<atom:link href="/" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>使用dd命令迁移磁盘数据</title>
+				<description>&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 查看分区&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;fdisk &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 挂载分区&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;mount /dev/sdb1 ~/data
+
+&lt;span class=&quot;c&quot;&gt;# 挂载后通过df命令查看是否挂载成功&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;df&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 使用dd命令制作镜像&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo dd &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/dev/sda &lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;~/data/ssd.img
+
+&lt;span class=&quot;c&quot;&gt;# 使用dd命令恢复镜像&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo dd &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;~/data/ssd.img &lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/dev/sda
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;使用体验&quot;&gt;使用体验&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;使用dd命令迁移硬盘数据速度较慢，250g硬盘制作镜像加恢复用时10小时&lt;/li&gt;
+  &lt;li&gt;Windows的磁盘工具不能把空白空间划到现有分区里，需要使用第三方工具&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Sun, 07 Mar 2021 00:00:00 +0800</pubDate>
+				<link>/2021/03/07/using-dd-command-to-migrate-disk-data.html</link>
+				<guid isPermaLink="true">/2021/03/07/using-dd-command-to-migrate-disk-data.html</guid>
+			</item>
+		
+			<item>
+				<title>nas</title>
+				<description>&lt;h4 id=&quot;nas的需求&quot;&gt;nas的需求&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;私有网盘&lt;/li&gt;
+  &lt;li&gt;jupyter&lt;/li&gt;
+  &lt;li&gt;web服务器&lt;/li&gt;
+  &lt;li&gt;定时任务&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;硬件要求&quot;&gt;硬件要求&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;性能够用&lt;/li&gt;
+  &lt;li&gt;省电&lt;/li&gt;
+  &lt;li&gt;长期运行稳定可靠&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;硬件配置&quot;&gt;硬件配置&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/nas_b490.jpg&quot; alt=&quot;nas b490&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;主板: 联想b490笔记本主板&lt;/li&gt;
+  &lt;li&gt;CPU: 赛扬b960&lt;/li&gt;
+  &lt;li&gt;内存: 4g&lt;/li&gt;
+  &lt;li&gt;硬盘: 光威悍将1t固态硬盘(主板sata口)&lt;/li&gt;
+  &lt;li&gt;硬盘: 希捷1t移动硬盘(外置)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;软件&quot;&gt;软件&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ubuntu Server 20.04.1 LTS&lt;/li&gt;
+  &lt;li&gt;snap Nextcloud&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;备份&quot;&gt;备份&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;crontab + rsync定时增量备份&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Thu, 04 Mar 2021 00:00:00 +0800</pubDate>
+				<link>/2021/03/04/nas.html</link>
+				<guid isPermaLink="true">/2021/03/04/nas.html</guid>
+			</item>
+		
+			<item>
+				<title>Gogs安装记录</title>
+				<description>&lt;p&gt;轻量化的git服务，类似gitlab，资源消耗更少。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;安装步骤&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;新建git用户
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;useradd git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;下载二进制安装包，解压到/home/git/gogs目录&lt;/li&gt;
+  &lt;li&gt;设置仓库根目录: /home/git/gogs-repositories&lt;/li&gt;
+  &lt;li&gt;管理员登录PostgreSQL数据库，新建gogs库和gogs用户&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;参考&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gogs.io/docs/installation/install_from_binary.html&quot;&gt;官方文档——二进制安装&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/linzhenlong123/article/details/78298659&quot;&gt;Gogs 安装教程（最简单版）&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Sun, 28 Feb 2021 00:00:00 +0800</pubDate>
+				<link>/2021/02/28/gogs-install.html</link>
+				<guid isPermaLink="true">/2021/02/28/gogs-install.html</guid>
+			</item>
+		
+			<item>
+				<title>Nextcloud</title>
+				<description>&lt;p&gt;nextcloud使用ubuntu的snap安装。&lt;/p&gt;
+
+&lt;h2 id=&quot;snap-nextcloud-的配置&quot;&gt;Snap Nextcloud 的配置&lt;/h2&gt;
+
+&lt;h4 id=&quot;修改https端口&quot;&gt;修改https端口&lt;/h4&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;snap &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;nextcloud ports.http&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;81 ports.https&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;444
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;文件存储目录&quot;&gt;文件存储目录&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;/var/snap/nextcloud/common/nextcloud/data&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;配置文件路径&quot;&gt;配置文件路径&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;/var/snap/nextcloud/current/nextcloud/config/config.php&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;参考&quot;&gt;参考&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/nextcloud/nextcloud-snap&quot;&gt;Snappy Nextcloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.nextcloud.com/server/20/admin_manual/maintenance/backup.html&quot;&gt;备份&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Wed, 24 Feb 2021 00:00:00 +0800</pubDate>
+				<link>/2021/02/24/nextcloud-settings.html</link>
+				<guid isPermaLink="true">/2021/02/24/nextcloud-settings.html</guid>
+			</item>
+		
+			<item>
+				<title>Dell 9020m</title>
+				<description>&lt;h4 id=&quot;配置&quot;&gt;配置&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CPU: i5 4670t&lt;/li&gt;
+  &lt;li&gt;内存: 10G&lt;/li&gt;
+  &lt;li&gt;硬盘: 1T固态&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Tue, 09 Feb 2021 00:00:00 +0800</pubDate>
+				<link>/2021/02/09/dell-9020m.html</link>
+				<guid isPermaLink="true">/2021/02/09/dell-9020m.html</guid>
+			</item>
+		
+			<item>
+				<title>Flask</title>
+				<description>&lt;p&gt;因为在使用Python和Pandas作为数据分析工具,为了方便展示分析结果,所以采用了Python语言的Web框架——Flask.&lt;/p&gt;
+</description>
+				<pubDate>Fri, 05 Feb 2021 00:00:00 +0800</pubDate>
+				<link>/2021/02/05/flask.html</link>
+				<guid isPermaLink="true">/2021/02/05/flask.html</guid>
+			</item>
+		
+			<item>
+				<title>电子钟</title>
+				<description>&lt;p&gt;&lt;img src=&quot;/assets/img/clock.jpg&quot; alt=&quot;电子钟&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;给老婆做了个电子钟,方便晚上看时间&lt;/p&gt;
+</description>
+				<pubDate>Sun, 17 Jan 2021 00:00:00 +0800</pubDate>
+				<link>/2021/01/17/diy-clock.html</link>
+				<guid isPermaLink="true">/2021/01/17/diy-clock.html</guid>
+			</item>
+		
+			<item>
+				<title>MeArm</title>
+				<description>&lt;p&gt;&lt;a href=&quot;https://mearm.com&quot;&gt;官网&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;制作过程记录&quot;&gt;制作过程记录&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;买的亚克力板制板不规矩，没有安装的说明，和官网下载的安装说明里看到的部件样式也略有不同&lt;/li&gt;
+  &lt;li&gt;亚克力配的螺丝把关节都扭紧了，只能在螺丝上点上润滑油，帮助润滑&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Fri, 13 Nov 2020 00:00:00 +0800</pubDate>
+				<link>/2020/11/13/MeArm.html</link>
+				<guid isPermaLink="true">/2020/11/13/MeArm.html</guid>
+			</item>
+		
+			<item>
+				<title>wsl使用中遇到的问题</title>
+				<description>&lt;ul&gt;
+  &lt;li&gt;wsl挂载的windows磁盘，内容修改后不能及时反应
+    &lt;ul&gt;
+      &lt;li&gt;例如：代码放在/mnt/c/目录下，jekyll s –watch提供web服务，修改代码后无法即时显示&lt;/li&gt;
+      &lt;li&gt;解决办法：文件保存到wsl的linux文件系统下&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Sun, 04 Oct 2020 00:00:00 +0800</pubDate>
+				<link>/2020/10/04/wsl-known-bugs.html</link>
+				<guid isPermaLink="true">/2020/10/04/wsl-known-bugs.html</guid>
+			</item>
+		
+			<item>
+				<title>wsl安装指南</title>
+				<description>&lt;h2 id=&quot;安装&quot;&gt;安装&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;以管理员身份打开PowerShell并运行：
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;更新系统，内部版本号必须是18362.1049+或18363.1049+&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;启动虚拟机功能：以管理员身份打开PowerShell并运行
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;重启电脑&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;下载Linux内核更新包：https://wslstorestorage.blob.core.windows.net/wslblob/wslupdatex64.msi&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;将WSL2设置为默认版本：以管理员的身份打开PowerShell并运行
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wsl --set-default-version 2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;安装Linux分发：https://aka.ms/wslstore，设置新分发：首次启动设置用户名和密码&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;管理&quot;&gt;管理&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;wsl发行版设置默认用户
+    &lt;ul&gt;
+      &lt;li&gt;[发行版] config –default-user &lt;USERNAME&gt;&lt;/USERNAME&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;参考&quot;&gt;参考：&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/zh-cn/windows/wsl/install-win10&quot;&gt;适用于 Linux 的 Windows 子系统安装指南 (Windows 10)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Sun, 04 Oct 2020 00:00:00 +0800</pubDate>
+				<link>/2020/10/04/wsl-installation-guide.html</link>
+				<guid isPermaLink="true">/2020/10/04/wsl-installation-guide.html</guid>
+			</item>
+		
+	</channel>
+</rss>

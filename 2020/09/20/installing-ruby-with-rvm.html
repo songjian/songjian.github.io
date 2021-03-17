@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+  <head>
+        <html lang="en-US">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        
+            rvm安装ruby指南 | 宋健的博客
+      
+    </title>
+    <meta name="description" content="
+     编程、生活、项目、Diy
+    ">
+
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Serif&display=swap">
+
+    <!-- SEO Plugin -->
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>rvm安装ruby指南 | 宋健的博客</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="rvm安装ruby指南" />
+<meta name="author" content="Songj" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="RVM安装 gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB \curl -sSL https://get.rvm.io | bash -s stable source ~/.bashrc source ~/.bash_profile" />
+<meta property="og:description" content="RVM安装 gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB \curl -sSL https://get.rvm.io | bash -s stable source ~/.bashrc source ~/.bash_profile" />
+<link rel="canonical" href="/2020/09/20/installing-ruby-with-rvm.html" />
+<meta property="og:url" content="/2020/09/20/installing-ruby-with-rvm.html" />
+<meta property="og:site_name" content="宋健的博客" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-09-20T00:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="rvm安装ruby指南" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@Songj" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2020/09/20/installing-ruby-with-rvm.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Songj"},"url":"/2020/09/20/installing-ruby-with-rvm.html","author":{"@type":"Person","name":"Songj"},"headline":"rvm安装ruby指南","dateModified":"2020-09-20T00:00:00+08:00","description":"RVM安装 gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB \\curl -sSL https://get.rvm.io | bash -s stable source ~/.bashrc source ~/.bash_profile","datePublished":"2020-09-20T00:00:00+08:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- Google Analytics -->
+    
+    <!-- End Google Analytics -->
+  </head>
+
+<body>
+
+  <div class="container">
+    <header id="header">
+	<div id = site_title>
+		<a href="/">
+			<h1>宋健的博客</h1>
+		</a>
+		
+		<h2>
+			工作、生活、DIY
+		</h2>
+		
+	</div>
+
+	<div id="subheader">
+		
+		<nav class="pages">
+<a href="/about.html">About</a>
+
+<a href="/archive.html">Archive</a>
+</nav>
+		
+		
+		<nav class="social">
+			
+  
+    <a href="https://www.github.com/songjian" target="_blank" id="github"><i class="fab fa-github" aria-hidden="true"></i></a>
+  
+   
+
+  
+    <a href="https://www.linkedin.com/in/健-宋-785785208/" target="_blank" id="linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+  
+   
+
+  
+  
+    <a href="mailto:songjian@codeorder.cn" target="_blank" id="envelope"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+   
+
+  
+  
+    <a href="/feed.xml" target="_blank" id="rss"><i class="fas fa-rss" aria-hidden="true"></i></a>
+   
+
+		</nav>
+		
+	</div>
+</header>
+
+    <div class="post-container">
+      <article id = "post">
+        <h2 id = "post-title">rvm安装ruby指南</h2>
+
+  
+  <div class = "post-info">
+    <span>
+        <i class="far fa-calendar" aria-hidden="true"></i> <span>20 Sep 2020</span> - <i class="far fa-clock"></i> 
+
+
+  
+  
+    Less than 1 minute read
+  
+
+    </span>
+  </div>
+  
+        <p>RVM安装</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+\curl -sSL https://get.rvm.io | bash -s stable
+source ~/.bashrc
+source ~/.bash_profile
+</code></pre></div></div>
+
+<p>修改 RVM 的 Ruby 安装源到 Ruby China 的 Ruby 镜像服务器</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "ruby_url=https://cache.ruby-china.com/pub/ruby" &gt; ~/.rvm/user/db
+</code></pre></div></div>
+
+<p>遇到网络问题可以尝试</p>
+
+<p><em>如果提示 curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused
+使用https://www.ipaddress.com/网站查询raw.githubusercontent.com真实ip，设置到sudo vim /etc/hosts中</em></p>
+
+<p>gem更换清华大学镜像源</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 添加 TUNA 源并移除默认源
+gem sources --add https://mirrors.tuna.tsinghua.edu.cn/rubygems/ --remove https://rubygems.org/
+# 列出已有源
+gem sources -l
+# 应该只有 TUNA 一个
+</code></pre></div></div>
+
+<p>替换bundler默认源</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle config mirror.https://rubygems.org https://mirrors.tuna.tsinghua.edu.cn/rubygems
+</code></pre></div></div>
+
+<p>使用gem安装软件包</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install [软件包名]
+# 例如：
+gem install rails
+gem install bundler
+</code></pre></div></div>
+
+<p>列出已知Ruby版本</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rvm list known
+</code></pre></div></div>
+
+<p>安装一个Ruby版本</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rvm install 3.0.0 --disable-binary
+</code></pre></div></div>
+
+<p>参考</p>
+
+<ul>
+  <li><a href="https://ruby-china.org/wiki/rvm-guide">RVM 实用指南</a></li>
+  <li><a href="https://mirrors.tuna.tsinghua.edu.cn/help/rubygems/">Ruby Gems 镜像使用帮助</a></li>
+</ul>
+
+      </article>
+    </div>
+    
+      <div class="categories">
+    <span><p>Categories:</p>
+    
+    
+      <a href="
+      /categories/#%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0">技术文章</a>
+       
+    
+  </span>
+</div>
+    
+
+    
+      <div class="related">
+
+    <h4>相关文章</h4>
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+        
+    
+        
+    
+      
+    
+        
+        
+    
+        
+    
+        
+    
+      
+    
+        
+        
+    
+        
+    
+        
+          <div class = "related-posts">
+          <h5><a href="/2021/02/28/gogs-install.html">• Gogs安装记录</a></h5>
+          </div>
+          
+          
+        
+    
+      
+    
+        
+        
+    
+        
+    
+        
+          <div class = "related-posts">
+          <h5><a href="/2021/02/24/nextcloud-settings.html">• Nextcloud</a></h5>
+          </div>
+          
+          
+        
+    
+      
+    
+        
+        
+    
+        
+    
+        
+    
+      
+    
+        
+        
+    
+        
+    
+        
+    
+      
+    
+        
+        
+    
+        
+    
+        
+    
+      
+    
+        
+        
+    
+        
+    
+        
+    
+      
+    
+        
+        
+    
+        
+    
+        
+          <div class = "related-posts">
+          <h5><a href="/2020/10/04/wsl-known-bugs.html">• wsl使用中遇到的问题</a></h5>
+          </div>
+          
+          
+        
+    
+      
+    
+        
+        
+    
+        
+    
+        
+          <div class = "related-posts">
+          <h5><a href="/2020/10/04/wsl-installation-guide.html">• wsl安装指南</a></h5>
+          </div>
+          
+          
+            
+    
+    </div>
+    
+
+    
+      <section class="disqus">
+    <p id="load-comments" onclick="loadDisqus()">Load Comments</p>
+    <div id="disqus_thread"></div>
+
+    <script id="loadDisqus" type="text/javascript">
+      var disqus_loaded = false;
+      var disqus_shortname = "your_username";
+      var disqus_identifier = "/2020/09/20/installing-ruby-with-rvm.html";
+      function loadDisqus() {
+        var e = document.createElement('script'); 
+        e.type = 'text/javascript'; 
+        e.async = true;
+        e.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(e);
+        document.getElementById("load-comments").style.display = "none";
+      };
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments.</a></noscript>
+</section>
+    
+  </div><footer class= "footer">
+    <p>Copyright© Songj 2020. All right reserved.</p>
+</footer>
+
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>

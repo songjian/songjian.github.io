@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+<head>
+      <html lang="en-US">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        
+            宋健的博客 | 编程、生活、项目、Diy
+        
+    </title>
+    <meta name="description" content="
+     编程、生活、项目、Diy
+    ">
+
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Serif&display=swap">
+
+    <!-- SEO Plugin -->
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Home | 宋健的博客</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Home" />
+<meta name="author" content="Songj" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="编程、生活、项目、Diy" />
+<meta property="og:description" content="编程、生活、项目、Diy" />
+<link rel="canonical" href="/" />
+<meta property="og:url" content="/" />
+<meta property="og:site_name" content="宋健的博客" />
+<link rel="next" href="/page2/" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Home" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@Songj" />
+<script type="application/ld+json">
+{"@type":"WebSite","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Songj"},"url":"/","author":{"@type":"Person","name":"Songj"},"headline":"Home","description":"编程、生活、项目、Diy","sameAs":["https://twitter.com/PandaSekh","https://www.github.com/songjian","https://www.linkedin.com/in/alessio-franceschi/"],"name":"宋健的博客","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- Google Analytics -->
+    
+    <!-- End Google Analytics -->
+</head>
+<body>
+
+  <div class="container">
+    <header id="header">
+	<div id = site_title>
+		<a href="/">
+			<h1>宋健的博客</h1>
+		</a>
+		
+		<h2>
+			工作、生活、DIY
+		</h2>
+		
+	</div>
+
+	<div id="subheader">
+		
+		<nav class="pages">
+<a href="/about.html">About</a>
+
+<a href="/archive.html">Archive</a>
+</nav>
+		
+		
+		<nav class="social">
+			
+  
+    <a href="https://www.github.com/songjian" target="_blank" id="github"><i class="fab fa-github" aria-hidden="true"></i></a>
+  
+   
+
+  
+    <a href="https://www.linkedin.com/in/健-宋-785785208/" target="_blank" id="linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+  
+   
+
+  
+  
+    <a href="mailto:songjian@codeorder.cn" target="_blank" id="envelope"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+   
+
+  
+  
+    <a href="/feed.xml" target="_blank" id="rss"><i class="fas fa-rss" aria-hidden="true"></i></a>
+   
+
+		</nav>
+		
+	</div>
+</header>
+
+    <div class="post-container">
+      
+
+<div class="post">
+    <h2 id = "post-title"><a href="/2021/03/07/using-dd-command-to-migrate-disk-data.html">使用dd命令迁移磁盘数据</a></h2>
+
+     
+    <div class = "post-info">
+        <span>
+            <i class="far fa-calendar" aria-hidden="true"></i>
+            <time datetime="2021-03-07T00:00:00+08:00" class="by-line">07 Mar 2021</time> - <i class="far fa-clock"></i> 
+            
+  
+  
+    Less than 1 minute read
+  
+
+
+
+        </span>
+    </div>
+    
+
+    
+    <div class = "featured-img-container">
+    
+        <a href="/2021/03/07/using-dd-command-to-migrate-disk-data.html"><img src="/assets/img/dd-command.png"/></a>
+    
+    
+    </div>
+    
+
+    <p>
+        
+            # 查看分区
+sudo fdisk -l
+
+# 挂载分区
+sudo mount /dev/sdb1 ~/data
+
+# 挂载后通过df命令查看是否挂载成功
+df -l
+
+# 使用dd命令制作镜像
+sudo dd if=/dev/sda of=~/data/ssd.img
+
+# 使用dd命令恢复镜像
+sudo dd if=~/data/ssd.img of=/dev/sda
+
+
+使用体验
+
+
+  使用dd命令迁移硬盘数据速度较慢，250g硬盘制作镜像加恢复用时10小时
+  Windows的磁盘工具不能把空白空间划到现有分区里，需要使用第三方工具
+
+
+        
+        <span class = "continue-reading"><a href="/2021/03/07/using-dd-command-to-migrate-disk-data.html">Continue reading...</a></span>
+    </p> 
+</div>
+
+
+<div class="post">
+    <h2 id = "post-title"><a href="/2021/03/04/nas.html">nas</a></h2>
+
+     
+    <div class = "post-info">
+        <span>
+            <i class="far fa-calendar" aria-hidden="true"></i>
+            <time datetime="2021-03-04T00:00:00+08:00" class="by-line">04 Mar 2021</time> - <i class="far fa-clock"></i> 
+            
+  
+  
+    Less than 1 minute read
+  
+
+
+
+        </span>
+    </div>
+    
+
+    
+    <div class = "featured-img-container">
+    
+        <a href="/2021/03/04/nas.html"><img src="/assets/img/nas_b490.jpg"/></a>
+    
+    
+    </div>
+    
+
+    <p>
+        
+            nas的需求
+
+
+  私有网盘
+  jupyter
+  web服务器
+  定时任务
+
+
+硬件要求
+
+
+  性能够用
+  省电
+  长期运行稳定可靠
+
+
+硬件配置
+
+
+
+
+  主板: 联想b490笔记本主板
+  CPU: 赛扬b960
+  内存: 4g
+  硬盘: 光威悍将1t固态硬盘(主板sata口)
+  硬盘: 希捷1t移动硬盘(外置)
+
+
+软件
+
+
+  Ubuntu Server 20.04.1 LTS
+  snap Nextcloud
+
+
+备份
+
+
+  crontab + rsync定时增量备份
+
+
+        
+        <span class = "continue-reading"><a href="/2021/03/04/nas.html">Continue reading...</a></span>
+    </p> 
+</div>
+
+
+<div class="post">
+    <h2 id = "post-title"><a href="/2021/02/28/gogs-install.html">Gogs安装记录</a></h2>
+
+     
+    <div class = "post-info">
+        <span>
+            <i class="far fa-calendar" aria-hidden="true"></i>
+            <time datetime="2021-02-28T00:00:00+08:00" class="by-line">28 Feb 2021</time> - <i class="far fa-clock"></i> 
+            
+  
+  
+    Less than 1 minute read
+  
+
+
+
+        </span>
+    </div>
+    
+
+    
+    <div class = "featured-img-container">
+    
+    
+    </div>
+    
+
+    <p>
+        
+            轻量化的git服务，类似gitlab，资源消耗更少。
+
+安装步骤
+
+
+  新建git用户
+    useradd git
+    
+  
+  下载二进制安装包，解压到/home/git/gogs目录
+  设置仓库根目录: /home/git/gogs-repositories
+  管理员登录PostgreSQL数据库，新建gogs库和gogs用户
+
+
+参考
+
+
+  官方文档——二进制安装
+  Gogs 安装教程（最简单版）
+
+
+        
+        <span class = "continue-reading"><a href="/2021/02/28/gogs-install.html">Continue reading...</a></span>
+    </p> 
+</div>
+
+
+<div class="post">
+    <h2 id = "post-title"><a href="/2021/02/24/nextcloud-settings.html">Nextcloud</a></h2>
+
+     
+    <div class = "post-info">
+        <span>
+            <i class="far fa-calendar" aria-hidden="true"></i>
+            <time datetime="2021-02-24T00:00:00+08:00" class="by-line">24 Feb 2021</time> - <i class="far fa-clock"></i> 
+            
+  
+  
+    Less than 1 minute read
+  
+
+
+
+        </span>
+    </div>
+    
+
+    
+    <div class = "featured-img-container">
+    
+    
+    </div>
+    
+
+    <p>
+        
+            nextcloud使用ubuntu的snap安装。
+
+Snap Nextcloud 的配置
+
+修改https端口
+
+sudo snap set nextcloud ports.http=81 ports.https=444
+
+
+文件存储目录
+
+
+  /var/snap/nextcloud/common/nextcloud/data
+
+
+配置文件路径
+
+
+  /var/snap/nextcloud/current/nextcloud/config/config.php
+
+
+参考
+
+
+  Snappy Nextcloud
+  备份
+
+
+        
+        <span class = "continue-reading"><a href="/2021/02/24/nextcloud-settings.html">Continue reading...</a></span>
+    </p> 
+</div>
+
+
+<div class="post">
+    <h2 id = "post-title"><a href="/2021/02/09/dell-9020m.html">Dell 9020m</a></h2>
+
+     
+    <div class = "post-info">
+        <span>
+            <i class="far fa-calendar" aria-hidden="true"></i>
+            <time datetime="2021-02-09T00:00:00+08:00" class="by-line">09 Feb 2021</time> - <i class="far fa-clock"></i> 
+            
+  
+  
+    Less than 1 minute read
+  
+
+
+
+        </span>
+    </div>
+    
+
+    
+    <div class = "featured-img-container">
+    
+        <a href="/2021/02/09/dell-9020m.html"><img src="/assets/img/dell-9020m.jpg"/></a>
+    
+    
+    </div>
+    
+
+    <p>
+        
+            配置
+
+
+  CPU: i5 4670t
+  内存: 10G
+  硬盘: 1T固态
+
+
+        
+        <span class = "continue-reading"><a href="/2021/02/09/dell-9020m.html">Continue reading...</a></span>
+    </p> 
+</div>
+
+
+<!-- Pagination links -->
+<div class = "paginator">
+    
+    
+      <a class = "older paginate-button" href="/page2/">Older Posts</a>
+    
+    
+  
+</div>
+
+    </div>
+  </div><footer class= "footer">
+    <p>Copyright© Songj 2020. All right reserved.</p>
+</footer>
+</body>
+</html>
