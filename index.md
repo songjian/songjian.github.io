@@ -3,8 +3,6 @@ layout: default
 title: 简历
 ---
 
-# 简历
-
 ## 基本信息
 
 * 姓名: 宋健
