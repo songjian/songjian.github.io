@@ -1,3 +1,4 @@
 pages:
   - {name: 'About', url: '/'}
-  - {name: 'Archive', url: 'archive.html'}
+  - {name: 'Blog', url: 'blog.html'}
+  - {name: 'Github', url: 'https://www.github.com/songjian'}
