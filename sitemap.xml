@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>/2005/10/10/ejob.html</loc>
+<lastmod>2005-10-10T00:00:00+08:00</lastmod>
+</url>
+<url>
 <loc>/2010/05/19/projector.html</loc>
 <lastmod>2010-05-19T00:00:00+08:00</lastmod>
 </url>
@@ -29,14 +33,6 @@
 <lastmod>2018-02-11T00:00:00+08:00</lastmod>
 </url>
 <url>
-<loc>/2018/02/12/taishan.html</loc>
-<lastmod>2018-02-12T17:25:07+08:00</lastmod>
-</url>
-<url>
-<loc>/2018/02/12/qingdao-fushan.html</loc>
-<lastmod>2018-02-12T17:25:07+08:00</lastmod>
-</url>
-<url>
 <loc>/2018/02/26/poker.html</loc>
 <lastmod>2018-02-26T00:00:00+08:00</lastmod>
 </url>
@@ -49,15 +45,7 @@
 <lastmod>2018-04-20T00:00:00+08:00</lastmod>
 </url>
 <url>
-<loc>/2018/04/22/headhunter.html</loc>
-<lastmod>2018-04-22T00:00:00+08:00</lastmod>
-</url>
-<url>
 <loc>/2018/05/07/docker-install-nginx.html</loc>
-<lastmod>2018-05-07T00:00:00+08:00</lastmod>
-</url>
-<url>
-<loc>/2018/05/07/welcome-to-codeorder.html</loc>
 <lastmod>2018-05-07T00:00:00+08:00</lastmod>
 </url>
 <url>
@@ -65,20 +53,8 @@
 <lastmod>2018-05-10T00:00:00+08:00</lastmod>
 </url>
 <url>
-<loc>/2018/05/30/headhunting-system.html</loc>
-<lastmod>2018-05-30T00:00:00+08:00</lastmod>
-</url>
-<url>
 <loc>/2018/05/30/codeorder-enterprise-information-system.html</loc>
 <lastmod>2018-05-30T00:00:00+08:00</lastmod>
-</url>
-<url>
-<loc>/2018/06/28/sell-website-backstage.html</loc>
-<lastmod>2018-06-28T00:00:00+08:00</lastmod>
-</url>
-<url>
-<loc>/2018/06/28/corporate-website.html</loc>
-<lastmod>2018-06-28T00:00:00+08:00</lastmod>
 </url>
 <url>
 <loc>/2018/11/01/codeorder-kindergarten.html</loc>
@@ -165,10 +141,7 @@
 <lastmod>2021-03-07T00:00:00+08:00</lastmod>
 </url>
 <url>
-<loc>/about.html</loc>
-</url>
-<url>
-<loc>/archive.html</loc>
+<loc>/blog.html</loc>
 </url>
 <url>
 <loc>/case-presentation.html</loc>
@@ -184,6 +157,9 @@
 </url>
 <url>
 <loc>/contact.html</loc>
+</url>
+<url>
+<loc>/</loc>
 </url>
 <url>
 <loc>/</loc>
@@ -211,11 +187,5 @@
 </url>
 <url>
 <loc>/page7/</loc>
-</url>
-<url>
-<loc>/page8/</loc>
-</url>
-<url>
-<loc>/page9/</loc>
 </url>
 </urlset>

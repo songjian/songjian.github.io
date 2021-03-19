@@ -29,7 +29,7 @@
 
     <!-- SEO Plugin -->
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Page 7 of 9 for Home | 宋健的博客</title>
+<title>Page 7 of 7 for Home | 宋健的博客</title>
 <meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="Home" />
 <meta name="author" content="Songj" />
@@ -40,13 +40,12 @@
 <meta property="og:url" content="/page7/" />
 <meta property="og:site_name" content="宋健的博客" />
 <link rel="prev" href="/page6/" />
-<link rel="next" href="/page8/" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Home" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@Songj" />
 <script type="application/ld+json">
-{"@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Songj"},"url":"/page7/","author":{"@type":"Person","name":"Songj"},"headline":"Home","description":"编程、生活、项目、Diy","@context":"https://schema.org"}</script>
+{"@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Songj"},"headline":"Home","description":"编程、生活、项目、Diy","url":"/page7/","author":{"@type":"Person","name":"Songj"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -72,35 +71,18 @@
 	<div id="subheader">
 		
 		<nav class="pages">
-<a href="/about.html">About</a>
 
-<a href="/archive.html">Archive</a>
+&nbsp;&nbsp;<a href="/">About</a> 
+
+
+/&nbsp;&nbsp;<a href="/blog.html">Blog</a> 
+
+
+/&nbsp;&nbsp;<a href="https://www.github.com/songjian">Github</a> 
+
+
 </nav>
 		
-		
-		<nav class="social">
-			
-  
-    <a href="https://www.github.com/songjian" target="_blank" id="github"><i class="fab fa-github" aria-hidden="true"></i></a>
-  
-   
-
-  
-    <a href="https://www.linkedin.com/in/健-宋-785785208/" target="_blank" id="linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-  
-   
-
-  
-  
-    <a href="mailto:songjian@codeorder.cn" target="_blank" id="envelope"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-   
-
-  
-  
-    <a href="/feed.xml" target="_blank" id="rss"><i class="fas fa-rss" aria-hidden="true"></i></a>
-   
-
-		</nav>
 		
 	</div>
 </header>
@@ -109,13 +91,13 @@
       
 
 <div class="post">
-    <h2 id = "post-title"><a href="/2018/03/25/rails.html">rails常用命令&技巧</a></h2>
+    <h2 id = "post-title"><a href="/2013/07/10/sae.html">SAE域名绑定的解决方法</a></h2>
 
      
     <div class = "post-info">
         <span>
             <i class="far fa-calendar" aria-hidden="true"></i>
-            <time datetime="2018-03-25T00:00:00+08:00" class="by-line">25 Mar 2018</time> - <i class="far fa-clock"></i> 
+            <time datetime="2013-07-10T00:00:00+08:00" class="by-line">10 Jul 2013</time> - <i class="far fa-clock"></i> 
             
   
   
@@ -137,55 +119,25 @@
 
     <p>
         
-            常用命令
-
-# 创建rails项目
-rails new new_project_name
-
-# 启动服务
-rails s
-
-# 创建数据库
-rake db:create
-
-# 删除数据库
-rake db:drop
-
-# 执行迁移
-rake db:migrate
-
-
-资源预处理
-
-禁止生成控制器静态资源
-
-通过在 config/application.rb 配置文件中添加下述代码，可以禁止生成针对控制器的静态资源文件：
-
-config.generators do |g|
-  g.assets false
-end
-
-
-参考网站
-
-
-  http://rubyonrails.org/
+            
+  使用CNAME把www子域名指向sae服务；
+  把A记录指向的主域名服务器，使用脚本指向www域名；
 
 
         
-        <span class = "continue-reading"><a href="/2018/03/25/rails.html">Continue reading...</a></span>
+        <span class = "continue-reading"><a href="/2013/07/10/sae.html">Continue reading...</a></span>
     </p> 
 </div>
 
 
 <div class="post">
-    <h2 id = "post-title"><a href="/2018/02/26/poker.html">60%机械键盘</a></h2>
+    <h2 id = "post-title"><a href="/2013/07/10/nginx-path-rewriting.html">Nginx路径重写</a></h2>
 
      
     <div class = "post-info">
         <span>
             <i class="far fa-calendar" aria-hidden="true"></i>
-            <time datetime="2018-02-26T00:00:00+08:00" class="by-line">26 Feb 2018</time> - <i class="far fa-clock"></i> 
+            <time datetime="2013-07-10T00:00:00+08:00" class="by-line">10 Jul 2013</time> - <i class="far fa-clock"></i> 
             
   
   
@@ -207,23 +159,30 @@ end
 
     <p>
         
-            
+            server {
+    listen       80;
+    server_name  www.nginx.org  nginx.org;
+    if ($http_host = nginx.org) {
+        rewrite  (.*)  http://www.nginx.org$1;
+    }
+    ...
+}
 
 
         
-        <span class = "continue-reading"><a href="/2018/02/26/poker.html">Continue reading...</a></span>
+        <span class = "continue-reading"><a href="/2013/07/10/nginx-path-rewriting.html">Continue reading...</a></span>
     </p> 
 </div>
 
 
 <div class="post">
-    <h2 id = "post-title"><a href="/2018/02/12/qingdao-fushan.html">青岛</a></h2>
+    <h2 id = "post-title"><a href="/2012/03/07/php-api-example.html">PHP调用接口示例</a></h2>
 
      
     <div class = "post-info">
         <span>
             <i class="far fa-calendar" aria-hidden="true"></i>
-            <time datetime="2018-02-12T17:25:07+08:00" class="by-line">12 Feb 2018</time> - <i class="far fa-clock"></i> 
+            <time datetime="2012-03-07T11:25:07+08:00" class="by-line">07 Mar 2012</time> - <i class="far fa-clock"></i> 
             
   
   
@@ -245,22 +204,21 @@ end
 
     <p>
         
-            
-
+            两个程序之间交换数据一般需要一个程序给另一个程序提供接口，以获取或者更新第一个程序中的数据。如何安全的开放数据的访问与更新？这就需要在开放的接口上做一些安全处理，如限制ip和访问次数、检查接口访问时间的有效范围和程序之间约定密钥对交换数据进行摘要和加密。 上栗子 有两台服务器a和b，a服务器中保存有会员记录，b服务器现在想要请求这些记录，处理如下： b 服务器请求数据代码 $server_name = 'http://localhost/a.php'; $time = time(); //请求时间 $key = 'weqwesfxvcvxs'; //主机间约定的密钥 $index = 1; //请求记录的起始记录 $row = 10; //请求返回记录条数 //加密 $flag = md5($index . $row . $time . $key); //变量连接顺序由 a 和 b 服务器约定 echo file_get_contents($server_name . "?time={$time}&amp;index={$index}&amp;row={$row}&amp;flag={$flag}"); 处理主机 b 的接口访问请求 //允许访问接口的ip地址 $ips = array('127.0.0.1');...
         
-        <span class = "continue-reading"><a href="/2018/02/12/qingdao-fushan.html">Continue reading...</a></span>
+        <span class = "continue-reading"><a href="/2012/03/07/php-api-example.html">Continue reading...</a></span>
     </p> 
 </div>
 
 
 <div class="post">
-    <h2 id = "post-title"><a href="/2018/02/12/taishan.html">泰山·日出</a></h2>
+    <h2 id = "post-title"><a href="/2010/05/19/projector.html">自制投影仪</a></h2>
 
      
     <div class = "post-info">
         <span>
             <i class="far fa-calendar" aria-hidden="true"></i>
-            <time datetime="2018-02-12T17:25:07+08:00" class="by-line">12 Feb 2018</time> - <i class="far fa-clock"></i> 
+            <time datetime="2010-05-19T00:00:00+08:00" class="by-line">19 May 2010</time> - <i class="far fa-clock"></i> 
             
   
   
@@ -276,6 +234,8 @@ end
     
     <div class = "featured-img-container">
     
+        <a href="/2010/05/19/projector.html"><img src="/assets/img/projector01.jpg"/></a>
+    
     
     </div>
     
@@ -283,21 +243,48 @@ end
     <p>
         
             
+自制投影仪的文章网上挺多的，但是看文章的介绍，大多使用鞋盒（体积较大），另外需要播放软件支持做画面镜像，不然投出的画面是左右颠倒的。
+
+我这个方案的特点是体积较小（使用咖啡包装盒），支持物理镜像（通过一面化妆镜反射画面），支持在外壳外面对焦（手机放在座上，座上留个尾巴连到外面，推拉可以调焦）。
+
+使用材料
+
+
+  雀巢咖啡包装盒(方袋)
+  地摊双筒望远镜镜筒
+  一面小化妆镜
+  热熔胶枪
+
+
+效果口述
+
+可惜制作好的时候，没有支持手动模式的相机，无法记录效果的画面
+
+全黑环境下使用基本可以让人满意
+
+内部结构
+
+小化妆镜用于镜像翻转图像
+
+手机放在托架上, 托架的把手通向外壳外面, 可以推拉把手调焦.
+
+
+
 
         
-        <span class = "continue-reading"><a href="/2018/02/12/taishan.html">Continue reading...</a></span>
+        <span class = "continue-reading"><a href="/2010/05/19/projector.html">Continue reading...</a></span>
     </p> 
 </div>
 
 
 <div class="post">
-    <h2 id = "post-title"><a href="/2018/02/11/awesome-vue.html">备忘录：Vue.js资料整理</a></h2>
+    <h2 id = "post-title"><a href="/2005/10/10/ejob.html">招聘网站</a></h2>
 
      
     <div class = "post-info">
         <span>
             <i class="far fa-calendar" aria-hidden="true"></i>
-            <time datetime="2018-02-11T00:00:00+08:00" class="by-line">11 Feb 2018</time> - <i class="far fa-clock"></i> 
+            <time datetime="2005-10-10T00:00:00+08:00" class="by-line">10 Oct 2005</time> - <i class="far fa-clock"></i> 
             
   
   
@@ -313,16 +300,48 @@ end
     
     <div class = "featured-img-container">
     
+        <a href="/2005/10/10/ejob.html"><img src="/assets/img/ejob.jpg"/></a>
+    
     
     </div>
     
 
     <p>
         
-            https://github.com/vuejs/awesome-vue
+            简介
+写于2005年。
+
+网站界面
+
+
+运行环境
+
+  语言: asp
+  系统: windows server
+  web服务器: iis
+  数据库: SQL Server 2000
+
+
+数据库
+数据库文件放在job_data文件夹内，连接方式采用odbc，odbc名:ejob。
+
+功能
+网站用户分为企业用户、个人用户和管理员。
+
+企业用户和个人用户可以在网站前台注册。企业用户注册成功登录后可发布招聘信息。个人用户注册成功登录后可以发出面试申请。个人用户完善完简历后可以把简历加入到人才库中。
+
+特色
+
+邀请面试的功能，企业看到合适的人才后可以发出面试邀请，个人登录系统后可以看到邀请，并且选择接受或拒绝。
+
+这个功能不算什么，不过05年的时候第一次写动态网站想到这个功能我觉得还是挺厉害的吧。
+
+Github
+
+https://github.com/songjian/ejob
 
         
-        <span class = "continue-reading"><a href="/2018/02/11/awesome-vue.html">Continue reading...</a></span>
+        <span class = "continue-reading"><a href="/2005/10/10/ejob.html">Continue reading...</a></span>
     </p> 
 </div>
 
@@ -330,8 +349,6 @@ end
 <!-- Pagination links -->
 <div class = "paginator">
     
-    
-      <a class = "older paginate-button" href="/page8/">Older Posts</a>
     
     
     <a class = "newer paginate-button" href="/page6/">Newer Posts</a>

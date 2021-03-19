@@ -7,8 +7,8 @@
 
     <title>
         
-            宋健的博客 | 编程、生活、项目、Diy
-        
+            简历 | 宋健的博客
+      
     </title>
     <meta name="description" content="
      编程、生活、项目、Diy
@@ -29,9 +29,9 @@
 
     <!-- SEO Plugin -->
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Home | 宋健的博客</title>
+<title>简历 | 宋健的博客</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Home" />
+<meta property="og:title" content="简历" />
 <meta name="author" content="Songj" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="编程、生活、项目、Diy" />
@@ -39,13 +39,12 @@
 <link rel="canonical" href="/" />
 <meta property="og:url" content="/" />
 <meta property="og:site_name" content="宋健的博客" />
-<link rel="next" href="/page2/" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Home" />
+<meta property="twitter:title" content="简历" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@Songj" />
 <script type="application/ld+json">
-{"@type":"WebSite","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Songj"},"url":"/","author":{"@type":"Person","name":"Songj"},"headline":"Home","description":"编程、生活、项目、Diy","sameAs":["https://twitter.com/PandaSekh","https://www.github.com/songjian","https://www.linkedin.com/in/alessio-franceschi/"],"name":"宋健的博客","@context":"https://schema.org"}</script>
+{"@type":"WebSite","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Songj"},"headline":"简历","description":"编程、生活、项目、Diy","sameAs":["https://twitter.com/PandaSekh","https://www.github.com/songjian","https://www.linkedin.com/in/alessio-franceschi/"],"url":"/","author":{"@type":"Person","name":"Songj"},"name":"宋健的博客","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -71,354 +70,161 @@
 	<div id="subheader">
 		
 		<nav class="pages">
-<a href="/about.html">About</a>
 
-<a href="/archive.html">Archive</a>
+&nbsp;&nbsp;<a href="/">About</a> 
+
+
+/&nbsp;&nbsp;<a href="/blog.html">Blog</a> 
+
+
+/&nbsp;&nbsp;<a href="https://www.github.com/songjian">Github</a> 
+
+
 </nav>
 		
-		
-		<nav class="social">
-			
-  
-    <a href="https://www.github.com/songjian" target="_blank" id="github"><i class="fab fa-github" aria-hidden="true"></i></a>
-  
-   
-
-  
-    <a href="https://www.linkedin.com/in/健-宋-785785208/" target="_blank" id="linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-  
-   
-
-  
-  
-    <a href="mailto:songjian@codeorder.cn" target="_blank" id="envelope"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-   
-
-  
-  
-    <a href="/feed.xml" target="_blank" id="rss"><i class="fas fa-rss" aria-hidden="true"></i></a>
-   
-
-		</nav>
 		
 	</div>
 </header>
 
     <div class="post-container">
-      
-
-<div class="post">
-    <h2 id = "post-title"><a href="/2021/03/07/using-dd-command-to-migrate-disk-data.html">使用dd命令迁移磁盘数据</a></h2>
-
-     
-    <div class = "post-info">
-        <span>
-            <i class="far fa-calendar" aria-hidden="true"></i>
-            <time datetime="2021-03-07T00:00:00+08:00" class="by-line">07 Mar 2021</time> - <i class="far fa-clock"></i> 
-            
-  
-  
-    Less than 1 minute read
-  
-
-
-
-        </span>
-    </div>
-    
-
-    
-    <div class = "featured-img-container">
-    
-        <a href="/2021/03/07/using-dd-command-to-migrate-disk-data.html"><img src="/assets/img/dd-command.png"/></a>
-    
-    
-    </div>
-    
-
-    <p>
-        
-            # 查看分区
-sudo fdisk -l
-
-# 挂载分区
-sudo mount /dev/sdb1 ~/data
-
-# 挂载后通过df命令查看是否挂载成功
-df -l
-
-# 使用dd命令制作镜像
-sudo dd if=/dev/sda of=~/data/ssd.img
-
-# 使用dd命令恢复镜像
-sudo dd if=~/data/ssd.img of=/dev/sda
-
-
-使用体验
-
-
-  使用dd命令迁移硬盘数据速度较慢，250g硬盘制作镜像加恢复用时10小时
-  Windows的磁盘工具不能把空白空间划到现有分区里，需要使用第三方工具
-
-
-        
-        <span class = "continue-reading"><a href="/2021/03/07/using-dd-command-to-migrate-disk-data.html">Continue reading...</a></span>
-    </p> 
-</div>
-
-
-<div class="post">
-    <h2 id = "post-title"><a href="/2021/03/04/nas.html">nas</a></h2>
-
-     
-    <div class = "post-info">
-        <span>
-            <i class="far fa-calendar" aria-hidden="true"></i>
-            <time datetime="2021-03-04T00:00:00+08:00" class="by-line">04 Mar 2021</time> - <i class="far fa-clock"></i> 
-            
-  
-  
-    Less than 1 minute read
-  
-
-
-
-        </span>
-    </div>
-    
-
-    
-    <div class = "featured-img-container">
-    
-        <a href="/2021/03/04/nas.html"><img src="/assets/img/nas_b490.jpg"/></a>
-    
-    
-    </div>
-    
-
-    <p>
-        
-            nas的需求
-
-
-  私有网盘
-  jupyter
-  web服务器
-  定时任务
-
-
-硬件要求
-
-
-  性能够用
-  省电
-  长期运行稳定可靠
-
-
-硬件配置
-
-
-
-
-  主板: 联想b490笔记本主板
-  CPU: 赛扬b960
-  内存: 4g
-  硬盘: 光威悍将1t固态硬盘(主板sata口)
-  硬盘: 希捷1t移动硬盘(外置)
-
-
-软件
-
-
-  Ubuntu Server 20.04.1 LTS
-  snap Nextcloud
-
-
-备份
-
-
-  crontab + rsync定时增量备份
-
-
-        
-        <span class = "continue-reading"><a href="/2021/03/04/nas.html">Continue reading...</a></span>
-    </p> 
-</div>
-
-
-<div class="post">
-    <h2 id = "post-title"><a href="/2021/02/28/gogs-install.html">Gogs安装记录</a></h2>
-
-     
-    <div class = "post-info">
-        <span>
-            <i class="far fa-calendar" aria-hidden="true"></i>
-            <time datetime="2021-02-28T00:00:00+08:00" class="by-line">28 Feb 2021</time> - <i class="far fa-clock"></i> 
-            
-  
-  
-    Less than 1 minute read
-  
-
-
-
-        </span>
-    </div>
-    
-
-    
-    <div class = "featured-img-container">
-    
-    
-    </div>
-    
-
-    <p>
-        
-            轻量化的git服务，类似gitlab，资源消耗更少。
-
-安装步骤
-
-
-  新建git用户
-    useradd git
-    
-  
-  下载二进制安装包，解压到/home/git/gogs目录
-  设置仓库根目录: /home/git/gogs-repositories
-  管理员登录PostgreSQL数据库，新建gogs库和gogs用户
-
-
-参考
-
-
-  官方文档——二进制安装
-  Gogs 安装教程（最简单版）
-
-
-        
-        <span class = "continue-reading"><a href="/2021/02/28/gogs-install.html">Continue reading...</a></span>
-    </p> 
-</div>
-
-
-<div class="post">
-    <h2 id = "post-title"><a href="/2021/02/24/nextcloud-settings.html">Nextcloud</a></h2>
-
-     
-    <div class = "post-info">
-        <span>
-            <i class="far fa-calendar" aria-hidden="true"></i>
-            <time datetime="2021-02-24T00:00:00+08:00" class="by-line">24 Feb 2021</time> - <i class="far fa-clock"></i> 
-            
-  
-  
-    Less than 1 minute read
-  
-
-
-
-        </span>
-    </div>
-    
-
-    
-    <div class = "featured-img-container">
-    
-    
-    </div>
-    
-
-    <p>
-        
-            nextcloud使用ubuntu的snap安装。
-
-Snap Nextcloud 的配置
-
-修改https端口
-
-sudo snap set nextcloud ports.http=81 ports.https=444
-
-
-文件存储目录
-
-
-  /var/snap/nextcloud/common/nextcloud/data
-
-
-配置文件路径
-
-
-  /var/snap/nextcloud/current/nextcloud/config/config.php
-
-
-参考
-
-
-  Snappy Nextcloud
-  备份
-
-
-        
-        <span class = "continue-reading"><a href="/2021/02/24/nextcloud-settings.html">Continue reading...</a></span>
-    </p> 
-</div>
-
-
-<div class="post">
-    <h2 id = "post-title"><a href="/2021/02/09/dell-9020m.html">Dell 9020m</a></h2>
-
-     
-    <div class = "post-info">
-        <span>
-            <i class="far fa-calendar" aria-hidden="true"></i>
-            <time datetime="2021-02-09T00:00:00+08:00" class="by-line">09 Feb 2021</time> - <i class="far fa-clock"></i> 
-            
-  
-  
-    Less than 1 minute read
-  
-
-
-
-        </span>
-    </div>
-    
-
-    
-    <div class = "featured-img-container">
-    
-        <a href="/2021/02/09/dell-9020m.html"><img src="/assets/img/dell-9020m.jpg"/></a>
-    
-    
-    </div>
-    
-
-    <p>
-        
-            配置
-
-
-  CPU: i5 4670t
-  内存: 10G
-  硬盘: 1T固态
-
-
-        
-        <span class = "continue-reading"><a href="/2021/02/09/dell-9020m.html">Continue reading...</a></span>
-    </p> 
-</div>
-
-
-<!-- Pagination links -->
-<div class = "paginator">
-    
-    
-      <a class = "older paginate-button" href="/page2/">Older Posts</a>
-    
-    
-  
-</div>
+      <h2 id="基本信息">基本信息</h2>
+
+<ul>
+  <li>姓名: 宋健</li>
+  <li>年龄: 36</li>
+  <li>学历: 中专</li>
+  <li>手机/微信: 13361285504</li>
+  <li>邮箱: songjian@codeorder.cn</li>
+</ul>
+
+<h2 id="工作经历项目经验">工作经历&amp;项目经验</h2>
+
+<p><strong>2018.3 - 2021.3 青岛码序科技有限公司 ruby程序员</strong></p>
+
+<p>1、码序企业信息化系统</p>
+
+<ul>
+  <li>码序企业信息化系统是为中小企业开发的快速搭建中小企业常用的信息化工具平台管理系统</li>
+  <li>负责使用rails搭建开发和生产环境</li>
+  <li>负责项目架构设计，后端业务逻辑代码编写</li>
+  <li>负责使用AdminLTE搭建管理端的前端页面框架</li>
+</ul>
+
+<p>2、幼儿园网站管理系统</p>
+
+<ul>
+  <li>幼儿园网站管理系统是给幼儿园快速搭建自己的网站而设计的产品</li>
+  <li>负责使用rails搭建开发环境和线上生产环境</li>
+  <li>负责开发资讯、报名管理、招生简章(入园指南)、每周菜谱、公告、幼儿画廊功能</li>
+</ul>
+
+<p><strong>2015.3 - 2018.3 北京维基飞翔科技有限公司 php\ruby程序员</strong></p>
+
+<p>1、海尔创客实验室 <a href="https://lab.haier.com">lab.haier.com</a></p>
+
+<ul>
+  <li>海尔创客实验室是海尔集团为服务创客群体打造的网上平台</li>
+  <li>负责使用php语言和laravel框架搭建开发环境和线上生产环境</li>
+  <li>负责网站架构设计，新功能开发和运营的数据统计</li>
+  <li>负责使用堡垒机登录海尔服务器，维护网站数据和发布代码</li>
+  <li>负责将收到的海尔的新需求功能分解成功能点</li>
+</ul>
+
+<p>2、潍坊商务局二维码追溯系统（项目已下线）</p>
+
+<ul>
+  <li>潍坊商务局二维码追溯系统是给潍坊商务局打造的追溯食品、农产品的商品溯源系统</li>
+  <li>负责使用rails搭建演示环境和生产环境，以及准备演示环境用到的数据</li>
+  <li>负责开发企业申请和使用二维码的功能，微信端扫描二维码查询功能</li>
+  <li>按照开发合同的要求顺利交付项目</li>
+</ul>
+
+<p>3、安踏茁壮成长公益计划 <a href="http://anta.wikiflyer.cn">anta.wikiflyer.cn</a>（项目已下线）</p>
+
+<ul>
+  <li>安踏茁壮成长公益计划是安踏体育用品资助的公益项目</li>
+  <li>使用rails搭建web服务平台，线上生产环境的搭建和配置</li>
+  <li>负责捐助流程的设计，项目架构设计，功能模块的分解</li>
+  <li>负责捐助流程代码的编写</li>
+  <li>仅用3周时间就完成了项目交付</li>
+</ul>
+
+<p>4、亿木课堂 <a href="http://www.ymooc.com.cn/">www.ymooc.com.cn</a></p>
+
+<ul>
+  <li>亿木课堂是类似慕课网的在线视频学习网站</li>
+  <li>负责使用rails搭建web服务平台，线上生产环境的搭建</li>
+  <li>负责架构设计，功能模块的分解</li>
+  <li>负责视频存储平台——腾讯云接口对接</li>
+</ul>
+
+<p>5、党建平台</p>
+
+<ul>
+  <li>党建平台是柳州中烟集团内部党员管理平台，包括pc管理端和企业微信端。这个项目是对旧平台的重构</li>
+  <li>负责与产品同事一起和客户对接需求</li>
+  <li>负责网站架构设计</li>
+  <li>负责使用rails开发后台管理和微信端</li>
+  <li>项目按照合同的约定顺利上线</li>
+</ul>
+
+<p>6、格桑花西部助学网 <a href="http://www.gesanghua.org/">www.gesanghua.org</a></p>
+
+<ul>
+  <li>格桑花西部助学网是国内老牌的资助西部贫困学生的项目，第一版网站2005年上线，为了更好的将捐助流程搬到网上，2017年决定网站改版</li>
+  <li>格桑花要求将捐助流程程序化，保留旧网站的部分数据</li>
+  <li>负责使用rails搭建web服务平台，线上生产环境的搭建和配置</li>
+  <li>负责网站架构设计，和格桑花相关负责人沟通功能的需求</li>
+  <li>负责给后来参与开发的同事讲解需求和分配开发任务</li>
+  <li>负责编写旧网站数据迁移到新网站的程序脚本</li>
+  <li>按照合同约定网站顺利交付上线运行</li>
+</ul>
+
+<p><strong>2014.2 - 2015.3 青岛华创联合房地产咨询管理有限公司 php程序员</strong></p>
+
+<p>1、客推推网站和APP</p>
+
+<ul>
+  <li>客推推是网上售房、租房的互联网产品，包括pc端网站、手机app</li>
+  <li>负责app服务端和微信端服务接口的编写</li>
+  <li>负责用phpcms开发管理后台</li>
+  <li>负责苹果开发账号、微信开放平台账号申请</li>
+  <li>项目按时上线运行</li>
+</ul>
+
+<h2 id="个人评价">个人评价</h2>
+
+<ul>
+  <li>极客、热爱技术、热爱开源</li>
+  <li>Ruby on Rails: 精通</li>
+  <li>Laravel: 精通</li>
+  <li>Python: 掌握</li>
+  <li>Docker: 掌握</li>
+  <li>Linux: 掌握</li>
+  <li>Vim: 精通</li>
+  <li>Vue: 掌握</li>
+  <li>Git: 掌握</li>
+  <li>Jekyll: 掌握</li>
+</ul>
+
+<h2 id="教育经历">教育经历</h2>
+
+<ul>
+  <li>2005.3 - 2006.5 清华大学继续教育学院 - 高级软件工程师培训认证</li>
+  <li>2000.9 - 2003.7 青岛高级职业学校 - 计算机技术与应用</li>
+</ul>
+
+<h2 id="工作期望">工作期望</h2>
+
+<ul>
+  <li>我对自己的定位: 主攻后端</li>
+</ul>
+
+<h2 id="博客">博客</h2>
+
+<ul>
+  <li><a href="https://songjian.github.io/">songjian.github.io</a></li>
+</ul>
 
     </div>
   </div><footer class= "footer">
