@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用咖啡盒制作手机投影仪
+title: 自制投影仪
 categories: [DIY]
 image: /assets/img/projector01.jpg
 ---
