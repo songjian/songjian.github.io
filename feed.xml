@@ -37,11 +37,13 @@
 			</item>
 		
 			<item>
-				<title>nas</title>
-				<description>&lt;h4 id=&quot;nas的需求&quot;&gt;nas的需求&lt;/h4&gt;
+				<title>NAS</title>
+				<description>&lt;p&gt;&lt;img src=&quot;/assets/img/nas_b490.jpg&quot; alt=&quot;nas b490&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;对nas的需求&quot;&gt;对NAS的需求&lt;/h4&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;私有网盘&lt;/li&gt;
+  &lt;li&gt;nextcloud&lt;/li&gt;
   &lt;li&gt;jupyter&lt;/li&gt;
   &lt;li&gt;web服务器&lt;/li&gt;
   &lt;li&gt;定时任务&lt;/li&gt;
@@ -52,32 +54,29 @@
 &lt;ul&gt;
   &lt;li&gt;性能够用&lt;/li&gt;
   &lt;li&gt;省电&lt;/li&gt;
-  &lt;li&gt;长期运行稳定可靠&lt;/li&gt;
+  &lt;li&gt;稳定可靠&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;硬件配置&quot;&gt;硬件配置&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/nas_b490.jpg&quot; alt=&quot;nas b490&quot; /&gt;&lt;/p&gt;
-
 &lt;ul&gt;
-  &lt;li&gt;主板: 联想b490笔记本主板&lt;/li&gt;
+  &lt;li&gt;主板: 旧笔记本电脑拆出的主板（型号: 联想b490）&lt;/li&gt;
   &lt;li&gt;CPU: 赛扬b960&lt;/li&gt;
   &lt;li&gt;内存: 4g&lt;/li&gt;
-  &lt;li&gt;硬盘: 光威悍将1t固态硬盘(主板sata口)&lt;/li&gt;
-  &lt;li&gt;硬盘: 希捷1t移动硬盘(外置)&lt;/li&gt;
+  &lt;li&gt;硬盘1: 光威悍将1t固态硬盘(主板sata口)&lt;/li&gt;
+  &lt;li&gt;硬盘2: 希捷1t移动硬盘(主板usb口)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;软件&quot;&gt;软件&lt;/h4&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Ubuntu Server 20.04.1 LTS&lt;/li&gt;
-  &lt;li&gt;snap Nextcloud&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;备份&quot;&gt;备份&lt;/h4&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;crontab + rsync定时增量备份&lt;/li&gt;
+  &lt;li&gt;crontab + rsync增量备份&lt;/li&gt;
 &lt;/ul&gt;
 </description>
 				<pubDate>Thu, 04 Mar 2021 00:00:00 +0800</pubDate>
