@@ -1,4 +1,5 @@
 pages:
   - {name: 'About', url: '/'}
+  - {name: 'Case', url: 'case-presentation.html'}
   - {name: 'Blog', url: 'blog.html'}
   - {name: 'Github', url: 'https://www.github.com/songjian'}
