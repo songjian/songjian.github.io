@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dell 笔记本摄像头 Diy Windows Hello人脸解锁
+title: 自制Windows Hello人脸解锁
 categories: [DIY]
 image: /assets/img/dell-camera.jpg
 ---
