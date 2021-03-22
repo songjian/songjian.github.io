@@ -1,5 +1,5 @@
 # Site settings
-title: 宋健的博客
+title: 宋健
 description: "编程、生活、项目、Diy"
 url:  "" # Actual base url of the website
 baseurl: "/"           # url of the jekyll blog. e.g. if you set url to "mysite.com" and baseurl to "blog", the jekyll website will work on "mysite.com/blog"
