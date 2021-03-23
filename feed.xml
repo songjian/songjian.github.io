@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>宋健的博客</title>
+		<title>宋健</title>
 		<description>编程、生活、项目、Diy</description>
 		<link>/</link>
 		<atom:link href="/" rel="self" type="application/rss+xml" />
@@ -85,22 +85,28 @@
 			</item>
 		
 			<item>
-				<title>Gogs安装记录</title>
-				<description>&lt;p&gt;轻量化的git服务，类似gitlab，资源消耗更少。&lt;/p&gt;
+				<title>linux安装gogs</title>
+				<description>&lt;h3 id=&quot;第-1-步-创建git用户&quot;&gt;第 1 步: 创建git用户&lt;/h3&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;useradd git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;第-2-步-在postgresql数据库创建gogs库和gogs用户&quot;&gt;第 2 步: 在PostgreSQL数据库创建gogs库和gogs用户&lt;/h3&gt;
+&lt;h3 id=&quot;第-3-步-下载安装gogs二进制安装包&quot;&gt;第 3 步: 下载安装gogs二进制安装包&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;安装步骤&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;新建git用户
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;useradd git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;下载二进制包
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://gogs.io/docs/installation/install_from_binary.html&quot;&gt;https://gogs.io/docs/installation/install_from_binary.html&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;下载二进制安装包，解压到/home/git/gogs目录&lt;/li&gt;
-  &lt;li&gt;设置仓库根目录: /home/git/gogs-repositories&lt;/li&gt;
-  &lt;li&gt;管理员登录PostgreSQL数据库，新建gogs库和gogs用户&lt;/li&gt;
-&lt;/ol&gt;
+  &lt;li&gt;解压目录 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/home/git/gogs&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;参考&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;第-4-步-配置gogs开机启动&quot;&gt;第 4 步: 配置gogs开机启动&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;设置git仓库根目录: /home/git/gogs-repositories&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;参考&quot;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://gogs.io/docs/installation/install_from_binary.html&quot;&gt;官方文档——二进制安装&lt;/a&gt;&lt;/li&gt;
@@ -108,8 +114,8 @@
 &lt;/ul&gt;
 </description>
 				<pubDate>Sun, 28 Feb 2021 00:00:00 +0800</pubDate>
-				<link>/2021/02/28/gogs-install.html</link>
-				<guid isPermaLink="true">/2021/02/28/gogs-install.html</guid>
+				<link>/2021/02/28/linux-install-gogs.html</link>
+				<guid isPermaLink="true">/2021/02/28/linux-install-gogs.html</guid>
 			</item>
 		
 			<item>
