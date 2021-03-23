@@ -3,8 +3,8 @@ analytics-id: #leave blank to not use Analytics
 
 #Subtitle
 subtitle:
-  active: false
-  text: 
+  active: true
+  text: 工作、生活、DIY
 
 #Nav 
 nav:
