@@ -1,7 +1,10 @@
 ---
 layout: default
 title: 简历
+permalink: /
 ---
+
+![](/assets/img/avatar.jpg)
 
 ## 基本信息
 
