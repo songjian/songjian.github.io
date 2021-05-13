@@ -7,6 +7,52 @@
 		<atom:link href="/" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>《计算机教育中缺失的一课》阅读笔记</title>
+				<description>&lt;p&gt;课程在线地址：&lt;a href=&quot;https://missing-semester-cn.github.io/&quot;&gt;计算机教育中缺失的一课&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;笔记&quot;&gt;笔记&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Shell是程序的文字接口&lt;/li&gt;
+  &lt;li&gt;Linux和macOS上使用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;分割目录，Windows上使用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;是绝对路径，其他的都是相对路径&lt;/li&gt;
+  &lt;li&gt;Windows上每个盘都有一个根目录（例如： &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:\&lt;/code&gt;）&lt;/li&gt;
+  &lt;li&gt;相对路径是指相对于当前目录的路径&lt;/li&gt;
+  &lt;li&gt;当前工作目录可以使用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pwd&lt;/code&gt;命令来获取&lt;/li&gt;
+  &lt;li&gt;切换目录使用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd&lt;/code&gt;命令&lt;/li&gt;
+  &lt;li&gt;在路径中&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.&lt;/code&gt;表示当前目录，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;..&lt;/code&gt;表示上级目录&lt;/li&gt;
+  &lt;li&gt;如果没有指定路径，程序一般会在当前目录执行&lt;/li&gt;
+  &lt;li&gt;man这个程序，它接受一个程序名作为参数，然后将它的文档（用户手册）展现给您&lt;/li&gt;
+  &lt;li&gt;shell中，程序有两个主要的“流”，输入流和输出流&lt;/li&gt;
+  &lt;li&gt;我们可以重定向输入和输出流，最简单的重定向&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt; file&lt;/code&gt;和&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt; file&lt;/code&gt;，这两个命令可以将程序的输入输出流分别重定向到文件。还可以向用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&amp;gt;&lt;/code&gt;来象一个文件追加内容&lt;/li&gt;
+  &lt;li&gt;使用管道（pipes），我们能够更好的利用文件重定向。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|&lt;/code&gt;操作符允许我们将一个程序的输出和另一个程序的输入连接起来&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;和&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt;是通过shell执行的，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;echo&lt;/code&gt;等程序并不知道&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|&lt;/code&gt;的存在，它们只知道从自己的输入输出流中进行读写&lt;/li&gt;
+  &lt;li&gt;对于大多数的类Unix系统，有一类用户是非常特殊的，那就是：跟用户（root user）&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt;命令，顾名思义，他的作用是让您可以以su（super user或root的简写）的身份执行一些操作&lt;/li&gt;
+  &lt;li&gt;shell脚本是一种更加复杂的工具&lt;/li&gt;
+  &lt;li&gt;shell脚本针对shell所从事的相关工作来进行优化，因此，创建命令流程（pipelines）、将结果保存到文件、从标准输入中读取输入，这些都是shell脚本中的原生操作，这让它比通用的脚本语言更易用。&lt;/li&gt;
+  &lt;li&gt;在bash中变量赋值的语法&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;foo=bar&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;访问变量中存储的数值的语法为&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$foo&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;foo = bar&lt;/code&gt;（使用空格隔开）是不能正确工作的，解释器会调用程序&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;foo&lt;/code&gt;并将&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt;和&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bar&lt;/code&gt;作为参数&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'&lt;/code&gt;定义的字符串为原义字符串，其中的变量不会被转义；&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&lt;/code&gt;定义的字符串会将变量值进行替换&lt;/li&gt;
+  &lt;li&gt;bash函数例子：
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mcd &lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;history | grep find&lt;/code&gt; 会打印包含find字串的命令&lt;/li&gt;
+  &lt;li&gt;使用Ctrl+R对历史命令记录进行回溯搜索&lt;/li&gt;
+  &lt;li&gt;命令的开头加上一个空格，它就不会被加进shell记录中&lt;/li&gt;
+  &lt;li&gt;可以通过编辑&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bash_history&lt;/code&gt;或&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.zhistory&lt;/code&gt;来手动从历史记录中移除记录项&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Thu, 13 May 2021 00:00:00 +0800</pubDate>
+				<link>/2021/05/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%95%99%E8%82%B2%E4%B8%AD%E7%BC%BA%E5%A4%B1%E7%9A%84%E4%B8%80%E8%AF%BE-%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0.html</link>
+				<guid isPermaLink="true">/2021/05/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%95%99%E8%82%B2%E4%B8%AD%E7%BC%BA%E5%A4%B1%E7%9A%84%E4%B8%80%E8%AF%BE-%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0.html</guid>
+			</item>
+		
+			<item>
 				<title>使用dd命令迁移磁盘数据</title>
 				<description>&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 查看分区&lt;/span&gt;
 &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;fdisk &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;
@@ -68,22 +114,6 @@
 				<pubDate>Sun, 28 Feb 2021 00:00:00 +0800</pubDate>
 				<link>/2021/02/28/linux-install-gogs.html</link>
 				<guid isPermaLink="true">/2021/02/28/linux-install-gogs.html</guid>
-			</item>
-		
-			<item>
-				<title>wsl使用中遇到的问题</title>
-				<description>&lt;ul&gt;
-  &lt;li&gt;wsl挂载的windows磁盘，内容修改后不能及时反应
-    &lt;ul&gt;
-      &lt;li&gt;例如：代码放在/mnt/c/目录下，jekyll s –watch提供web服务，修改代码后无法即时显示&lt;/li&gt;
-      &lt;li&gt;解决办法：文件保存到wsl的linux文件系统下&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-				<pubDate>Sun, 04 Oct 2020 00:00:00 +0800</pubDate>
-				<link>/2020/10/04/wsl-known-bugs.html</link>
-				<guid isPermaLink="true">/2020/10/04/wsl-known-bugs.html</guid>
 			</item>
 		
 			<item>
@@ -220,153 +250,6 @@ gem install bundler
 			</item>
 		
 			<item>
-				<title>VMware Workstation Pro 15.1.0 官方版+激活密钥</title>
-				<description>&lt;p&gt;&lt;strong&gt;VMware Workstation&lt;/strong&gt; 产品允许用户将 Linux、Windows 等多个操作系统作为虚拟机在单台 PC 上运行。用户可以在虚拟机上重现服务器、桌面和平板电脑环境，无需重新启动即可跨不同操作系统同时运行应用。Workstation 还提供隔离的安全环境，用于评估新的操作系统（如 Windows 10）、测试软件应用和补丁程序以及参考体系结构。&lt;/p&gt;
-
-&lt;p&gt;借助 Workstation 产品，可以仅从一台本地 PC 轻松测试几乎任何操作系统和应用。构建面向 Windows 10 的应用、使用任何浏览器测试兼容性，或者在无需使用移动设备的情况下部署 Android-x86 以查看移动设备行为。&lt;/p&gt;
-
-&lt;p&gt;官方网站：www.vmware.com&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;功能特性：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;巨型虚拟机 创建拥有多达 16 个虚拟 CPU、8 TB 虚拟磁盘以及 64 GB 内存的大规模虚拟机，以便在虚拟环境中运行要求最严苛的桌面和服务器应用。通过为虚拟机分配多达 2 GB 的显存，可以进一步提升图形密集型应用的处理能力。&lt;/li&gt;
-  &lt;li&gt;高性能 3D 图形 VMware Workstation 产品现在支持 DirectX 10 和 OpenGL 3.3，可在运行 3D 应用时提供更顺畅和响应速度更快的体验。Workstation 能够在虚拟机中以接近本机的性能运行 AutoCAD 或 SOLIDWORKS 等要求最为严苛的 3D 应用。&lt;/li&gt;
-  &lt;li&gt;支持高分辨率显示屏 Workstation 已经过优化，可以支持用于台式机的高分辨率 4K UHD (3840 x 2160) 显示屏，以及用于笔记本电脑和 x86 平板电脑的 QHD+ (3200×1800) 显示屏。Workstation 还支持具有不同 DPI 设置的多个显示器，例如，可以同时使用全新的 4K UHD 显示屏和您现有的 1080P HD 显示屏。&lt;/li&gt;
-  &lt;li&gt;强大的网络连接功能 可使用真实的路由软件和工具，为虚拟机创建复杂的 IPv4 或 IPv6 虚拟网络，或通过与第三方软件集成来设计完整的数据中心拓扑。&lt;/li&gt;
-  &lt;li&gt;限制对虚拟机的访问 通过限制对 Workstation 虚拟机设置（例如拖放、复制和粘贴以及连接 USB 设备）的访问来保护公司内容。可对虚拟机进行加密和密码保护，从而确保只有经过授权的用户才能进行访问。&lt;/li&gt;
-  &lt;li&gt;交叉兼容性 利用 Workstation，您可以创建能够跨 VMware 产品组合运行的虚拟机，也可以创建在 Horizon FLEX 中使用的受限虚拟机。我们甚至还支持开放标准，使您不仅可以创建虚拟机，还可以使用来自其他供应商的虚拟机。&lt;/li&gt;
-  &lt;li&gt;共享虚拟机 在模拟生产环境中快速共享和测试应用。将 VMware Workstation Pro 作为一个服务器运行，以便与您的团队成员、部门或组织共享具有各种所需配置的预加载虚拟机的存储库。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;更新日志：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.vmware.com/cn/VMware-Workstation-Pro/15/rn/workstation-15-release-notes.html&quot;&gt;https://docs.vmware.com/cn/VMware-Workstation-Pro/15/rn/workstation-15-release-notes.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;系统要求&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;支持使用 2011 年或更晚发布的处理器 (CPU) 的系统，但以下系统&lt;strong&gt;除外&lt;/strong&gt;：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;使用基于 2011 年 Bonnell 微架构的 Intel Atom 处理器的系统。例如，Atom Z670/Z650 和 Atom N570。&lt;/li&gt;
-  &lt;li&gt;使用基于 2012 年 Saltwell 微架构的 Intel Atom 处理器的系统。例如，Atom S1200、Atom D2700/D2500 和 Atom N2800/N2600。&lt;/li&gt;
-  &lt;li&gt;使用基于 Llano 和 Bobcat 微架构的 AMD 处理器的系统。例如，代号为 Hondo、Ontario、Zacate 和 Llano 的处理器。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;此外，还&lt;strong&gt;支持&lt;/strong&gt;以下系统：使用基于 2010 年 Westmere 微架构的 Intel 处理器的系统。例如，Xeon 5600、Xeon 3600、Core i7-970、Core i7-980 和 Core i7-990。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;新增功能&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Workstation 15 Pro 中新增了以下支持：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;支持新的客户机操作系统&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Windows 10 1803&lt;/li&gt;
-  &lt;li&gt;Ubuntu 18.04&lt;/li&gt;
-  &lt;li&gt;Fedora 28&lt;/li&gt;
-  &lt;li&gt;RHEL 7.5&lt;/li&gt;
-  &lt;li&gt;CentOS 7.5&lt;/li&gt;
-  &lt;li&gt;Debian 9.5&lt;/li&gt;
-  &lt;li&gt;OpenSuse Leap 15.0&lt;/li&gt;
-  &lt;li&gt;FreeBSD 11.2&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;ESXi 6.7&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;DirectX 10.1&lt;/strong&gt; DirectX 10.1 是 DirectX 10.0 的增量更新。它通过支持多重采样抗锯齿 (MSAA) 功能提供了更高的视觉质量。DirectX 10.1 还支持 Shader Model 4.1 和 Cubemap Array。&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;硬件版本 16&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;支持 DirectX 10.1&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;最大 3 GB 的图形内存&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;REST API&lt;/strong&gt; 可以使用 Workstation RESTful API，通过标准 JSON over HTTP/HTTPS 自动完成常见虚拟机任务。支持以下虚拟机操作：&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;管理虚拟机清单&lt;/li&gt;
-  &lt;li&gt;管理虚拟机电源&lt;/li&gt;
-  &lt;li&gt;克隆虚拟机&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;管理网络连接&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;支持高 DPI&lt;/strong&gt; 高 DPI 相关功能要求主机和虚拟机的操作系统为 Windows 10 版本 1703 或更高版本。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;支持主机级别高 DPI&lt;/strong&gt; – Workstation 界面会自动检测主机级别的 DPI 更改，并自动调整布局以符合新 DPI。&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;客户机 DPI 与主机同步&lt;/strong&gt; – 主机端发生 DPI 更改时，客户机操作系统会调整其 DPI 以便与主机 DPI 相匹配。 此功能需要使用 VMware Tools 10.3.2。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;连接到 vCenter 时的“主机和群集”视图&lt;/strong&gt; 连接到远程 vSphere 时，Workstation 15 Pro 新增了“主机和群集”视图。现在，清单树采用两个不同的视图显示对象的层次结构排列：“主机和群集”视图以及“虚拟机”视图。您只需单击一次，即可在这两个视图之间轻松切换。这是仅限 Windows 主机的功能。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;支持 vSphere 6.7&lt;/strong&gt; Workstation 15 Pro 提供了对 vSphere 6.7 的无缝支持。您可以从 Workstation 15 Pro 连接到远程 ESXi 6.7 主机或 vCenter Server 6.7，以管理在 vSphere 上运行的远程虚拟机。您还可以将本地虚拟机上载到 vSphere 6.7，或将 vSphere 6.7 上运行的远程虚拟机下载到本地桌面。您也可以部署 VMware VCSA 6.7 (vCenter Server Appliance) OVA 软件包，以在 Workstation 15 Pro 上运行。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;USB 自动连接到虚拟机&lt;/strong&gt; 将 Workstation 15 Pro 配置为记住连接规则后，USB 设备可以自动连接到已打开电源的虚拟机。这是仅限 Windows 主机的功能。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;通过 SSH 登录到 Linux 虚拟机&lt;/strong&gt; 现在，您可以使用 Workstation 15 Pro 提供的 SSH 访问 Linux 虚拟机。 此功能要求主机的操作系统为 Windows 10 版本 1803 或更高版本。&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;增强了用户体验&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;拉伸客户机显示&lt;/strong&gt; 为 Linux 客户机和早于 Windows XP 的 Windows 客户机启用了拉伸客户机显示功能。您可以使用“保持纵横比拉伸”功能在保持用户界面纵横比的同时拉伸虚拟机显示，或者还可以使用“自由拉伸”功能拉伸虚拟机显示以填充用户界面。这是仅限 Windows 主机的功能。&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;打开虚拟机目录&lt;/strong&gt; 现在，可以轻松地从 Windows 主机中访问虚拟机目录，方法是右键单击 Workstation Pro 库中的虚拟机，然后选择&lt;strong&gt;打开虚拟机目录&lt;/strong&gt;。Linux Workstation Pro 已支持此功能。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;支持 Linux 主机 Wayland&lt;/strong&gt; 现在，Workstation 15 Pro 可以在 Linux 主机 Wayland 桌面上运行。要在 Wayland 桌面上安装 Workstation Pro，必须使用终端模式安装。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;改进了虚拟 NVMe 存储的性能&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;已解决的问题&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;直接使用物理磁盘的虚拟机可能会显示黑屏&lt;/strong&gt;如果虚拟机直接使用物理磁盘，在打开虚拟机电源后，虚拟机可能会显示黑屏。这个问题已得到解决。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;如果将并行端口映射到物理并行端口，在打开虚拟机电源后，虚拟机可能会崩溃并显示错误&lt;/strong&gt;如果虚拟机使用并行端口，并且该并行端口映射到主机操作系统的物理并行端口，在打开虚拟机电源后，虚拟机可能会崩溃并显示以下错误：不可恢复的 VMware Workstation 错误: (vcpu-0) (VMware Workstation unrecoverable error: (vcpu-0))这个问题已得到解决。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;连接到 DELL Thunderbolt USB Dock 的 USB 设备可能无法连接到虚拟机&lt;/strong&gt;将 USB 设备连接到 USB Dock（例如，DELL Thunderbolt）后，USB 设备可能无法连接到虚拟机。这个问题已得到解决。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;无法在 Windows 主机上直接访问连接到某些 3.1 xHCI 控制器的 USB 设备&lt;/strong&gt;在 Windows 主机上，选择&lt;strong&gt;虚拟机&lt;/strong&gt; &amp;gt; &lt;strong&gt;可移动设备&lt;/strong&gt;时，未列出连接到某些 USB 3.1 控制器的 USB 设备。因此，无法从虚拟机直接访问这些设备。这个问题已得到解决。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;在 Linux 主机上使用“缩放”实用工具时，Workstation Pro 界面可能会崩溃&lt;/strong&gt;对于某些 Linux 主机（例如 Ubuntu 18.04），当您使用“缩放”实用工具时，Workstation Pro 界面可能会崩溃。这个问题已得到解决。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;已知问题&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;在主机上安装某个第三方软件后，虚拟机中的鼠标单击功能可能停止工作&lt;/strong&gt;在主机上安装某个软件（例如 WizMouse）后，虚拟机中的鼠标单击功能可能停止工作。&lt;strong&gt;解决办法&lt;/strong&gt;：&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;关闭虚拟机电源。&lt;/li&gt;
-  &lt;li&gt;将以下条目添加到虚拟机的 .vmx 文件中： mks.win32.processWin32MouseInput = “TRUE”&lt;/li&gt;
-  &lt;li&gt;打开虚拟机电源。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;激活密钥：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;ZC10K-8EF57-084QZ-VXYXE-ZF2XF&lt;/p&gt;
-
-&lt;p&gt;UF71K-2TW5J-M88QZ-8WMNT-WKUY4&lt;/p&gt;
-
-&lt;p&gt;AZ7MK-44Y1J-H819Z-WMYNC-N7ATF&lt;/p&gt;
-
-&lt;p&gt;CU702-DRD1M-H89GP-JFW5E-YL8X6&lt;/p&gt;
-
-&lt;p&gt;YY5EA-00XDJ-480RP-35QQV-XY8F6&lt;/p&gt;
-
-&lt;p&gt;VA510-23F57-M85PY-7FN7C-MCRG0&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;下载地址：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.vmware.com/go/getworkstation-win&quot;&gt;Workstation 15 Pro for Windows&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.vmware.com/go/getworkstation-linux&quot;&gt;Workstation 15 Pro for Linux&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;来自 «https://cloud.tencent.com/developer/article/1430711»&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-</description>
-				<pubDate>Sat, 08 Aug 2020 00:00:00 +0800</pubDate>
-				<link>/2020/08/08/VMware-Workstation-Pro-15.1.0.html</link>
-				<guid isPermaLink="true">/2020/08/08/VMware-Workstation-Pro-15.1.0.html</guid>
-			</item>
-		
-			<item>
 				<title>wsl打开windows资源管理器</title>
 				<description>&lt;p&gt;设置别名&lt;/p&gt;
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;explorer.exe&quot;&lt;/span&gt;
@@ -379,67 +262,6 @@ gem install bundler
 				<pubDate>Mon, 27 Jul 2020 00:00:00 +0800</pubDate>
 				<link>/2020/07/27/wsl-open.html</link>
 				<guid isPermaLink="true">/2020/07/27/wsl-open.html</guid>
-			</item>
-		
-			<item>
-				<title>win10安装指南</title>
-				<description>&lt;p&gt;第1步 制作安装u盘&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;访问微软“&lt;a href=&quot;https://www.microsoft.com/zh-cn/software-download/windows10&quot;&gt;下载Windows10&lt;/a&gt;”页面，点击“立即下载工具”链接，下载安装工具&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;第2步 更新系统&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;“Windows 设置”-&amp;gt; “更新和安全”-&amp;gt;“Windows更新”&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;第3步 安装驱动&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;品牌机去品牌官网下载安装驱动工具&lt;/li&gt;
-  &lt;li&gt;兼容机去芯片生产商官网下载驱动&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;第4步 安装常用软件&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Office
-    &lt;ul&gt;
-      &lt;li&gt;下载&lt;a href=&quot;https://otp.landian.vip/zh-cn/&quot;&gt;Office Tool Plus工具&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;第5步 删除系统无用的软件&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;OneDrive - 国内使用体验不好&lt;/li&gt;
-  &lt;li&gt;Skype ——我日常用不到&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;第6步 软件设置&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;配置Outlook账号
-    &lt;ul&gt;
-      &lt;li&gt;songjian@codeorder.cn&lt;/li&gt;
-      &lt;li&gt;001@codeorder.cn&lt;/li&gt;
-      &lt;li&gt;boss@codeorder.cn&lt;/li&gt;
-      &lt;li&gt;business@codeorder.cn&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Office
-    &lt;ul&gt;
-      &lt;li&gt;不要使用微软账号登录Office软件，国内连接OneDrive不稳定，影响使用体验&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-				<pubDate>Mon, 27 Jul 2020 00:00:00 +0800</pubDate>
-				<link>/2020/07/27/win10-installation-guide.html</link>
-				<guid isPermaLink="true">/2020/07/27/win10-installation-guide.html</guid>
 			</item>
 		
 			<item>
@@ -466,24 +288,1692 @@ gem install bundler
   &lt;li&gt;Kr2：整理第一版程序要实现的功能列表&lt;/li&gt;
   &lt;li&gt;Kr3：开发框架可以在本地运行并正常访问&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&quot;o4期货开户&quot;&gt;O4：期货开户&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Kr1：查询青岛地区期货公司的营业部&lt;/li&gt;
-  &lt;li&gt;Kr2：比较各期货公司的佣金&lt;/li&gt;
-  &lt;li&gt;Kr3：开户&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;o5提升公司业绩&quot;&gt;O5：提升公司业绩&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Kr1：每日找到2家青岛的幼儿园通过电话或者邮件推介产品&lt;/li&gt;
-&lt;/ul&gt;
 </description>
 				<pubDate>Fri, 21 Jun 2019 00:00:00 +0800</pubDate>
 				<link>/2019/06/21/OKRs.html</link>
 				<guid isPermaLink="true">/2019/06/21/OKRs.html</guid>
+			</item>
+		
+			<item>
+				<title>《Ruby基础教程v4》 学习笔记</title>
+				<description>&lt;h2 id=&quot;第5章-条件判断&quot;&gt;第5章 条件判断&lt;/h2&gt;
+
+&lt;h3 id=&quot;ruby的三种主要条件判断语句&quot;&gt;ruby的三种主要条件判断语句&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;if&lt;/li&gt;
+  &lt;li&gt;unless&lt;/li&gt;
+  &lt;li&gt;case&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ruby真假值&quot;&gt;Ruby真假值&lt;/h3&gt;
+&lt;p&gt;|真|假|
+|–|–|
+|真|false、nil以外的所有对象|
+|假|false、nil|&lt;/p&gt;
+
+&lt;h4 id=&quot;if语句&quot;&gt;if语句&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;条件&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;then 可以省略&lt;/p&gt;
+
+&lt;h4 id=&quot;unless语句&quot;&gt;unless语句&lt;/h4&gt;
+
+&lt;p&gt;条件为假时执行&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;条件&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;then 可以省略&lt;/p&gt;
+
+&lt;h4 id=&quot;case语句&quot;&gt;case语句&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;比较对象&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;值&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;处理&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;值&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;处理&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;值&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;处理&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;处理&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;then 可以省略&lt;/p&gt;
+
+&lt;h3 id=&quot;-与-case&quot;&gt;=== 与 case&lt;/h3&gt;
+&lt;p&gt;在case语句中，when判断值是否相等时，实际是使用===运算符来判断。左边是数值或字符串时，===与==意义一样，除此之外，===还可以与=~一样用来判断正则表达式是否匹配，或者判断右边的对象是否属于左边的类，等等。对比单纯的判断两边的值是否相等，===能表达更加广义的”相等”。&lt;/p&gt;
+
+&lt;h3 id=&quot;eql-判断值相等比--严谨&quot;&gt;eql? 判断值相等比 == 严谨&lt;/h3&gt;
+&lt;p&gt;例如：0 与 0.0 和 1.0 与 1 eql? 返回 false  ==返回 true&lt;/p&gt;
+
+&lt;h2 id=&quot;第6章-循环&quot;&gt;第6章 循环&lt;/h2&gt;
+
+&lt;h3 id=&quot;实现循环的方法&quot;&gt;实现循环的方法&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;times 方法&lt;/li&gt;
+  &lt;li&gt;while 语句&lt;/li&gt;
+  &lt;li&gt;each 方法&lt;/li&gt;
+  &lt;li&gt;for 语句&lt;/li&gt;
+  &lt;li&gt;until 语句&lt;/li&gt;
+  &lt;li&gt;loop 方法&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;times方法&quot;&gt;times方法&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 满地油菜花输出7遍&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;times&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;满地油菜花&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;得到当前的循环次数&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;times&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;for语句&quot;&gt;for语句&lt;/h4&gt;
+
+&lt;p&gt;for语句与times方法不一样，循环的开始值和结束值可以任意指定。&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;do可以省略&lt;/p&gt;
+
+&lt;p&gt;计算变量from到变量to累加的总数&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;普通for语句&quot;&gt;普通for语句&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;names&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;awk&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Perl&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Python&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Ruby&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;names&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;while语句&quot;&gt;while语句&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;until语句&quot;&gt;until语句&lt;/h4&gt;
+
+&lt;p&gt;until语句的结构与white完全一样，只是条件判断刚好相反，不满足条件时才执行循环处理&lt;/p&gt;
+
+&lt;h4 id=&quot;each方法&quot;&gt;each方法&lt;/h4&gt;
+
+&lt;p&gt;each方法将对象集合里的对象逐条取出&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;names&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;awk&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Perl&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Python&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Ruby&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;loop方法&quot;&gt;loop方法&lt;/h4&gt;
+
+&lt;p&gt;loop方法没有终止条件，只是不断的执行循环&lt;/p&gt;
+
+&lt;h3 id=&quot;循环控制&quot;&gt;循环控制&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;break 终止程序，跳出循环&lt;/li&gt;
+  &lt;li&gt;next 跳到下一次循环&lt;/li&gt;
+  &lt;li&gt;redo 在相同的条件下重复刚才的处理&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;break&quot;&gt;break&lt;/h4&gt;
+
+&lt;p&gt;break会终止全体循环程序&lt;/p&gt;
+
+&lt;h4 id=&quot;next&quot;&gt;next&lt;/h4&gt;
+
+&lt;p&gt;next会忽略next后面的部分，跳到下一个循环开始的部分&lt;/p&gt;
+
+&lt;h4 id=&quot;redo&quot;&gt;redo&lt;/h4&gt;
+
+&lt;p&gt;redo和next非常像，与next不同之处是，redo会再执行一次相同的循环
+break和next比较常用，redo在ruby默认提供的程序库里也很难找到踪影&lt;/p&gt;
+
+&lt;h3 id=&quot;do--end-与---&quot;&gt;do ~ end 与 { ~ }&lt;/h3&gt;
+
+&lt;p&gt;一般的约定&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;程序是跨行写的时候使用 do ~ end&lt;/li&gt;
+  &lt;li&gt;程序写在1行的时候用 { ~}&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;第7章-方法&quot;&gt;第7章 方法&lt;/h2&gt;
+
+&lt;h3 id=&quot;方法调用&quot;&gt;方法调用&lt;/h3&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;对象&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;方法名&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;参数&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;参数&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;…&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;参数&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;对象被称为接收者(receiver)。在面向对象的世界中，调用方法被称为『向对象发送消息（message）』，调用的结果就是『对象接收(receive)了消息』，也就是说，方法的调用就是把几个参数连同消息一起发送给对象的过程。&lt;/p&gt;
+
+&lt;h3 id=&quot;带块的方法调用&quot;&gt;带块的方法调用&lt;/h3&gt;
+
+&lt;p&gt;each 和 loop 等方法都属于带块的方法&lt;/p&gt;
+
+&lt;p&gt;使用do ~ end是，可以省略参数列表括起来的()。使用{~}时，只有在没有参数的时候才可以省略()。&lt;/p&gt;
+
+&lt;h3 id=&quot;运算符形式的方法调用&quot;&gt;运算符形式的方法调用&lt;/h3&gt;
+
+&lt;p&gt;Ruby中有些方法看起来很像运算符。四则运算等的二元运算符、-（负号）等的一元运算符、指定数组、散列的元素下标的[]等，实际都是方法。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;obj + arg1&lt;/li&gt;
+  &lt;li&gt;obj =~ arg1&lt;/li&gt;
+  &lt;li&gt;-obj&lt;/li&gt;
+  &lt;li&gt;!obj&lt;/li&gt;
+  &lt;li&gt;obj[arg1]&lt;/li&gt;
+  &lt;li&gt;obj[arg1] = arg2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;实际上可以将obj理解为接收者，将arg1、arg2理解为参数。&lt;/p&gt;
+
+&lt;h3 id=&quot;方法的分类&quot;&gt;方法的分类&lt;/h3&gt;
+
+&lt;p&gt;Ruby的方法分为3类：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;实例方法&lt;/li&gt;
+  &lt;li&gt;类方法&lt;/li&gt;
+  &lt;li&gt;函数式方法&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;实例方法&quot;&gt;实例方法&lt;/h4&gt;
+
+&lt;p&gt;如果有一个对象的实例，那么以这个对象为接收者的方法就是实例方法。&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;10, 20, 30, 40&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;,&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_s&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;类方法&quot;&gt;类方法&lt;/h4&gt;
+
+&lt;p&gt;接收者不是对象而是类本身时的方法，是类方法。&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;no&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;some_file&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;now&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;调用类方法时，可以使用::代替.。Ruby语法中 :: 和 . 代表的意思是一样的。&lt;/p&gt;
+
+&lt;h4 id=&quot;函数式方法&quot;&gt;函数式方法&lt;/h4&gt;
+
+&lt;p&gt;没有接收者的方法是函数式方法。&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;hello!&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;函数式方法的执行结果，不会根据接收者的状态而发生变化。程序运行print方法以及sleep方法的时候，不需要知道接收者是谁。反过来说，不需要接收者的方法就是函数式方法。&lt;/p&gt;
+
+&lt;h4 id=&quot;ruby帮助文档里实例方法的标记法&quot;&gt;Ruby帮助文档里实例方法的标记法&lt;/h4&gt;
+
+&lt;p&gt;Ruby帮助文档里标记类的实例方法用Array#each、Array#inject写法。&lt;/p&gt;
+
+&lt;h3 id=&quot;方法的定义&quot;&gt;方法的定义&lt;/h3&gt;
+
+&lt;p&gt;定义方法的一般语法：&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;方法名&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;参数&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;，&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;参数&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;希望执行的代码&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;方法名可以由英文字母、数字、下划线组成，但不能以数字开头。&lt;/p&gt;
+
+&lt;p&gt;方法有多个参数时，从参数列表右边开始依次指定默认值。&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;方法的返回值&quot;&gt;方法的返回值&lt;/h4&gt;
+
+&lt;p&gt;可以用return指定方法的返回值&lt;/p&gt;
+
+&lt;p&gt;可以省略return语句，方法的最后一个表达式的结果作为方法的返回值&lt;/p&gt;
+
+&lt;p&gt;return语句可以马上终止程序&lt;/p&gt;
+
+&lt;h4 id=&quot;定义带块的方法&quot;&gt;定义带块的方法&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;myloop&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 执行块&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;# 初始化num&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;myloop&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;num is &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;# num超过100时跳出循环&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;yield是定义块的关键字&lt;/p&gt;
+
+&lt;h4 id=&quot;参数个数不确定的方法&quot;&gt;参数个数不确定的方法&lt;/h4&gt;
+
+&lt;p&gt;通过 『*变量名』 的形式来定义参数个数不确定的方法&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; [1, 2, 3]&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;meth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;meth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;         &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; [1, []]&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;meth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#=&amp;gt;[1, [2, 3]]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;关键字参数&quot;&gt;关键字参数&lt;/h4&gt;
+
+&lt;p&gt;Ruby 2.0加入的新特性&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;方法名&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;参数&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;值&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;参数&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;值&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;代码逻辑&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;可以使用 『**变量名』这种形式来接收未定义的参数&lt;/p&gt;
+
+&lt;p&gt;关键字参数可以与普通参数搭配使用&lt;/p&gt;
+
+&lt;p&gt;可以使用散列传递参数&lt;/p&gt;
+
+&lt;h4 id=&quot;关于方法调用的一些补充&quot;&gt;关于方法调用的一些补充&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;把数组分解为参数&lt;/li&gt;
+  &lt;li&gt;把散列作为参数传递&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;如何书写简明易懂的程序&quot;&gt;如何书写简明易懂的程序&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;换行和;
+    &lt;ul&gt;
+      &lt;li&gt;多使用换行作为语句的间隔&lt;/li&gt;
+      &lt;li&gt;除非必要，不使用;作为语句的间隔&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;缩进(indent)
+    &lt;ul&gt;
+      &lt;li&gt;两个空白表示一个缩进&lt;/li&gt;
+      &lt;li&gt;需要使用缩进的情况：
+        &lt;ul&gt;
+          &lt;li&gt;条件分支&lt;/li&gt;
+          &lt;li&gt;循环&lt;/li&gt;
+          &lt;li&gt;块&lt;/li&gt;
+          &lt;li&gt;方法、类等定义&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;不要突然使用缩进&lt;/li&gt;
+      &lt;li&gt;确保缩进整齐&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;空白
+    &lt;ul&gt;
+      &lt;li&gt;好的写法
+        &lt;ul&gt;
+          &lt;li&gt;a+b&lt;/li&gt;
+          &lt;li&gt;a + b&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;不好的写法
+        &lt;ul&gt;
+          &lt;li&gt;a +b&lt;/li&gt;
+          &lt;li&gt;a+ b&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;良好的编码风格需要大量阅读其他人写的程序&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;第8章-类和模块&quot;&gt;第8章 类和模块&lt;/h2&gt;
+
+&lt;h3 id=&quot;81-类是什么&quot;&gt;8.1 类是什么&lt;/h3&gt;
+
+&lt;h4 id=&quot;811&quot;&gt;8.1.1&lt;/h4&gt;
+
+&lt;p&gt;想知道某个对象属于哪个类，可以使用class方法&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;ary&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Hello World.'&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;class&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; Array&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;class&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; String&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;判断某个对象是否属于某个类时，使用instance_of?方法&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;ary&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Hello World'&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;instance_of?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; true&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;instance_of?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; true&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;instance_of?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; false&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;instance_of?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; false&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;812-继承&quot;&gt;8.1.2 继承&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;通过扩展已定义的类来创建新类称为继承&lt;/li&gt;
+  &lt;li&gt;继承后创建创建的新类称为子类(subclass)&lt;/li&gt;
+  &lt;li&gt;被继承的类称为父类(superclass)，也称超类&lt;/li&gt;
+  &lt;li&gt;通过继承可以实现以下事情：
+    &lt;ul&gt;
+      &lt;li&gt;在不影响原有功能的前提下追加新功能&lt;/li&gt;
+      &lt;li&gt;重新定义原有功能，使名称相同的方法产生不同的效果&lt;/li&gt;
+      &lt;li&gt;在已有功能的基础上追加处理，扩展已有功能&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;BasicObject类是Ruby中所有类的父类，它定义了作为Ruby对象的最基本功能&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;82-类的创建&quot;&gt;8.2 类的创建&lt;/h3&gt;
+
+&lt;p&gt;使用class关键字定义类&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;类名&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;类的定义&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;822-initialize-方法&quot;&gt;8.2.2 initialize 方法&lt;/h4&gt;
+
+&lt;p&gt;使用new方法生成新对象时，initialize方法会被调用，new方法的参数会原封不动的传给initialize方法&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c1&quot;&gt;# initialize方法&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Ruby'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
+  &lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myname&lt;/span&gt;                  &lt;span class=&quot;c1&quot;&gt;# 初始化实例变量&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;823-实例变量与实例方法&quot;&gt;8.2.3 实例变量与实例方法&lt;/h4&gt;
+
+&lt;p&gt;实例方法在实例内可用&lt;/p&gt;
+
+&lt;h4 id=&quot;824-存取器&quot;&gt;8.2.4 存取器&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HelloWorld&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;# 获取name&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;name&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;# 修改name&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Ruby提供了简便的定义方法&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;attr_reader 只读&lt;/li&gt;
+  &lt;li&gt;attr_writer 只写&lt;/li&gt;
+  &lt;li&gt;attr_accessor 读写&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;825-特殊变量-self&quot;&gt;8.2.5 特殊变量 self&lt;/h4&gt;
+
+&lt;p&gt;self是引用对象本身的保留字，对它赋值，不会对本身的值有任何影响&lt;/p&gt;
+
+&lt;h4 id=&quot;826-类方法&quot;&gt;8.2.6 类方法&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;HelloWorld&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; said hello.&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'John'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; John said hello.&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HelloWorld&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; said hello.&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'John'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; John said hello.&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; said hello.&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'John'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; John said hello.&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HelloWorld&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; said hello.&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'John'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; John said hello.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;827-常量&quot;&gt;8.2.7 常量&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HelloWorld&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1.0&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;使用类常量&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Version&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;1.0&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;828-类变量&quot;&gt;8.2.8 类变量&lt;/h4&gt;
+
+&lt;p&gt;@@开头的变量称作类变量，类变量是该类所有实例的共享变量&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HelloCount&lt;/span&gt;
+  &lt;span class=&quot;vc&quot;&gt;@@count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;count&lt;/span&gt;
+    &lt;span class=&quot;vc&quot;&gt;@@count&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Ruby&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myname&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;
+    &lt;span class=&quot;vc&quot;&gt;@@count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello, World. I am &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;bob&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;HelloCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Bob&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;alice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;HelloCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Alice&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;HelloCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;HelloCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;count&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; 0&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;bob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;alice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;HelloCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;count&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; 3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;829-限制方法的调用&quot;&gt;8.2.9 限制方法的调用&lt;/h4&gt;
+
+&lt;p&gt;限制方法的调用&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;public 实例方法，对外部公开&lt;/li&gt;
+  &lt;li&gt;private 无法从实例外部访问&lt;/li&gt;
+  &lt;li&gt;protected 在同一个类中使用时，可做实例方法调用&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;83-扩展类&quot;&gt;8.3 扩展类&lt;/h3&gt;
+
+&lt;h4 id=&quot;831-在原有类基础上添加方法&quot;&gt;8.3.1 在原有类基础上添加方法&lt;/h4&gt;
+
+&lt;p&gt;给String类添加统计单词数实例方法&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;count_word&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ary&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/\s+/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 使用空格分割&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;size&lt;/span&gt;         &lt;span class=&quot;c1&quot;&gt;# 返回分割后数组元素总数&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Just Another Ruby Newbie&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;count_word&lt;/span&gt;            &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; 4&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;832-继承&quot;&gt;8.3.2 继承&lt;/h4&gt;
+
+&lt;p&gt;定义继承时，在使用class关键字指定类名的同时指定父类名&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;类名&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;父类名&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;类定义&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RingArray&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Array&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;[]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;wday&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;RingArray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'日'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'火'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'水'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'木'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'金'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'土'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; '土'&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; '木'&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; '月'&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; '土'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;84-alias-与-undef&quot;&gt;8.4 alias 与 undef&lt;/h3&gt;
+
+&lt;h4 id=&quot;841-alias&quot;&gt;8.4.1 alias&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;别名&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;原名&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;# 直接使用方法名&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;别名&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;原名&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;# 使用符号名&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;同一种功能设置多个名称时，我们使用alias&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;C1&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;Hello&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;C2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;C1&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;old_hello&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hello&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;old_hello&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;, again&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;C2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;old_hello&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;842-undef&quot;&gt;8.4.2 undef&lt;/h4&gt;
+
+&lt;p&gt;undef用于删除已有方法的定义。&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;undef&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;方法名&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# 只用使用方法名&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;undef&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;方法名&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;# 使用符号名&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;85-模块&quot;&gt;8.5 模块&lt;/h2&gt;
+
+&lt;p&gt;模块是Ruby的特色功能之一。如果说类变现的是事物的实体（数据）和行为（处理），那模块表现的就只是事物的行为部分。模块和类有两点不同：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;模块不能拥有实例&lt;/li&gt;
+  &lt;li&gt;模块不能被继承&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;86-模块的使用方法&quot;&gt;8.6 模块的使用方法&lt;/h2&gt;
+
+&lt;h3 id=&quot;861-提供命名空间&quot;&gt;8.6.1 提供命名空间&lt;/h3&gt;
+
+&lt;p&gt;调用方法&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;模块名&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;方法名&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;862-利用mix-in扩展功能&quot;&gt;8.6.2 利用Mix-in扩展功能&lt;/h3&gt;
+
+&lt;p&gt;Mix-in就是将模块混合到类中&lt;/p&gt;
+
+&lt;p&gt;Mix-in可以灵活的解决下面问题：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;两个类拥有相似功能，但不希望作为相同种类（Class）考虑&lt;/li&gt;
+  &lt;li&gt;Ruby不支持父类多重继承，因此无法对已经继承的类添加共通的功能的时候&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;MyModule&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# 共通的方法&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyClass1&lt;/span&gt;
+  &lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MyModule&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# MyClass1独有方法&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyClass2&lt;/span&gt;
+  &lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MyModule&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# MyClass2独有方法&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;87-创建模块&quot;&gt;8.7 创建模块&lt;/h2&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;模块名&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;模块定义&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;HelloModule&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1.0&quot;&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;kp&quot;&gt;module_function&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:hello&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;871-常量&quot;&gt;8.7.1 常量&lt;/h3&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;HelloModule&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Version&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;1.0&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;872-方法的定义&quot;&gt;8.7.2 方法的定义&lt;/h3&gt;
+
+&lt;h2 id=&quot;88-mix-in&quot;&gt;8.8 Mix-in&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;想知道类是否包含某个模块，可以使用include?方法&lt;/li&gt;
+  &lt;li&gt;用ancestors方法和superclass方法调查类的继承关系&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;M&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;meth&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;meth&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;C&lt;/span&gt;
+  &lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;M&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;meth&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;include?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;M&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; true&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ancestors&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; [C, M, Object, BasicObject]&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;superclass&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; Object&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;881-查找方法的规则&quot;&gt;8.8.1 查找方法的规则&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;同继承关系一样，原类中已经定义了同名的方法时，优先使用该方法&lt;/li&gt;
+  &lt;li&gt;在同一类中包含多个模块时，优先使用最后一个包含模块&lt;/li&gt;
+  &lt;li&gt;嵌套include时，查找顺序也是线性的&lt;/li&gt;
+  &lt;li&gt;相同的模块被包含两次以上时，第2次以后的会被省略&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;882-extend方法&quot;&gt;8.8.2 extend方法&lt;/h3&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Edition&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;edition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; 第&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;版&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Ruby基础教程&quot;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Edition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;edition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;Ruby基础教程第4版&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;include可以帮助我们突破继承的限制，通过模块扩展类的功能；而extend则可以帮助我们跨过类，直接通过模块扩展对象的功能。&lt;/p&gt;
+
+&lt;h3 id=&quot;883-类与mix-in&quot;&gt;8.8.3 类与Mix-in&lt;/h3&gt;
+
+&lt;p&gt;我们可以把类方法理解为：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Class类的实例方法&lt;/li&gt;
+  &lt;li&gt;类对象的单例方法&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;89-面向对象程序设计&quot;&gt;8.9 面向对象程序设计&lt;/h2&gt;
+
+&lt;h3 id=&quot;891-对象是什么&quot;&gt;8.9.1 对象是什么&lt;/h3&gt;
+
+&lt;p&gt;面向对象语言的「对象」是指数据及操作数据方法的组合&lt;/p&gt;
+
+&lt;h3 id=&quot;892-面向对象的特征&quot;&gt;8.9.2 面向对象的特征&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;封装&lt;/li&gt;
+  &lt;li&gt;多态&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;第9章-运算符&quot;&gt;第9章 运算符&lt;/h2&gt;
+
+&lt;h3 id=&quot;91-赋值运算符&quot;&gt;9.1 赋值运算符&lt;/h3&gt;
+
+&lt;h3 id=&quot;92-逻辑运算符的应用&quot;&gt;9.2 逻辑运算符的应用&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;表达式的执行顺序是从左到右&lt;/li&gt;
+  &lt;li&gt;如果逻辑表达式真假已经可以确定，则不会判断剩余表达式&lt;/li&gt;
+  &lt;li&gt;最后一个表达式的值为整理逻辑表达式的值&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;93-条件运算符&quot;&gt;9.3 条件运算符&lt;/h3&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;条件&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;？&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;表达式&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;表达式&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;94-范围运算符&quot;&gt;9.4 范围运算符&lt;/h3&gt;
+
+&lt;p&gt;范围对象range&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;no&quot;&gt;Range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;x..y是从x到y
+x…y是从x到y的前一个&lt;/p&gt;
+
+&lt;h3 id=&quot;95-运算符优先级&quot;&gt;9.5 运算符优先级&lt;/h3&gt;
+
+&lt;p&gt;从高到低排序&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;::&lt;/li&gt;
+  &lt;li&gt;[]&lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;! ~&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;**&lt;/li&gt;
+  &lt;li&gt;-&lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;/ %&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;-&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;« »&lt;/li&gt;
+  &lt;li&gt;&amp;amp;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;^&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;blockquote&gt;
+        &lt;p&gt;= &amp;lt; &amp;lt;=&lt;/p&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&amp;lt;=&amp;gt; == === != =~ !~&lt;/li&gt;
+  &lt;li&gt;&amp;amp;&amp;amp;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt; &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;?:&lt;/li&gt;
+  &lt;li&gt;.. …&lt;/li&gt;
+  &lt;li&gt;= （包含+= -= /=）&lt;/li&gt;
+  &lt;li&gt;not&lt;/li&gt;
+  &lt;li&gt;and or&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如果不想按照优先顺序计算，可以使用()起来&lt;/p&gt;
+
+&lt;h3 id=&quot;96-定义运算符&quot;&gt;9.6 定义运算符&lt;/h3&gt;
+
+&lt;p&gt;不允许修改的运算符&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;::&lt;/li&gt;
+  &lt;li&gt;&amp;amp;&amp;amp;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt; &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;..&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+  &lt;li&gt;?:&lt;/li&gt;
+  &lt;li&gt;not&lt;/li&gt;
+  &lt;li&gt;=&lt;/li&gt;
+  &lt;li&gt;and&lt;/li&gt;
+  &lt;li&gt;or&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;961-二元运算符&quot;&gt;9.6.1 二元运算符&lt;/h4&gt;
+
+&lt;h2 id=&quot;第10章-错误处理与异常&quot;&gt;第10章 错误处理与异常&lt;/h2&gt;
+
+&lt;h4 id=&quot;103-异常处理的写法&quot;&gt;10.3 异常处理的写法&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;可能发生错误的处理&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;rescue&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;发生错误时的处理&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;rescue后指定变量名，可获得异常对象&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;可能发生错误的处理&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;rescue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;引用异常对象的变量&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;发生错误时的处理&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;异常发生时被自动赋值的变量：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$! —— 最后发生的异常（异常对象）&lt;/li&gt;
+  &lt;li&gt;$@ —— 最后发生异常的位置信息&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;异常对象的方法：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;class 异常的种类&lt;/li&gt;
+  &lt;li&gt;message 异常信息&lt;/li&gt;
+  &lt;li&gt;backtrace 异常发生的位置&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;第11章-块&quot;&gt;第11章 块&lt;/h2&gt;
+
+&lt;h3 id=&quot;111-块是什么&quot;&gt;11.1 块是什么&lt;/h3&gt;
+
+&lt;p&gt;块就是在调用方法时，能与参数一起传递的多个处理的集合&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;do和end之间的就是块&lt;/p&gt;
+
+&lt;h2 id=&quot;第13章-数组类&quot;&gt;第13章 数组类&lt;/h2&gt;
+
+&lt;h3 id=&quot;135-作为列的数组&quot;&gt;13.5 作为列的数组&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;队列是一种按照元素被追加顺序来获取元素的数据结构。这样的做法称为FIFO（First-in First-out）,也就是先进先出。&lt;/li&gt;
+  &lt;li&gt;而栈则是一种按照与元素被追加时顺序相反的顺序来获取元素的数据结构。这样的做法叫做LIFO（Last-in First-out），是一种『先进后出』的数据结构。
+    ## 13.6 主要的数组方法&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;1361-为数组添加元素&quot;&gt;13.6.1 为数组添加元素&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;a.unshift(item) 将item元素添加到数组开头&lt;/li&gt;
+  &lt;li&gt;a«item 和 a.push(item) « 与 push 等价，是在数组a末尾添加新元素item&lt;/li&gt;
+  &lt;li&gt;a.conact(b) 和 a+b 连接数组a和b。concat是具有破坏性的方法，而+则会返回新数组&lt;/li&gt;
+  &lt;li&gt;a[n]=item; a[n..m]=item; a[n,len]=item  将a数组指定部分的元素替换为item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;1362-从数组中删除元素&quot;&gt;13.6.2 从数组中删除元素&lt;/h4&gt;
+
+&lt;p&gt;a.compact
+a.compact!&lt;/p&gt;
+
+&lt;p&gt;从数组a中删除nil元素。
+compact方法返回新数组，compact!则直接替换原来的数组&lt;/p&gt;
+
+&lt;p&gt;a.delete(x)
+从数组a删除x元素&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; [1, 3, 1]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;a.delete_at(n)
+从数组a中删除a[n]元素&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;delete_atl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; [1, 2, 4, 5]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;a.delete_if{&lt;/td&gt;
+      &lt;td&gt;item&lt;/td&gt;
+      &lt;td&gt;… }&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;a.reject{&lt;/td&gt;
+      &lt;td&gt;item&lt;/td&gt;
+      &lt;td&gt;… }&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;a.reject!{&lt;/td&gt;
+      &lt;td&gt;item&lt;/td&gt;
+      &lt;td&gt;… }&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;判断数组a中个元素item，如果块的执行结果为真，则从数组a中删除item。delete_if和reject!方法都是具有破坏性的方法。&lt;/p&gt;
+
+&lt;p&gt;a.slice!(n)
+a.slice!(n..m)
+a.slice!(n, len)
+删除数组a中指定的部分，并返回删除部分的值。slice!是具有破坏性的方法。&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;slice!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; [2, 3]&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;                 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; [1, 4, 5]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;a.uniq
+a.uniq!&lt;/p&gt;
+
+&lt;p&gt;删除数组a中重复的元素，uniq!是具有破坏性的方法&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;uniq!&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; [1, 2, 3, 4]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;a.shift
+删除数组a开头的元素&lt;/p&gt;
+
+&lt;p&gt;a.pop
+删除数组a末尾的元素&lt;/p&gt;
+
+&lt;h4 id=&quot;1363-替换数组元素&quot;&gt;13.6.3 替换数组元素&lt;/h4&gt;
+
+&lt;h3 id=&quot;137-数组与迭代器&quot;&gt;13.7 数组与迭代器&lt;/h3&gt;
+
+&lt;p&gt;迭代器是实现循环处理的方法，而数组则是多个对象的集合&lt;/p&gt;
+
+&lt;h3 id=&quot;138-处理数组中的元素&quot;&gt;13.8 处理数组中的元素&lt;/h3&gt;
+
+&lt;h4 id=&quot;1381-使用循环与索引&quot;&gt;13.8.1 使用循环与索引&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;第&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;个元素是&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;1382-使用each方法逐个获取元素&quot;&gt;13.8.2 使用each方法逐个获取元素&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;elem&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;合计：&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;指定元素索引值 each_with_index&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each_with_index&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;第&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;个元素是&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;elem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;1383-使用具有破坏性的方法实现循环&quot;&gt;13.8.3 使用具有破坏性的方法实现循环&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;pop&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;## 对item进行处理&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;1384-使用其他迭代器&quot;&gt;13.8.4 使用其他迭代器&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;collect&lt;/li&gt;
+  &lt;li&gt;map&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;1385-创建专用迭代器&quot;&gt;13.8.5 创建专用迭代器&lt;/h4&gt;
+
+&lt;p&gt;参考 11.3&lt;/p&gt;
+
+&lt;h3 id=&quot;139-数组元素&quot;&gt;13.9 数组元素&lt;/h3&gt;
+
+&lt;h4 id=&quot;1391-使用简单矩阵&quot;&gt;13.9.1 使用简单矩阵&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;取出元素&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;第14章-字符串类&quot;&gt;第14章 字符串类&lt;/h2&gt;
+
+&lt;h3 id=&quot;141-字符串的创建&quot;&gt;14.1 字符串的创建&lt;/h3&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;str1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;这是字符串&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;str2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'那也是字符串'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;使用\转义特殊字符&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;\t 水平制表符&lt;/li&gt;
+  &lt;li&gt;\n 换行符&lt;/li&gt;
+  &lt;li&gt;\r 回车&lt;/li&gt;
+  &lt;li&gt;\f 换页&lt;/li&gt;
+  &lt;li&gt;\b 退格&lt;/li&gt;
+  &lt;li&gt;\a 响铃&lt;/li&gt;
+  &lt;li&gt;\e 溢出&lt;/li&gt;
+  &lt;li&gt;\s 空格&lt;/li&gt;
+  &lt;li&gt;\v 垂直制表符&lt;/li&gt;
+  &lt;li&gt;\nnn 8进制表示方式&lt;/li&gt;
+  &lt;li&gt;\Xnn 16进制表示方式&lt;/li&gt;
+  &lt;li&gt;\Cx、\C-x Control + x&lt;/li&gt;
+  &lt;li&gt;\M-x Meta(Alt) + x&lt;/li&gt;
+  &lt;li&gt;\M-\C-x Meta(Alt) + Control + x&lt;/li&gt;
+  &lt;li&gt;\x 表示x字符本身(x为除以上字符的字符)&lt;/li&gt;
+  &lt;li&gt;\Unnnn Unicode字符的16进制表示方式&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;1411-使用q与q&quot;&gt;14.1.1 使用%Q与%q&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;%Q相当于用” “创建字符串&lt;/li&gt;
+  &lt;li&gt;%q相当于用’ ‘创建字符串&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;desc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;%Q{Ruby的字符串中也可以使用''和&quot;&quot;}&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;%q|Ruby said, 'Hello world!'|&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;1412-使用here-document&quot;&gt;14.1.2 使用Here Document&lt;/h4&gt;
+
+&lt;p&gt;Here Document源于Unix的shell的一种写法，«来创建字符串&lt;/p&gt;
+
+&lt;h4 id=&quot;1413-使用sprintf方法&quot;&gt;14.1.3 使用sprintf方法&lt;/h4&gt;
+
+&lt;p&gt;参考printrf方法与sprintf方法&lt;/p&gt;
+
+&lt;h4 id=&quot;1414-使用&quot;&gt;14.1.4 使用``&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;irb&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;simple&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prompt&lt;/span&gt;
+&lt;span class=&quot;sb&quot;&gt;`ls -l /etc/hosts`&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;142-获取字符串长度&quot;&gt;14.2 获取字符串长度&lt;/h3&gt;
+
+&lt;p&gt;length和size方法获得字符串长度，两者的返回结果相同。&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'面向对象编程语言'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; 8&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;需要获得字节数可以使用bytesize方法&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'面向对象编程语言'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;bytesize&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; 24&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;想知道字符串长度是否为0，使用empty?方法&lt;/p&gt;
+
+&lt;h3 id=&quot;143-字符串索引&quot;&gt;14.3 字符串索引&lt;/h3&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;全新的String类对象&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;全&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;S&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;的String类&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;144-字符串的连接&quot;&gt;14.4 字符串的连接&lt;/h3&gt;
+
+&lt;p&gt;连接字符串的两种方法：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;将两个字符串合并为新字符串&lt;/li&gt;
+  &lt;li&gt;扩展原有字符串&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;145-字符串的比较&quot;&gt;14.5 字符串的比较&lt;/h3&gt;
+
+&lt;p&gt;使用==或者!=判断字符串是否相等&lt;/p&gt;
+
+&lt;h4 id=&quot;1493-与连接反转reverse相关的方法&quot;&gt;14.9.3 与连接、反转(reverse)相关的方法&lt;/h4&gt;
+
+&lt;p&gt;s.reverse
+s.reverse!
+反转字符串&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;晚上好&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;reverse&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;好上晚&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;1410-其他方法&quot;&gt;14.10 其他方法&lt;/h3&gt;
+
+&lt;p&gt;s.strip
+s.strip!&lt;/p&gt;
+
+&lt;p&gt;这是删除字符串s开头和结尾空白字符的方法&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;s.upcase 大写&lt;/li&gt;
+  &lt;li&gt;s.upcase!&lt;/li&gt;
+  &lt;li&gt;s.downcase 小写&lt;/li&gt;
+  &lt;li&gt;s.downcase!&lt;/li&gt;
+  &lt;li&gt;s.swapcase 大写字母转换小写，小写字母转换大写&lt;/li&gt;
+  &lt;li&gt;s.swapcase!&lt;/li&gt;
+  &lt;li&gt;s.capitalize 首字母大写&lt;/li&gt;
+  &lt;li&gt;s.capitalize!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;第15章-散列类&quot;&gt;第15章 散列类&lt;/h2&gt;
+
+&lt;h3 id=&quot;152-散列的创建&quot;&gt;15.2 散列的创建&lt;/h3&gt;
+
+&lt;h4 id=&quot;1521-使用&quot;&gt;15.2.1 使用{}&lt;/h4&gt;
+
+&lt;p&gt;{键 =&amp;gt; 值}&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;b&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;{健: 值}&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;h2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;a: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;c: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h2&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; {:a=&amp;gt;&quot;b&quot;, :c=&amp;gt;&quot;d&quot;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;1522-使用hashnew&quot;&gt;15.2.2 使用Hash.new&lt;/h4&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Hash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;h2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Hash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;not_key&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; nil&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;not_key&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;153-值的获取与设定&quot;&gt;15.3 值的获取与设定&lt;/h3&gt;
+
+&lt;p&gt;使用[]获取键相对应的元素值&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Hash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;R&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Ruby&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;R&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;Ruby&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;另外可以使用store方法设定，fetch方法获取值&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Hash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;stroe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;R&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Ruby&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fetch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;R&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;Ruby&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;使用fetch方法时，有一点与[]不一样，如果散列中不存在指定键，程序会发生异常；
+如果对fetch方法指定第2个参数，那么该参数值就会作为键不存在时散列的默认值;
+fetch方法还可以使用块，此时块的结果为散列的默认值&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Hash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fetch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;N&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;1531-一次性获取所有键值&quot;&gt;15.3.1 一次性获取所有键、值&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;获取键
+    &lt;ul&gt;
+      &lt;li&gt;数组形式: keys方法&lt;/li&gt;
+      &lt;li&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;迭代器形式: each_key{&lt;/td&gt;
+              &lt;td&gt;键&lt;/td&gt;
+              &lt;td&gt;……}&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;获取值
+    &lt;ul&gt;
+      &lt;li&gt;数组形式: values方法&lt;/li&gt;
+      &lt;li&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;迭代器形式: each_value{&lt;/td&gt;
+              &lt;td&gt;值&lt;/td&gt;
+              &lt;td&gt;……}&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;获取键值对[键,值]
+    &lt;ul&gt;
+      &lt;li&gt;数组形式: to_a&lt;/li&gt;
+      &lt;li&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;迭代器形式: each{&lt;/td&gt;
+              &lt;td&gt;键, 值&lt;/td&gt;
+              &lt;td&gt;……}			each{&lt;/td&gt;
+              &lt;td&gt;数组&lt;/td&gt;
+              &lt;td&gt;……}&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;1532-散列的默认值&quot;&gt;15.3.2 散列的默认值&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;创建散列时指定默认值&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Hash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; 10&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;x&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; 1&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;y&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; 1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;通过块指定默认值&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Hash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;hash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+	&lt;span class=&quot;nb&quot;&gt;hash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;upcase&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;b&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;x&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;x&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;y&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;y&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;154-查看指定对象是否为散列的键或值&quot;&gt;15.4 查看指定对象是否为散列的键或值&lt;/h3&gt;
+
+&lt;p&gt;h.key?(key)
+h.has_key?(key)
+h.include?(key)
+h.member?(key)&lt;/p&gt;
+
+&lt;p&gt;上面4个方法都是查看指定对象是否为散列的键的方法，用法和效果都一样&lt;/p&gt;
+
+&lt;p&gt;h.value?(value)
+h.has_value?(value)
+上面两2个方法用来检查值是否在指定的对象中&lt;/p&gt;
+
+&lt;h3 id=&quot;查看散列的大小&quot;&gt;查看散列的大小&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;h.size&lt;/li&gt;
+  &lt;li&gt;h.length&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;可以用length方法或者size方法查看散列的大小&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;h.empty?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;可以empty?方法来查看散列的大小是否为0&lt;/p&gt;
+
+&lt;h3 id=&quot;156-删除键值&quot;&gt;15.6 删除键值&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;h.delete(key)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;通过键删除用delete方法，delete方法可以使用块，如果不存在键，返回块执行结果&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;R&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Ruby&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;P&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;no &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;no P.&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;h.delete_if{&lt;/td&gt;
+          &lt;td&gt;key, val&lt;/td&gt;
+          &lt;td&gt;……}&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;h.reject!{&lt;/td&gt;
+          &lt;td&gt;key, val&lt;/td&gt;
+          &lt;td&gt;……}&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;R&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Ruby&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;p&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Perl&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;delete_if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;P&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; {&quot;R&quot;=&amp;gt;&quot;Ruby&quot;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;reject!方法和delete_if方法用法相同，但当不符合条件时，两者返回值各异。delete_if返回原来的散列，reject!返回nil&lt;/p&gt;
+
+&lt;h3 id=&quot;157-初始化散列&quot;&gt;15.7 初始化散列&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;h.clear&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;使用clear方法清空使用过的散列&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;clear&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;size&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; 0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;第16章-正则表达式类&quot;&gt;第16章 正则表达式类&lt;/h2&gt;
+
+&lt;h3 id=&quot;161-关于正则表达式&quot;&gt;16.1 关于正则表达式&lt;/h3&gt;
+
+&lt;h4 id=&quot;1611-正则表达式的写法与用法&quot;&gt;16.1.1 正则表达式的写法与用法&lt;/h4&gt;
+
+&lt;p&gt;一般情况我们把正则表达式对象（Regexp类对象）称为『正则表达式对象』，或直接称为『正则表达式』&lt;/p&gt;
+
+&lt;h4 id=&quot;1612-正则表达式创建方法&quot;&gt;16.1.2 正则表达式创建方法&lt;/h4&gt;
+
+&lt;p&gt;在程序中，通过用//将正则表达式模式的字符串括起来，就可以非常简单的创建出正则表达式&lt;/p&gt;
+
+&lt;p&gt;另外可以使用类方法Regexp.new(str)来创建对象&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;re&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Regexp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Ruby&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;使用%r创建正则表达式&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;sr&quot;&gt;%r(模式)&lt;/span&gt;
+&lt;span class=&quot;sr&quot;&gt;%r&amp;lt;模式&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;sr&quot;&gt;%r|模式|&lt;/span&gt;
+&lt;span class=&quot;sr&quot;&gt;%r!模式!&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;162-正则表达式的模式与匹配&quot;&gt;16.2 正则表达式的模式与匹配&lt;/h3&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;正则表达式&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=~&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;字符串&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;无法匹配时返回nil，匹配成功返回该字符串起始字符的位置&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;正则表达式&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=~&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;字符串&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;匹配时处理&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;不匹配时处理&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;可以使用!~颠倒「真」与「假」&lt;/p&gt;
+
+&lt;h4 id=&quot;1621-匹配普通字符&quot;&gt;16.2.1 匹配普通字符&lt;/h4&gt;
+
+&lt;h4 id=&quot;1622-匹配行首与行尾&quot;&gt;16.2.2 匹配行首与行尾&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;^ 代表行首&lt;/li&gt;
+  &lt;li&gt;$ 代表行尾&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;1623-指定匹配字符的范围&quot;&gt;16.2.3 指定匹配字符的范围&lt;/h4&gt;
+
+&lt;p&gt;有时候我们想匹配『ABC』中的1个字符，可以使用[]&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;AB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;      &lt;span class=&quot;c1&quot;&gt;# 匹配A或B&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ABC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;# 匹配A或B或C&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;CBA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;# 同上，与[]中的顺序无关&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;012&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ABC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 0、1、A、B、C中的一个字符&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;1624&quot;&gt;16.2.4&lt;/h4&gt;
+
+&lt;p&gt;使用.匹配任意1个字符&lt;/p&gt;
+
+&lt;h4 id=&quot;1625-使用反斜杠的模式&quot;&gt;16.2.5 使用反斜杠的模式&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;\s 表示空白字符，匹配空格(0x20)、制表符(Tab)、换行符、换页符&lt;/li&gt;
+  &lt;li&gt;\d 配备0到9的数字&lt;/li&gt;
+  &lt;li&gt;\w 匹配英文字母与数字&lt;/li&gt;
+  &lt;li&gt;\A 匹配字符串的开头&lt;/li&gt;
+  &lt;li&gt;\z 匹配字符串的末尾&lt;/li&gt;
+  &lt;li&gt;\  元字符串转义&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;1626-重复&quot;&gt;16.2.6 重复&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;重复0次以上&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;重复1次以上&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;? 重复0次或1次&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;1627-最短匹配&quot;&gt;16.2.7 最短匹配&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;*? 0次以上的重复中最短的部分&lt;/li&gt;
+  &lt;li&gt;+? 1次以上的重复中最短的部分&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;1628-与重复&quot;&gt;16.2.8 ()与重复&lt;/h4&gt;
+
+&lt;h3 id=&quot;163-使用quote方法的正则表达式&quot;&gt;16.3 使用quote方法的正则表达式&lt;/h3&gt;
+
+&lt;h3 id=&quot;164-正则表达式的选项&quot;&gt;16.4 正则表达式的选项&lt;/h3&gt;
+
+&lt;p&gt;正则表达式还有选项，使用选项可以改变正则表达式的一些默认效果。
+设定正则表达式的选项时，只需在/…/后面指定即可，如：/…/im&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;i 忽略英文字母大小写&lt;/li&gt;
+  &lt;li&gt;x 忽略正则表达式中的空白字符以及#后面的字符，指定这个选项，我们就可以使用#在正则表达式中写注释&lt;/li&gt;
+  &lt;li&gt;m 指定这个选项可以使用.匹配换行符&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;165-捕获&quot;&gt;16.5 捕获&lt;/h3&gt;
+
+&lt;p&gt;所谓捕获，就是从正则表达式的就匹配部分中提取其中的某部分。通过”$数字”这种形式的变量，就可以获取匹配了正则表达式中用()扩住的部分字符串。&lt;/p&gt;
+
+&lt;p&gt;除了”$数字”这种形式，保存匹配结果的变量还有：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$` 匹配部分前的字符串&lt;/li&gt;
+  &lt;li&gt;$&amp;amp; 匹配的字符串&lt;/li&gt;
+  &lt;li&gt;$’ 匹配部分后的字符串&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;sr&quot;&gt;/C./&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=~&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'ABCDEF'&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$\&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;``&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;AB&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$&amp;amp;&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;CD&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$'&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;EF&quot;     &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;166-使用正则表达式的方法&quot;&gt;16.6 使用正则表达式的方法&lt;/h3&gt;
+
+&lt;h4 id=&quot;1661-sub方法与gsub方法&quot;&gt;16.6.1 sub方法与gsub方法&lt;/h4&gt;
+
+&lt;p&gt;sub方法与gsub方法的作用是用指定的字符串置换字符串中的某部分字符&lt;/p&gt;
+
+&lt;p&gt;sub方法只置换首次匹配的部分，而gsub方法则会置换所有匹配的部分&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;abc   def   g   hi&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/\s+/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;abc def  g  hi&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;gsub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/\s+/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &quot;abc def g hi&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;sub方法和gsub方法还可以使用块，这时程序将字符串中匹配的部分传递给块，并在块中使用该字符串进行处理。&lt;/p&gt;
+
+&lt;h4 id=&quot;1662-sacn方法&quot;&gt;16.6.2 sacn方法&lt;/h4&gt;
+
+&lt;p&gt;sacn方法像gsub方法那样捕获匹配部分的字符串，但不能做置换操作&lt;/p&gt;
+</description>
+				<pubDate>Sun, 11 Jun 2017 00:00:00 +0800</pubDate>
+				<link>/2017/06/11/ruby-programming.html</link>
+				<guid isPermaLink="true">/2017/06/11/ruby-programming.html</guid>
+			</item>
+		
+			<item>
+				<title>Vue.js 学习笔记</title>
+				<description>&lt;h2 id=&quot;实例生命周期钩子&quot;&gt;实例生命周期钩子&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;created 钩子可以用来在一个实例被创建之后执行代码&lt;/li&gt;
+  &lt;li&gt;不要在选项属性或回调上使用箭头函数，比如：created: () =&amp;gt;
+console.log(this.a)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;模板语法&quot;&gt;模板语法&lt;/h2&gt;
+
+&lt;h3 id=&quot;插值&quot;&gt;插值&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;v-once指令，执行一次性插值，例：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;v-once&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;这个将不会改变：{{ msg }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;使用javascript表达式&quot;&gt;使用JavaScript表达式&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{{}}&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//中可使用JavaScript表达式&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;指令&quot;&gt;指令&lt;/h3&gt;
+
+&lt;p&gt;指令（Directives）是带有v-前缀的特殊属性&lt;/p&gt;
+
+&lt;h4 id=&quot;参数&quot;&gt;参数&lt;/h4&gt;
+
+&lt;p&gt;一些指令能够接收一个“参数”，在指令名称之后以冒号表示。&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;v-bind:href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;url&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;...&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;缩写&quot;&gt;缩写&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;v-bind 缩写 v-bind:href 等于 :href&lt;/li&gt;
+  &lt;li&gt;v-on 缩写 v-on:click 等于 @click&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;计算属性和观察者&quot;&gt;计算属性和观察者&lt;/h2&gt;
+
+&lt;h3 id=&quot;计算属性缓存vs方法&quot;&gt;计算属性缓存vs方法&lt;/h3&gt;
+
+&lt;p&gt;计算属性是基于他们的依赖进行缓存的&lt;/p&gt;
+
+&lt;h2 id=&quot;绑定html-class&quot;&gt;绑定HTML Class&lt;/h2&gt;
+
+&lt;h3 id=&quot;对象语法&quot;&gt;对象语法&lt;/h3&gt;
+
+&lt;p&gt;使用计算属性&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;v-bind:class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;classObject&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;isActive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;computed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;classObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;active&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isActive&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;text-danger&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;fatal&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;用在组件上&quot;&gt;用在组件上&lt;/h3&gt;
+
+&lt;p&gt;当在一个自定义组件上使用 class 属性时，这些类将被添加到该组件的根元素上面。这个元素上已经存在的类不会被覆盖。&lt;/p&gt;
+
+&lt;h2 id=&quot;条件渲染&quot;&gt;条件渲染&lt;/h2&gt;
+
+&lt;p&gt;使用 v-if 和 v-else 实现&lt;/p&gt;
+
+&lt;h3 id=&quot;在-template-元素上使用-v-if-条件渲染分组&quot;&gt;在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;template&amp;gt;&lt;/code&gt; 元素上使用 v-if 条件渲染分组&lt;/h3&gt;
+
+&lt;p&gt;可以把一个 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;template&amp;gt;&lt;/code&gt; 元素当做不可见的包裹元素，并在上面使用 v-if。最终的渲染结果将不包含 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;template&amp;gt;&lt;/code&gt; 元素。&lt;/p&gt;
+
+&lt;h3 id=&quot;v-else-和-v-else-if&quot;&gt;v-else 和 v-else-if&lt;/h3&gt;
+
+&lt;p&gt;v-else-if 2.1.0版新增&lt;/p&gt;
+
+&lt;h3 id=&quot;v-show&quot;&gt;v-show&lt;/h3&gt;
+
+&lt;p&gt;与v-if不同的是带有 v-show 的元素始终会被渲染并保留在 DOM 中。v-show 只是简单地切换元素的 CSS 属性 display。&lt;/p&gt;
+
+&lt;h3 id=&quot;v-if-vs-v-show&quot;&gt;v-if vs v-show&lt;/h3&gt;
+
+&lt;p&gt;一般来说，v-if 有更高的切换开销，而 v-show 有更高的初始渲染开销。因此，如果需要非常频繁地切换，则使用 v-show 较好；如果在运行时条件很少改变，则使用 v-if 较好。&lt;/p&gt;
+
+&lt;h3 id=&quot;v-if-与-v-for-一起使用&quot;&gt;v-if 与 v-for 一起使用&lt;/h3&gt;
+
+&lt;p&gt;当 v-if 与 v-for 一起使用时，v-for 具有比 v-if 更高的优先级。&lt;/p&gt;
+</description>
+				<pubDate>Thu, 02 Mar 2017 00:00:00 +0800</pubDate>
+				<link>/2017/03/02/vuejs.html</link>
+				<guid isPermaLink="true">/2017/03/02/vuejs.html</guid>
 			</item>
 		
 	</channel>
