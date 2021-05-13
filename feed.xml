@@ -37,54 +37,6 @@
 			</item>
 		
 			<item>
-				<title>NAS</title>
-				<description>&lt;p&gt;&lt;img src=&quot;/assets/img/nas_b490.jpg&quot; alt=&quot;nas b490&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;对nas的需求&quot;&gt;对NAS的需求&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;nextcloud&lt;/li&gt;
-  &lt;li&gt;jupyter&lt;/li&gt;
-  &lt;li&gt;web服务器&lt;/li&gt;
-  &lt;li&gt;定时任务&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;硬件要求&quot;&gt;硬件要求&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;性能够用&lt;/li&gt;
-  &lt;li&gt;省电&lt;/li&gt;
-  &lt;li&gt;稳定可靠&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;硬件配置&quot;&gt;硬件配置&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;主板: 旧笔记本电脑拆出的主板（型号: 联想b490）&lt;/li&gt;
-  &lt;li&gt;CPU: 赛扬b960&lt;/li&gt;
-  &lt;li&gt;内存: 4g&lt;/li&gt;
-  &lt;li&gt;硬盘1: 光威悍将1t固态硬盘(主板sata口)&lt;/li&gt;
-  &lt;li&gt;硬盘2: 希捷1t移动硬盘(主板usb口)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;软件&quot;&gt;软件&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ubuntu Server 20.04.1 LTS&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;备份&quot;&gt;备份&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;crontab + rsync增量备份&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-				<pubDate>Thu, 04 Mar 2021 00:00:00 +0800</pubDate>
-				<link>/2021/03/04/nas.html</link>
-				<guid isPermaLink="true">/2021/03/04/nas.html</guid>
-			</item>
-		
-			<item>
 				<title>linux安装gogs</title>
 				<description>&lt;h3 id=&quot;第-1-步-创建git用户&quot;&gt;第 1 步: 创建git用户&lt;/h3&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;useradd git
@@ -116,92 +68,6 @@
 				<pubDate>Sun, 28 Feb 2021 00:00:00 +0800</pubDate>
 				<link>/2021/02/28/linux-install-gogs.html</link>
 				<guid isPermaLink="true">/2021/02/28/linux-install-gogs.html</guid>
-			</item>
-		
-			<item>
-				<title>Nextcloud</title>
-				<description>&lt;p&gt;nextcloud使用ubuntu的snap安装。&lt;/p&gt;
-
-&lt;h2 id=&quot;snap-nextcloud-的配置&quot;&gt;Snap Nextcloud 的配置&lt;/h2&gt;
-
-&lt;h4 id=&quot;修改https端口&quot;&gt;修改https端口&lt;/h4&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;snap &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;nextcloud ports.http&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;81 ports.https&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;444
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;文件存储目录&quot;&gt;文件存储目录&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;/var/snap/nextcloud/common/nextcloud/data&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;配置文件路径&quot;&gt;配置文件路径&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;/var/snap/nextcloud/current/nextcloud/config/config.php&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;参考&quot;&gt;参考&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/nextcloud/nextcloud-snap&quot;&gt;Snappy Nextcloud&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.nextcloud.com/server/20/admin_manual/maintenance/backup.html&quot;&gt;备份&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-				<pubDate>Wed, 24 Feb 2021 00:00:00 +0800</pubDate>
-				<link>/2021/02/24/nextcloud-settings.html</link>
-				<guid isPermaLink="true">/2021/02/24/nextcloud-settings.html</guid>
-			</item>
-		
-			<item>
-				<title>Dell 9020m</title>
-				<description>&lt;h4 id=&quot;配置&quot;&gt;配置&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;CPU: i5 4670t&lt;/li&gt;
-  &lt;li&gt;内存: 10G&lt;/li&gt;
-  &lt;li&gt;硬盘: 1T固态&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-				<pubDate>Tue, 09 Feb 2021 00:00:00 +0800</pubDate>
-				<link>/2021/02/09/dell-9020m.html</link>
-				<guid isPermaLink="true">/2021/02/09/dell-9020m.html</guid>
-			</item>
-		
-			<item>
-				<title>Flask</title>
-				<description>&lt;p&gt;因为在使用Python和Pandas作为数据分析工具,为了方便展示分析结果,所以采用了Python语言的Web框架——Flask.&lt;/p&gt;
-</description>
-				<pubDate>Fri, 05 Feb 2021 00:00:00 +0800</pubDate>
-				<link>/2021/02/05/flask.html</link>
-				<guid isPermaLink="true">/2021/02/05/flask.html</guid>
-			</item>
-		
-			<item>
-				<title>电子钟</title>
-				<description>&lt;p&gt;&lt;img src=&quot;/assets/img/clock.jpg&quot; alt=&quot;电子钟&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;给老婆做了个电子钟,方便晚上看时间&lt;/p&gt;
-</description>
-				<pubDate>Sun, 17 Jan 2021 00:00:00 +0800</pubDate>
-				<link>/2021/01/17/diy-clock.html</link>
-				<guid isPermaLink="true">/2021/01/17/diy-clock.html</guid>
-			</item>
-		
-			<item>
-				<title>MeArm</title>
-				<description>&lt;p&gt;&lt;a href=&quot;https://mearm.com&quot;&gt;官网&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;制作过程记录&quot;&gt;制作过程记录&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;买的亚克力板制板不规矩，没有安装的说明，和官网下载的安装说明里看到的部件样式也略有不同&lt;/li&gt;
-  &lt;li&gt;亚克力配的螺丝把关节都扭紧了，只能在螺丝上点上润滑油，帮助润滑&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-				<pubDate>Fri, 13 Nov 2020 00:00:00 +0800</pubDate>
-				<link>/2020/11/13/MeArm.html</link>
-				<guid isPermaLink="true">/2020/11/13/MeArm.html</guid>
 			</item>
 		
 			<item>
@@ -266,6 +132,338 @@
 				<pubDate>Sun, 04 Oct 2020 00:00:00 +0800</pubDate>
 				<link>/2020/10/04/wsl-installation-guide.html</link>
 				<guid isPermaLink="true">/2020/10/04/wsl-installation-guide.html</guid>
+			</item>
+		
+			<item>
+				<title>rvm安装ruby指南</title>
+				<description>&lt;p&gt;RVM安装&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+\curl -sSL https://get.rvm.io | bash -s stable
+source ~/.bashrc
+source ~/.bash_profile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;修改 RVM 的 Ruby 安装源到 Ruby China 的 Ruby 镜像服务器&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;echo &quot;ruby_url=https://cache.ruby-china.com/pub/ruby&quot; &amp;gt; ~/.rvm/user/db
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;遇到网络问题可以尝试&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;如果提示 curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused
+使用https://www.ipaddress.com/网站查询raw.githubusercontent.com真实ip，设置到sudo vim /etc/hosts中&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;gem更换清华大学镜像源&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 添加 TUNA 源并移除默认源
+gem sources --add https://mirrors.tuna.tsinghua.edu.cn/rubygems/ --remove https://rubygems.org/
+# 列出已有源
+gem sources -l
+# 应该只有 TUNA 一个
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;替换bundler默认源&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle config mirror.https://rubygems.org https://mirrors.tuna.tsinghua.edu.cn/rubygems
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;使用gem安装软件包&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install [软件包名]
+# 例如：
+gem install rails
+gem install bundler
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;列出已知Ruby版本&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rvm list known
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;安装一个Ruby版本&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rvm install 3.0.0 --disable-binary
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;参考&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ruby-china.org/wiki/rvm-guide&quot;&gt;RVM 实用指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mirrors.tuna.tsinghua.edu.cn/help/rubygems/&quot;&gt;Ruby Gems 镜像使用帮助&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Sun, 20 Sep 2020 00:00:00 +0800</pubDate>
+				<link>/2020/09/20/installing-ruby-with-rvm.html</link>
+				<guid isPermaLink="true">/2020/09/20/installing-ruby-with-rvm.html</guid>
+			</item>
+		
+			<item>
+				<title>自制Windows Hello人脸解锁</title>
+				<description>&lt;p&gt;在Bilibili上看到的视频，就跟着做了一下
+&lt;a href=&quot;https://www.bilibili.com/video/BV1Gz4y1Z7HF&quot;&gt;50块搞定Windows Hello人脸解锁！&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;做好后的效果&lt;/strong&gt;
+&lt;img src=&quot;/assets/img/dell-camera.jpg&quot; alt=&quot;做好后的效果&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;接口定义图&lt;/strong&gt;
+&lt;img src=&quot;/assets/img/dell-camera.png&quot; alt=&quot;接口定义图&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;驱动下载&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;访问&lt;a href=&quot;https://www.dell.com/support/home/zh-cn/product-support/product/alienware-17-laptop/drivers&quot;&gt;https://www.dell.com/support/home/zh-cn/product-support/product/alienware-17-laptop/drivers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;找到“Realtek IR Camera Driver”下载&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+				<pubDate>Wed, 26 Aug 2020 00:00:00 +0800</pubDate>
+				<link>/2020/08/26/windows-hello-camera.html</link>
+				<guid isPermaLink="true">/2020/08/26/windows-hello-camera.html</guid>
+			</item>
+		
+			<item>
+				<title>VMware Workstation Pro 15.1.0 官方版+激活密钥</title>
+				<description>&lt;p&gt;&lt;strong&gt;VMware Workstation&lt;/strong&gt; 产品允许用户将 Linux、Windows 等多个操作系统作为虚拟机在单台 PC 上运行。用户可以在虚拟机上重现服务器、桌面和平板电脑环境，无需重新启动即可跨不同操作系统同时运行应用。Workstation 还提供隔离的安全环境，用于评估新的操作系统（如 Windows 10）、测试软件应用和补丁程序以及参考体系结构。&lt;/p&gt;
+
+&lt;p&gt;借助 Workstation 产品，可以仅从一台本地 PC 轻松测试几乎任何操作系统和应用。构建面向 Windows 10 的应用、使用任何浏览器测试兼容性，或者在无需使用移动设备的情况下部署 Android-x86 以查看移动设备行为。&lt;/p&gt;
+
+&lt;p&gt;官方网站：www.vmware.com&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;功能特性：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;巨型虚拟机 创建拥有多达 16 个虚拟 CPU、8 TB 虚拟磁盘以及 64 GB 内存的大规模虚拟机，以便在虚拟环境中运行要求最严苛的桌面和服务器应用。通过为虚拟机分配多达 2 GB 的显存，可以进一步提升图形密集型应用的处理能力。&lt;/li&gt;
+  &lt;li&gt;高性能 3D 图形 VMware Workstation 产品现在支持 DirectX 10 和 OpenGL 3.3，可在运行 3D 应用时提供更顺畅和响应速度更快的体验。Workstation 能够在虚拟机中以接近本机的性能运行 AutoCAD 或 SOLIDWORKS 等要求最为严苛的 3D 应用。&lt;/li&gt;
+  &lt;li&gt;支持高分辨率显示屏 Workstation 已经过优化，可以支持用于台式机的高分辨率 4K UHD (3840 x 2160) 显示屏，以及用于笔记本电脑和 x86 平板电脑的 QHD+ (3200×1800) 显示屏。Workstation 还支持具有不同 DPI 设置的多个显示器，例如，可以同时使用全新的 4K UHD 显示屏和您现有的 1080P HD 显示屏。&lt;/li&gt;
+  &lt;li&gt;强大的网络连接功能 可使用真实的路由软件和工具，为虚拟机创建复杂的 IPv4 或 IPv6 虚拟网络，或通过与第三方软件集成来设计完整的数据中心拓扑。&lt;/li&gt;
+  &lt;li&gt;限制对虚拟机的访问 通过限制对 Workstation 虚拟机设置（例如拖放、复制和粘贴以及连接 USB 设备）的访问来保护公司内容。可对虚拟机进行加密和密码保护，从而确保只有经过授权的用户才能进行访问。&lt;/li&gt;
+  &lt;li&gt;交叉兼容性 利用 Workstation，您可以创建能够跨 VMware 产品组合运行的虚拟机，也可以创建在 Horizon FLEX 中使用的受限虚拟机。我们甚至还支持开放标准，使您不仅可以创建虚拟机，还可以使用来自其他供应商的虚拟机。&lt;/li&gt;
+  &lt;li&gt;共享虚拟机 在模拟生产环境中快速共享和测试应用。将 VMware Workstation Pro 作为一个服务器运行，以便与您的团队成员、部门或组织共享具有各种所需配置的预加载虚拟机的存储库。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;更新日志：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.vmware.com/cn/VMware-Workstation-Pro/15/rn/workstation-15-release-notes.html&quot;&gt;https://docs.vmware.com/cn/VMware-Workstation-Pro/15/rn/workstation-15-release-notes.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;系统要求&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;支持使用 2011 年或更晚发布的处理器 (CPU) 的系统，但以下系统&lt;strong&gt;除外&lt;/strong&gt;：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;使用基于 2011 年 Bonnell 微架构的 Intel Atom 处理器的系统。例如，Atom Z670/Z650 和 Atom N570。&lt;/li&gt;
+  &lt;li&gt;使用基于 2012 年 Saltwell 微架构的 Intel Atom 处理器的系统。例如，Atom S1200、Atom D2700/D2500 和 Atom N2800/N2600。&lt;/li&gt;
+  &lt;li&gt;使用基于 Llano 和 Bobcat 微架构的 AMD 处理器的系统。例如，代号为 Hondo、Ontario、Zacate 和 Llano 的处理器。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;此外，还&lt;strong&gt;支持&lt;/strong&gt;以下系统：使用基于 2010 年 Westmere 微架构的 Intel 处理器的系统。例如，Xeon 5600、Xeon 3600、Core i7-970、Core i7-980 和 Core i7-990。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;新增功能&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Workstation 15 Pro 中新增了以下支持：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;支持新的客户机操作系统&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Windows 10 1803&lt;/li&gt;
+  &lt;li&gt;Ubuntu 18.04&lt;/li&gt;
+  &lt;li&gt;Fedora 28&lt;/li&gt;
+  &lt;li&gt;RHEL 7.5&lt;/li&gt;
+  &lt;li&gt;CentOS 7.5&lt;/li&gt;
+  &lt;li&gt;Debian 9.5&lt;/li&gt;
+  &lt;li&gt;OpenSuse Leap 15.0&lt;/li&gt;
+  &lt;li&gt;FreeBSD 11.2&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ESXi 6.7&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;DirectX 10.1&lt;/strong&gt; DirectX 10.1 是 DirectX 10.0 的增量更新。它通过支持多重采样抗锯齿 (MSAA) 功能提供了更高的视觉质量。DirectX 10.1 还支持 Shader Model 4.1 和 Cubemap Array。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;硬件版本 16&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;支持 DirectX 10.1&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;最大 3 GB 的图形内存&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;REST API&lt;/strong&gt; 可以使用 Workstation RESTful API，通过标准 JSON over HTTP/HTTPS 自动完成常见虚拟机任务。支持以下虚拟机操作：&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;管理虚拟机清单&lt;/li&gt;
+  &lt;li&gt;管理虚拟机电源&lt;/li&gt;
+  &lt;li&gt;克隆虚拟机&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;管理网络连接&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;支持高 DPI&lt;/strong&gt; 高 DPI 相关功能要求主机和虚拟机的操作系统为 Windows 10 版本 1703 或更高版本。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;支持主机级别高 DPI&lt;/strong&gt; – Workstation 界面会自动检测主机级别的 DPI 更改，并自动调整布局以符合新 DPI。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;客户机 DPI 与主机同步&lt;/strong&gt; – 主机端发生 DPI 更改时，客户机操作系统会调整其 DPI 以便与主机 DPI 相匹配。 此功能需要使用 VMware Tools 10.3.2。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;连接到 vCenter 时的“主机和群集”视图&lt;/strong&gt; 连接到远程 vSphere 时，Workstation 15 Pro 新增了“主机和群集”视图。现在，清单树采用两个不同的视图显示对象的层次结构排列：“主机和群集”视图以及“虚拟机”视图。您只需单击一次，即可在这两个视图之间轻松切换。这是仅限 Windows 主机的功能。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;支持 vSphere 6.7&lt;/strong&gt; Workstation 15 Pro 提供了对 vSphere 6.7 的无缝支持。您可以从 Workstation 15 Pro 连接到远程 ESXi 6.7 主机或 vCenter Server 6.7，以管理在 vSphere 上运行的远程虚拟机。您还可以将本地虚拟机上载到 vSphere 6.7，或将 vSphere 6.7 上运行的远程虚拟机下载到本地桌面。您也可以部署 VMware VCSA 6.7 (vCenter Server Appliance) OVA 软件包，以在 Workstation 15 Pro 上运行。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;USB 自动连接到虚拟机&lt;/strong&gt; 将 Workstation 15 Pro 配置为记住连接规则后，USB 设备可以自动连接到已打开电源的虚拟机。这是仅限 Windows 主机的功能。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;通过 SSH 登录到 Linux 虚拟机&lt;/strong&gt; 现在，您可以使用 Workstation 15 Pro 提供的 SSH 访问 Linux 虚拟机。 此功能要求主机的操作系统为 Windows 10 版本 1803 或更高版本。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;增强了用户体验&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;拉伸客户机显示&lt;/strong&gt; 为 Linux 客户机和早于 Windows XP 的 Windows 客户机启用了拉伸客户机显示功能。您可以使用“保持纵横比拉伸”功能在保持用户界面纵横比的同时拉伸虚拟机显示，或者还可以使用“自由拉伸”功能拉伸虚拟机显示以填充用户界面。这是仅限 Windows 主机的功能。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;打开虚拟机目录&lt;/strong&gt; 现在，可以轻松地从 Windows 主机中访问虚拟机目录，方法是右键单击 Workstation Pro 库中的虚拟机，然后选择&lt;strong&gt;打开虚拟机目录&lt;/strong&gt;。Linux Workstation Pro 已支持此功能。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;支持 Linux 主机 Wayland&lt;/strong&gt; 现在，Workstation 15 Pro 可以在 Linux 主机 Wayland 桌面上运行。要在 Wayland 桌面上安装 Workstation Pro，必须使用终端模式安装。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;改进了虚拟 NVMe 存储的性能&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;已解决的问题&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;直接使用物理磁盘的虚拟机可能会显示黑屏&lt;/strong&gt;如果虚拟机直接使用物理磁盘，在打开虚拟机电源后，虚拟机可能会显示黑屏。这个问题已得到解决。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;如果将并行端口映射到物理并行端口，在打开虚拟机电源后，虚拟机可能会崩溃并显示错误&lt;/strong&gt;如果虚拟机使用并行端口，并且该并行端口映射到主机操作系统的物理并行端口，在打开虚拟机电源后，虚拟机可能会崩溃并显示以下错误：不可恢复的 VMware Workstation 错误: (vcpu-0) (VMware Workstation unrecoverable error: (vcpu-0))这个问题已得到解决。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;连接到 DELL Thunderbolt USB Dock 的 USB 设备可能无法连接到虚拟机&lt;/strong&gt;将 USB 设备连接到 USB Dock（例如，DELL Thunderbolt）后，USB 设备可能无法连接到虚拟机。这个问题已得到解决。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;无法在 Windows 主机上直接访问连接到某些 3.1 xHCI 控制器的 USB 设备&lt;/strong&gt;在 Windows 主机上，选择&lt;strong&gt;虚拟机&lt;/strong&gt; &amp;gt; &lt;strong&gt;可移动设备&lt;/strong&gt;时，未列出连接到某些 USB 3.1 控制器的 USB 设备。因此，无法从虚拟机直接访问这些设备。这个问题已得到解决。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;在 Linux 主机上使用“缩放”实用工具时，Workstation Pro 界面可能会崩溃&lt;/strong&gt;对于某些 Linux 主机（例如 Ubuntu 18.04），当您使用“缩放”实用工具时，Workstation Pro 界面可能会崩溃。这个问题已得到解决。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;已知问题&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;在主机上安装某个第三方软件后，虚拟机中的鼠标单击功能可能停止工作&lt;/strong&gt;在主机上安装某个软件（例如 WizMouse）后，虚拟机中的鼠标单击功能可能停止工作。&lt;strong&gt;解决办法&lt;/strong&gt;：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;关闭虚拟机电源。&lt;/li&gt;
+  &lt;li&gt;将以下条目添加到虚拟机的 .vmx 文件中： mks.win32.processWin32MouseInput = “TRUE”&lt;/li&gt;
+  &lt;li&gt;打开虚拟机电源。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;激活密钥：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ZC10K-8EF57-084QZ-VXYXE-ZF2XF&lt;/p&gt;
+
+&lt;p&gt;UF71K-2TW5J-M88QZ-8WMNT-WKUY4&lt;/p&gt;
+
+&lt;p&gt;AZ7MK-44Y1J-H819Z-WMYNC-N7ATF&lt;/p&gt;
+
+&lt;p&gt;CU702-DRD1M-H89GP-JFW5E-YL8X6&lt;/p&gt;
+
+&lt;p&gt;YY5EA-00XDJ-480RP-35QQV-XY8F6&lt;/p&gt;
+
+&lt;p&gt;VA510-23F57-M85PY-7FN7C-MCRG0&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;下载地址：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.vmware.com/go/getworkstation-win&quot;&gt;Workstation 15 Pro for Windows&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.vmware.com/go/getworkstation-linux&quot;&gt;Workstation 15 Pro for Linux&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;来自 «https://cloud.tencent.com/developer/article/1430711»&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+</description>
+				<pubDate>Sat, 08 Aug 2020 00:00:00 +0800</pubDate>
+				<link>/2020/08/08/VMware-Workstation-Pro-15.1.0.html</link>
+				<guid isPermaLink="true">/2020/08/08/VMware-Workstation-Pro-15.1.0.html</guid>
+			</item>
+		
+			<item>
+				<title>wsl打开windows资源管理器</title>
+				<description>&lt;p&gt;设置别名&lt;/p&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;explorer.exe&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;调用&lt;/p&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;open &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+				<pubDate>Mon, 27 Jul 2020 00:00:00 +0800</pubDate>
+				<link>/2020/07/27/wsl-open.html</link>
+				<guid isPermaLink="true">/2020/07/27/wsl-open.html</guid>
+			</item>
+		
+			<item>
+				<title>win10安装指南</title>
+				<description>&lt;p&gt;第1步 制作安装u盘&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;访问微软“&lt;a href=&quot;https://www.microsoft.com/zh-cn/software-download/windows10&quot;&gt;下载Windows10&lt;/a&gt;”页面，点击“立即下载工具”链接，下载安装工具&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;第2步 更新系统&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“Windows 设置”-&amp;gt; “更新和安全”-&amp;gt;“Windows更新”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;第3步 安装驱动&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;品牌机去品牌官网下载安装驱动工具&lt;/li&gt;
+  &lt;li&gt;兼容机去芯片生产商官网下载驱动&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;第4步 安装常用软件&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Office
+    &lt;ul&gt;
+      &lt;li&gt;下载&lt;a href=&quot;https://otp.landian.vip/zh-cn/&quot;&gt;Office Tool Plus工具&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;第5步 删除系统无用的软件&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;OneDrive - 国内使用体验不好&lt;/li&gt;
+  &lt;li&gt;Skype ——我日常用不到&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;第6步 软件设置&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;配置Outlook账号
+    &lt;ul&gt;
+      &lt;li&gt;songjian@codeorder.cn&lt;/li&gt;
+      &lt;li&gt;001@codeorder.cn&lt;/li&gt;
+      &lt;li&gt;boss@codeorder.cn&lt;/li&gt;
+      &lt;li&gt;business@codeorder.cn&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Office
+    &lt;ul&gt;
+      &lt;li&gt;不要使用微软账号登录Office软件，国内连接OneDrive不稳定，影响使用体验&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Mon, 27 Jul 2020 00:00:00 +0800</pubDate>
+				<link>/2020/07/27/win10-installation-guide.html</link>
+				<guid isPermaLink="true">/2020/07/27/win10-installation-guide.html</guid>
+			</item>
+		
+			<item>
+				<title>mt4</title>
+				<description>&lt;p&gt;trader1_trial_version.ex4是自动平仓程序，即由使用者开仓，程序监控仓单，根据设定好的条件平仓。&lt;/p&gt;
+
+&lt;p&gt;适用场景&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;超短线交易（分钟级）&lt;/li&gt;
+  &lt;li&gt;短线交易（30分钟到10小时）&lt;/li&gt;
+  &lt;li&gt;逻辑（有交易逻辑，例如：某订单被平仓，在某品种开仓）交易&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;**试用版没有使用期限，只是对交易手数（0.01，1k）和平仓条件做了固定化处理。您可以尽情的体验。&lt;/p&gt;
+
+&lt;p&gt;下载：&lt;a href=&quot;/assets/trial/trader1_trial_version.ex4&quot;&gt;trader1_trial_version.ex4&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;运行平台：mt4&lt;/p&gt;
+
+</description>
+				<pubDate>Tue, 15 Oct 2019 00:00:00 +0800</pubDate>
+				<link>/2019/10/15/trader1-trial-version.html</link>
+				<guid isPermaLink="true">/2019/10/15/trader1-trial-version.html</guid>
 			</item>
 		
 	</channel>
