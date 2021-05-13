@@ -443,27 +443,24 @@ gem install bundler
 			</item>
 		
 			<item>
-				<title>mt4</title>
-				<description>&lt;p&gt;trader1_trial_version.ex4是自动平仓程序，即由使用者开仓，程序监控仓单，根据设定好的条件平仓。&lt;/p&gt;
+				<title>8月OKRs</title>
+				<description>&lt;h3 id=&quot;o1提升交易能力&quot;&gt;O1：提升交易能力&lt;/h3&gt;
 
-&lt;p&gt;适用场景&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Kr1：每日坚持15笔手工交易&lt;/li&gt;
+  &lt;li&gt;Kr2：对已经理解的交易能力程序化&lt;/li&gt;
+  &lt;li&gt;Kr3：读2本交易书&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;超短线交易（分钟级）&lt;/li&gt;
-  &lt;li&gt;短线交易（30分钟到10小时）&lt;/li&gt;
-  &lt;li&gt;逻辑（有交易逻辑，例如：某订单被平仓，在某品种开仓）交易&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h3 id=&quot;o2提高生活质量&quot;&gt;O2：提高生活质量&lt;/h3&gt;
 
-&lt;p&gt;**试用版没有使用期限，只是对交易手数（0.01，1k）和平仓条件做了固定化处理。您可以尽情的体验。&lt;/p&gt;
-
-&lt;p&gt;下载：&lt;a href=&quot;/assets/trial/trader1_trial_version.ex4&quot;&gt;trader1_trial_version.ex4&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;运行平台：mt4&lt;/p&gt;
-
+&lt;ul&gt;
+  &lt;li&gt;Kr1：每月盈利&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-				<pubDate>Tue, 15 Oct 2019 00:00:00 +0800</pubDate>
-				<link>/2019/10/15/trader1-trial-version.html</link>
-				<guid isPermaLink="true">/2019/10/15/trader1-trial-version.html</guid>
+				<pubDate>Thu, 01 Aug 2019 00:00:00 +0800</pubDate>
+				<link>/2019/08/01/OKRs.html</link>
+				<guid isPermaLink="true">/2019/08/01/OKRs.html</guid>
 			</item>
 		
 	</channel>
