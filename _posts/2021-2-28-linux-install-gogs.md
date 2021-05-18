@@ -6,9 +6,14 @@ categories: [技术文章]
 
 ### 第 1 步: 创建git用户
 ```bash
-useradd git
+# useradd git
 ```
 ### 第 2 步: 在PostgreSQL数据库创建gogs库和gogs用户
+```bash
+sudo -u postgres psql -c "create user gogs with password 'gogs';"
+sudo -u postgres psql -c "create database gogs owner gogs;"
+sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE gogs TO gogs;"
+```
 ### 第 3 步: 下载安装gogs二进制安装包
 
 * 下载二进制包
