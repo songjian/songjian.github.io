@@ -29,7 +29,7 @@
 
     <!-- SEO Plugin -->
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Page 3 of 3 for Home | 宋健</title>
+<title>Page 4 of 4 for Home | 宋健</title>
 <meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="Home" />
 <meta name="author" content="Songj" />
@@ -39,13 +39,13 @@
 <link rel="canonical" href="/b" />
 <meta property="og:url" content="/b" />
 <meta property="og:site_name" content="宋健" />
-<link rel="prev" href="/page2/" />
+<link rel="prev" href="/page3/" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Home" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@Songj" />
 <script type="application/ld+json">
-{"description":"编程、生活、项目、Diy","@type":"WebPage","url":"/b","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Songj"},"author":{"@type":"Person","name":"Songj"},"headline":"Home","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Songj"},"description":"编程、生活、项目、Diy","@type":"WebPage","headline":"Home","url":"/b","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Songj"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -75,6 +75,9 @@
 &nbsp;&nbsp;<a href="/">About</a> 
 
 
+/&nbsp;&nbsp;<a href="/work.html">Work</a> 
+
+
 /&nbsp;&nbsp;<a href="/blog.html">Blog</a> 
 
 
@@ -89,127 +92,6 @@
 
     <div class="post-container">
       
-
-<div class="post">
-    <h2 id = "post-title"><a href="/2013/07/10/sae.html">SAE域名绑定的解决方法</a></h2>
-
-     
-    <div class = "post-info">
-        <span>
-            <i class="far fa-calendar" aria-hidden="true"></i>
-            <time datetime="2013-07-10T00:00:00+08:00" class="by-line">10 Jul 2013</time> - <i class="far fa-clock"></i> 
-            
-  
-  
-    Less than 1 minute read
-  
-
-
-
-        </span>
-    </div>
-    
-
-    
-    <div class = "featured-img-container">
-    
-    
-    </div>
-    
-
-    <p>
-        
-            
-  使用CNAME把www子域名指向sae服务；
-  把A记录指向的主域名服务器，使用脚本指向www域名；
-
-
-        
-        <span class = "continue-reading"><a href="/2013/07/10/sae.html">Continue reading...</a></span>
-    </p> 
-</div>
-
-
-<div class="post">
-    <h2 id = "post-title"><a href="/2013/07/10/nginx-path-rewriting.html">Nginx路径重写</a></h2>
-
-     
-    <div class = "post-info">
-        <span>
-            <i class="far fa-calendar" aria-hidden="true"></i>
-            <time datetime="2013-07-10T00:00:00+08:00" class="by-line">10 Jul 2013</time> - <i class="far fa-clock"></i> 
-            
-  
-  
-    Less than 1 minute read
-  
-
-
-
-        </span>
-    </div>
-    
-
-    
-    <div class = "featured-img-container">
-    
-    
-    </div>
-    
-
-    <p>
-        
-            server {
-    listen       80;
-    server_name  www.nginx.org  nginx.org;
-    if ($http_host = nginx.org) {
-        rewrite  (.*)  http://www.nginx.org$1;
-    }
-    ...
-}
-
-
-        
-        <span class = "continue-reading"><a href="/2013/07/10/nginx-path-rewriting.html">Continue reading...</a></span>
-    </p> 
-</div>
-
-
-<div class="post">
-    <h2 id = "post-title"><a href="/2012/03/07/php-api-example.html">PHP调用接口示例</a></h2>
-
-     
-    <div class = "post-info">
-        <span>
-            <i class="far fa-calendar" aria-hidden="true"></i>
-            <time datetime="2012-03-07T11:25:07+08:00" class="by-line">07 Mar 2012</time> - <i class="far fa-clock"></i> 
-            
-  
-  
-    Less than 1 minute read
-  
-
-
-
-        </span>
-    </div>
-    
-
-    
-    <div class = "featured-img-container">
-    
-    
-    </div>
-    
-
-    <p>
-        
-            两个程序之间交换数据一般需要一个程序给另一个程序提供接口，以获取或者更新第一个程序中的数据。如何安全的开放数据的访问与更新？这就需要在开放的接口上做一些安全处理，如限制ip和访问次数、检查接口访问时间的有效范围和程序之间约定密钥对交换数据进行摘要和加密。 上栗子 有两台服务器a和b，a服务器中保存有会员记录，b服务器现在想要请求这些记录，处理如下： b 服务器请求数据代码 $server_name = 'http://localhost/a.php'; $time = time(); //请求时间 $key = 'weqwesfxvcvxs'; //主机间约定的密钥 $index = 1; //请求记录的起始记录 $row = 10; //请求返回记录条数 //加密 $flag = md5($index . $row . $time . $key); //变量连接顺序由 a 和 b 服务器约定 echo file_get_contents($server_name . "?time={$time}&amp;index={$index}&amp;row={$row}&amp;flag={$flag}"); 处理主机 b 的接口访问请求 //允许访问接口的ip地址 $ips = array('127.0.0.1');...
-        
-        <span class = "continue-reading"><a href="/2012/03/07/php-api-example.html">Continue reading...</a></span>
-    </p> 
-</div>
-
 
 <div class="post">
     <h2 id = "post-title"><a href="/2010/05/19/projector.html">自制投影仪</a></h2>
@@ -351,7 +233,7 @@ https://github.com/songjian/ejob
     
     
     
-    <a class = "newer paginate-button" href="/page2/">Newer Posts</a>
+    <a class = "newer paginate-button" href="/page3/">Newer Posts</a>
   
   
 </div>
