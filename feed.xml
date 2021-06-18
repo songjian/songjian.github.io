@@ -25,6 +25,30 @@
 			</item>
 		
 			<item>
+				<title>使用docker作为Jekyll的开发环境</title>
+				<description>&lt;p&gt;Jekyll是一个静态网站生成器，使用ruby语言编写，可以把Markdown文件转换成静态网页。Linux和MacOS系统可以比较简单的在命令行搭建ruby的运行环境，Windows系统上运行比较麻烦，可用的方案有Wsl或者虚拟机，现在还可以Docker作为开发环境。&lt;/p&gt;
+
+&lt;p&gt;docker hub上有jekyll的镜像&lt;/p&gt;
+
+&lt;p&gt;新建Jekyll网站&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PWD&lt;/span&gt;:/srv/jekyll &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; jekyll/minimal jekyll new blog
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;开发&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;blog
+docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PWD&lt;/span&gt;:/srv/jekyll &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 4000:4000 &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; jekyll/minimal jekyll s &lt;span class=&quot;nt&quot;&gt;-wD&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;编译&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PWD&lt;/span&gt;:/srv/jekyll &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; jekyll/minimal jekyll b
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+				<pubDate>Fri, 04 Jun 2021 00:00:00 +0800</pubDate>
+				<link>/2021/06/04/%E4%BD%BF%E7%94%A8docker%E4%BD%9C%E4%B8%BAJekyll%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.html</link>
+				<guid isPermaLink="true">/2021/06/04/%E4%BD%BF%E7%94%A8docker%E4%BD%9C%E4%B8%BAJekyll%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.html</guid>
+			</item>
+		
+			<item>
 				<title>《计算机教育中缺失的一课》阅读笔记</title>
 				<description>&lt;p&gt;课程在线地址：&lt;a href=&quot;https://missing-semester-cn.github.io/&quot;&gt;计算机教育中缺失的一课&lt;/a&gt;&lt;/p&gt;
 
@@ -284,36 +308,6 @@ gem install bundler
 				<pubDate>Mon, 27 Jul 2020 00:00:00 +0800</pubDate>
 				<link>/2020/07/27/wsl-open.html</link>
 				<guid isPermaLink="true">/2020/07/27/wsl-open.html</guid>
-			</item>
-		
-			<item>
-				<title>7月OKRs</title>
-				<description>&lt;h3 id=&quot;o1提高幼儿园网站管理系统演示版的使用体验&quot;&gt;O1：提高幼儿园网站管理系统演示版的使用体验&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Kr1：提供快速和稳定的网络访问&lt;/li&gt;
-  &lt;li&gt;kr2：主要流程可以走通&lt;/li&gt;
-  &lt;li&gt;Kr3：前后台功能使用不报错&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;o2准备好幼儿园网站管理系统软件著作权的申请材料&quot;&gt;O2：准备好幼儿园网站管理系统软件著作权的申请材料&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Kr1：软件使用说明书&lt;/li&gt;
-  &lt;li&gt;Kr2：源代码文档&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;o3搭建协会网站管理系统开发框架&quot;&gt;O3：搭建协会网站管理系统开发框架&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Kr1：搭建开发框架&lt;/li&gt;
-  &lt;li&gt;Kr2：整理第一版程序要实现的功能列表&lt;/li&gt;
-  &lt;li&gt;Kr3：开发框架可以在本地运行并正常访问&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-				<pubDate>Fri, 21 Jun 2019 00:00:00 +0800</pubDate>
-				<link>/2019/06/21/OKRs.html</link>
-				<guid isPermaLink="true">/2019/06/21/OKRs.html</guid>
 			</item>
 		
 	</channel>

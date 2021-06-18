@@ -7,7 +7,7 @@
 
     <title>
         
-            使用dd命令迁移磁盘数据 | 宋健
+            使用docker作为Jekyll的开发环境 | 宋健
       
     </title>
     <meta name="description" content="
@@ -29,26 +29,24 @@
 
     <!-- SEO Plugin -->
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>使用dd命令迁移磁盘数据 | 宋健</title>
+<title>使用docker作为Jekyll的开发环境 | 宋健</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="使用dd命令迁移磁盘数据" />
+<meta property="og:title" content="使用docker作为Jekyll的开发环境" />
 <meta name="author" content="Songj" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="```sh 查看分区 sudo fdisk -l" />
-<meta property="og:description" content="```sh 查看分区 sudo fdisk -l" />
-<link rel="canonical" href="/2021/03/07/using-dd-command-to-migrate-disk-data.html" />
-<meta property="og:url" content="/2021/03/07/using-dd-command-to-migrate-disk-data.html" />
+<meta name="description" content="Jekyll是一个静态网站生成器，使用ruby语言编写，可以把Markdown文件转换成静态网页。Linux和MacOS系统可以比较简单的在命令行搭建ruby的运行环境，Windows系统上运行比较麻烦，可用的方案有Wsl或者虚拟机，现在还可以Docker作为开发环境。" />
+<meta property="og:description" content="Jekyll是一个静态网站生成器，使用ruby语言编写，可以把Markdown文件转换成静态网页。Linux和MacOS系统可以比较简单的在命令行搭建ruby的运行环境，Windows系统上运行比较麻烦，可用的方案有Wsl或者虚拟机，现在还可以Docker作为开发环境。" />
+<link rel="canonical" href="/2021/06/04/%E4%BD%BF%E7%94%A8docker%E4%BD%9C%E4%B8%BAJekyll%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.html" />
+<meta property="og:url" content="/2021/06/04/%E4%BD%BF%E7%94%A8docker%E4%BD%9C%E4%B8%BAJekyll%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.html" />
 <meta property="og:site_name" content="宋健" />
-<meta property="og:image" content="/assets/img/dd-command.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-03-07T00:00:00+08:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="/assets/img/dd-command.png" />
-<meta property="twitter:title" content="使用dd命令迁移磁盘数据" />
+<meta property="article:published_time" content="2021-06-04T00:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="使用docker作为Jekyll的开发环境" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@Songj" />
 <script type="application/ld+json">
-{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Songj"},"author":{"@type":"Person","name":"Songj"},"description":"```sh 查看分区 sudo fdisk -l","@type":"BlogPosting","headline":"使用dd命令迁移磁盘数据","dateModified":"2021-03-07T00:00:00+08:00","datePublished":"2021-03-07T00:00:00+08:00","url":"/2021/03/07/using-dd-command-to-migrate-disk-data.html","image":"/assets/img/dd-command.png","mainEntityOfPage":{"@type":"WebPage","@id":"/2021/03/07/using-dd-command-to-migrate-disk-data.html"},"@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Songj"},"author":{"@type":"Person","name":"Songj"},"description":"Jekyll是一个静态网站生成器，使用ruby语言编写，可以把Markdown文件转换成静态网页。Linux和MacOS系统可以比较简单的在命令行搭建ruby的运行环境，Windows系统上运行比较麻烦，可用的方案有Wsl或者虚拟机，现在还可以Docker作为开发环境。","@type":"BlogPosting","headline":"使用docker作为Jekyll的开发环境","dateModified":"2021-06-04T00:00:00+08:00","datePublished":"2021-06-04T00:00:00+08:00","url":"/2021/06/04/%E4%BD%BF%E7%94%A8docker%E4%BD%9C%E4%B8%BAJekyll%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.html","mainEntityOfPage":{"@type":"WebPage","@id":"/2021/06/04/%E4%BD%BF%E7%94%A8docker%E4%BD%9C%E4%B8%BAJekyll%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -96,12 +94,12 @@
 
     <div class="post-container">
       <article id = "post">
-        <h2 id = "post-title">使用dd命令迁移磁盘数据</h2>
+        <h2 id = "post-title">使用docker作为Jekyll的开发环境</h2>
 
   
   <div class = "post-info">
     <span>
-        <i class="far fa-calendar" aria-hidden="true"></i> <span>07 Mar 2021</span> - <i class="far fa-clock"></i> 
+        <i class="far fa-calendar" aria-hidden="true"></i> <span>04 Jun 2021</span> - <i class="far fa-clock"></i> 
 
 
   
@@ -112,28 +110,22 @@
     </span>
   </div>
   
-        <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 查看分区</span>
-<span class="nb">sudo </span>fdisk <span class="nt">-l</span>
+        <p>Jekyll是一个静态网站生成器，使用ruby语言编写，可以把Markdown文件转换成静态网页。Linux和MacOS系统可以比较简单的在命令行搭建ruby的运行环境，Windows系统上运行比较麻烦，可用的方案有Wsl或者虚拟机，现在还可以Docker作为开发环境。</p>
 
-<span class="c"># 挂载分区</span>
-<span class="nb">sudo </span>mount /dev/sdb1 ~/data
+<p>docker hub上有jekyll的镜像</p>
 
-<span class="c"># 挂载后通过df命令查看是否挂载成功</span>
-<span class="nb">df</span> <span class="nt">-l</span>
-
-<span class="c"># 使用dd命令制作镜像</span>
-<span class="nb">sudo dd </span><span class="k">if</span><span class="o">=</span>/dev/sda <span class="nv">of</span><span class="o">=</span>~/data/ssd.img
-
-<span class="c"># 使用dd命令恢复镜像</span>
-<span class="nb">sudo dd </span><span class="k">if</span><span class="o">=</span>~/data/ssd.img <span class="nv">of</span><span class="o">=</span>/dev/sda
+<p>新建Jekyll网站</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--rm</span> <span class="nt">-v</span> <span class="nv">$PWD</span>:/srv/jekyll <span class="nt">-it</span> jekyll/minimal jekyll new blog
 </code></pre></div></div>
 
-<h2 id="使用体验">使用体验</h2>
+<p>开发</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>blog
+docker run <span class="nt">--rm</span> <span class="nt">-v</span> <span class="nv">$PWD</span>:/srv/jekyll <span class="nt">-p</span> 4000:4000 <span class="nt">-it</span> jekyll/minimal jekyll s <span class="nt">-wD</span>
+</code></pre></div></div>
 
-<ul>
-  <li>使用dd命令迁移硬盘数据速度较慢，250g硬盘制作镜像加恢复用时10小时</li>
-  <li>Windows的磁盘工具不能把空白空间划到现有分区里，需要使用第三方工具</li>
-</ul>
+<p>编译</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--rm</span> <span class="nt">-v</span> <span class="nv">$PWD</span>:/srv/jekyll <span class="nt">-it</span> jekyll/minimal jekyll b
+</code></pre></div></div>
 
       </article>
     </div>
@@ -141,14 +133,6 @@
       <div class="categories">
     <span><p>Categories:</p>
     
-    
-      <a href="
-      /categories/#linux">linux</a>
-      &nbsp; 
-    
-      <a href="
-      /categories/#%E6%95%B0%E6%8D%AE">数据</a>
-       
     
   </span>
 </div>
@@ -338,7 +322,7 @@
     <script id="loadDisqus" type="text/javascript">
       var disqus_loaded = false;
       var disqus_shortname = "your_username";
-      var disqus_identifier = "/2021/03/07/using-dd-command-to-migrate-disk-data.html";
+      var disqus_identifier = "/2021/06/04/%E4%BD%BF%E7%94%A8docker%E4%BD%9C%E4%B8%BAJekyll%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.html";
       function loadDisqus() {
         var e = document.createElement('script'); 
         e.type = 'text/javascript'; 
