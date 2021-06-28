@@ -94,6 +94,51 @@
       
 
 <div class="post">
+    <h2 id = "post-title"><a href="/2013/07/10/nginx-path-rewriting.html">Nginx路径重写</a></h2>
+
+     
+    <div class = "post-info">
+        <span>
+            <i class="far fa-calendar" aria-hidden="true"></i>
+            <time datetime="2013-07-10T00:00:00+08:00" class="by-line">10 Jul 2013</time> - <i class="far fa-clock"></i> 
+            
+  
+  
+    Less than 1 minute read
+  
+
+
+
+        </span>
+    </div>
+    
+
+    
+    <div class = "featured-img-container">
+    
+    
+    </div>
+    
+
+    <p>
+        
+            server {
+    listen       80;
+    server_name  www.nginx.org  nginx.org;
+    if ($http_host = nginx.org) {
+        rewrite  (.*)  http://www.nginx.org$1;
+    }
+    ...
+}
+
+
+        
+        <span class = "continue-reading"><a href="/2013/07/10/nginx-path-rewriting.html">Continue reading...</a></span>
+    </p> 
+</div>
+
+
+<div class="post">
     <h2 id = "post-title"><a href="/2012/03/07/php-api-example.html">PHP调用接口示例</a></h2>
 
      
