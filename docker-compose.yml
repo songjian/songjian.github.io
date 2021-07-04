@@ -1,6 +1,7 @@
 version: "3"
 services:
   app:
+    restart: always
     image: jekyll/jekyll
     command: /bin/bash -c "gem sources --add https://mirrors.tuna.tsinghua.edu.cn/rubygems/ --remove https://rubygems.org/ && gem install bundler:2.1.4 && bundle _2.1.4_ i && jekyll s -wD"
     volumes:

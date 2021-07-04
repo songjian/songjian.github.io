@@ -7,6 +7,65 @@
 		<atom:link href="/" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>体验winget</title>
+				<description>&lt;p&gt;&lt;img src=&quot;/assets/img/winget.png&quot; alt=&quot;&quot; /&gt;
+winget是微软推出的命令行应用安装程序，可以使用命令安装和卸载软件。&lt;/p&gt;
+
+&lt;h2 id=&quot;体验&quot;&gt;体验&lt;/h2&gt;
+&lt;h3 id=&quot;搜索应用&quot;&gt;搜索应用&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-cmd&quot;&gt;C:\Users\001&amp;gt;winget search chrome
+名称                 ID                         版本          匹配
+-----------------------------------------------------------------------------
+Google Chrome        Google.Chrome              91.0.4472.124 Command: chrome
+Stack                stack.stack                3.30.4        Tag: chrome
+Brave                BraveSoftware.BraveBrowser 91.1.26.74    Tag: Chrome
+Ginger Chrome        Saxo_Broko.GingerChrome    93.0.4529.0
+Google Chrome Canary Google.Chrome.Canary       93.0.4563.0
+Google Chrome Dev    Google.Chrome.Dev          93.0.4557.4
+Google Chrome Beta   Google.Chrome.Beta         92.0.4515.81
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;使用id或应用名安装&quot;&gt;使用ID或应用名安装&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-cmd&quot;&gt;C:\Users\001&amp;gt;winget install Google.Chrome
+已找到 Google Chrome [Google.Chrome]
+此应用程序由其所有者授权给你。
+Microsoft 对第三方程序包概不负责，也不向第三方程序包授予任何许可证。
+Downloading https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise64.msi
+  ██████████████████████████████  75.2 MB / 75.2 MB
+已成功验证安装程序哈希
+正在启动程序包安装...
+已成功安装
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;查看已安装的软件&quot;&gt;查看已安装的软件&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-cmd&quot;&gt;winget list
+名称                                 ID                                   版本                   可用            源
+-----------------------------------------------------------------------------------------------------------------------
+Visual Studio Community 2019         Microsoft.VisualStudio.2019.Communi… 16.7.30523.141         16.10.31424.327 winget
+Motrix                               agalwood.Motrix                      1.5.15                 1.6.11          winget
+Windows 驱动程序包 - Lenovo Lenovo … 62E4AB7721574B3F68D119528C2648B523F… 06/13/2014 01.00.01.01
+Windows 驱动程序包 - Lenovo M7206W,… 6B093F96A79C55A735C5AECDECD42A8BB65… 05/09/2014 01.00.00.00
+7-Zip                                7zip.7zip                            19.00
+QQ桌面版                             903DB504.46618D74B1ECA_a99ra4d2cbcxa 9.4.6.0
+Google Chrome                        Google.Chrome                        91.0.4472.124
+Windows 驱动程序包 - Lenovo M7206W,… 9F5D510E4DAB682B6192676C752A0CDF066… 07/22/2014 1.1.0.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;卸载&quot;&gt;卸载&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-cmd&quot;&gt;C:\Users\001&amp;gt;winget uninstall Google.Chrome
+已找到 Google Chrome [Google.Chrome]
+正在启动程序包卸载...
+已成功卸载
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+				<pubDate>Sun, 04 Jul 2021 00:00:00 +0800</pubDate>
+				<link>/2021/07/04/%E4%BD%93%E9%AA%8Cwinget.html</link>
+				<guid isPermaLink="true">/2021/07/04/%E4%BD%93%E9%AA%8Cwinget.html</guid>
+			</item>
+		
+			<item>
 				<title>给薄荷叶盆栽加自动浇水</title>
 				<description>&lt;p&gt;&lt;img src=&quot;/assets/img/watering.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
@@ -293,21 +352,6 @@ gem install bundler
 				<pubDate>Wed, 26 Aug 2020 00:00:00 +0800</pubDate>
 				<link>/2020/08/26/windows-hello-camera.html</link>
 				<guid isPermaLink="true">/2020/08/26/windows-hello-camera.html</guid>
-			</item>
-		
-			<item>
-				<title>wsl打开windows资源管理器</title>
-				<description>&lt;p&gt;设置别名&lt;/p&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;explorer.exe&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;调用&lt;/p&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;open &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-				<pubDate>Mon, 27 Jul 2020 00:00:00 +0800</pubDate>
-				<link>/2020/07/27/wsl-open.html</link>
-				<guid isPermaLink="true">/2020/07/27/wsl-open.html</guid>
 			</item>
 		
 	</channel>
