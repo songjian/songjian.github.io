@@ -1,8 +1,10 @@
 ---
 layout: post
 title: 体验winget
+image: /assets/img/winget.png
 ---
-winget是微软推出的应用安装程序，类似debian/ubuntu的apt工具。可以通过命令行安装软件。
+![](/assets/img/winget.png)
+winget是微软推出的命令行应用安装程序，可以使用命令安装和卸载软件。
 
 ## 体验
 ### 搜索应用
