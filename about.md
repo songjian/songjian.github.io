@@ -33,7 +33,7 @@ permalink: /
 
 **2015.3 - 2018.3 北京维基飞翔科技有限公司 php\\ruby程序员**
 
-1、海尔创客实验室 [lab.haier.com](https://lab.haier.com)
+1、海尔创客实验室 [http://lab.haier.com](https://lab.haier.com)
 
 * 海尔创客实验室是海尔集团为服务创客群体打造的网上平台
 * 负责使用php语言和laravel框架搭建开发环境和线上生产环境
@@ -48,7 +48,7 @@ permalink: /
 * 负责开发企业申请和使用二维码的功能，微信端扫描二维码查询功能
 * 按照开发合同的要求顺利交付项目
 
-3、安踏茁壮成长公益计划 [zzcz.wikiflyer.cn](http://zzcz.wikiflyer.cn)
+3、安踏茁壮成长公益计划 [http://zzcz.wikiflyer.cn](http://zzcz.wikiflyer.cn)
 
 * 安踏茁壮成长公益计划是安踏体育用品资助的公益项目
 * 使用rails搭建web服务平台，线上生产环境的搭建和配置
@@ -56,7 +56,7 @@ permalink: /
 * 负责捐助流程代码的编写
 * 仅用3周时间就完成了项目交付
 
-4、亿木课堂 [www.ymooc.com.cn](http://www.ymooc.com.cn/)
+4、亿木课堂 [http://www.ymooc.com.cn](http://www.ymooc.com.cn/)
 
 * 亿木课堂是类似慕课网的在线视频学习网站
 * 负责使用rails搭建web服务平台，线上生产环境的搭建
@@ -71,7 +71,7 @@ permalink: /
 * 负责使用rails开发后台管理和微信端
 * 项目按照合同的约定顺利上线
 
-6、格桑花西部助学网 [www.gesanghua.org](http://www.gesanghua.org/)
+6、格桑花西部助学网 [http://www.gesanghua.org](http://www.gesanghua.org/)
 
 * 格桑花西部助学网是国内老牌的资助西部贫困学生的项目，第一版网站2005年上线，为了更好的将捐助流程搬到网上，2017年决定网站改版
 * 格桑花要求将捐助流程程序化，保留旧网站的部分数据
