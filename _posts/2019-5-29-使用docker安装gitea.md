@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: docker
 ---
 ## 拉取gitea镜像
 
