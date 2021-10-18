@@ -14,7 +14,7 @@ wsl还不完全兼容linux，使用中有如下问题：
 
 ## wsl重启
 
-已管理员身份运行cmd，执行：
+以管理员身份运行cmd，执行：
 
 ```cmd
 net stop LxssManager
