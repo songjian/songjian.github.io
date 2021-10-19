@@ -1,10 +1,6 @@
-version: "3"
+version: '3'
 services:
   app:
-    build: .
-    volumes:
-      - ./:/srv/jekyll
-    ports:
-      - "4000:4000"
+    image: songjian/jekyll-cn
     environment:
       - TZ=Asia/Shanghai
