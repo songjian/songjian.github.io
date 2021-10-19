@@ -1,5 +1,5 @@
 pages:
-  - {name: 'About', url: '/'}
+  - {name: 'Home', url: '/'}
+  - {name: 'Archive', url: '/archive'}
   - {name: 'Work', url: '/work.html'}
-  - {name: 'Blog', url: 'blog.html'}
   - {name: 'Github', url: 'https://www.github.com/songjian'}

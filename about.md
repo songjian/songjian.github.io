@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 简历
-permalink: /
+permalink: /resume
 ---
 
 ![](/assets/img/avatar.jpg)
