@@ -4,7 +4,7 @@ analytics-id: #leave blank to not use Analytics
 #Subtitle
 subtitle:
   active: true
-  text: 工作、生活、DIY
+  text: Windows、Linux、Debian、Ubuntu、Vim、PHP、Python、Ruby、Gogo、Bash、Fish知识记录
 
 #Nav 
 nav:
