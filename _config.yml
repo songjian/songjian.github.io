@@ -1,12 +1,12 @@
 # Site settings
 title: 宋健
-description: "编程、生活、项目、Diy"
+description: "开软软件爱好者，ruby、python、php、bashscript"
 url:  "" # Actual base url of the website
 baseurl: "/"           # url of the jekyll blog. e.g. if you set url to "mysite.com" and baseurl to "blog", the jekyll website will work on "mysite.com/blog"
 author:
-  name: "Songj"
-  email: "songjian@codeorder.cn"
-  url: ""
+  name: "sj"
+  email: "boss@codeorder.cn"
+  url: "https://github.com/songjian"
 permalink: /:year/:month/:day/:title:output_ext
 
 #Plugins
@@ -16,7 +16,20 @@ plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
 paginate: 5
 paginate_path: "/page:num/"
 
-exclude: [publish.sh]
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - Dockerfile
+  - dev.sh
+  - publish-to-github.io.sh
+  - docker-compose.yml
+  - docker-compose.override.yml
 
 #SEO
 twitter:
