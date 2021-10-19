@@ -26,10 +26,15 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - Dockerfile
-  - dev.sh
-  - publish-to-github.io.sh
   - docker-compose.yml
   - docker-compose.override.yml
+  - LICENSE
+  - LICENSE.txt
+  - CHANGELOG.md
+  - jekyll-yamt.gemspec
+  - reset.sh
+  - dev.sh
+  - publish-to-github.io.sh
 
 #SEO
 twitter:
