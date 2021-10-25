@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 自制投影仪
-categories: [DIY]
+categories: DIY
 image: /assets/img/projector01.jpg
 ---
 

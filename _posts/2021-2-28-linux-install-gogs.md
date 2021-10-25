@@ -1,12 +1,12 @@
 ---
 layout: post
 title: linux安装gogs
-categories: [技术文章]
+categories: linux git gogs
 ---
 
 ### 第 1 步: 创建git用户
 ```bash
-# useradd git
+useradd git
 ```
 ### 第 2 步: 在PostgreSQL数据库创建gogs库和gogs用户
 ```bash

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: rvm安装ruby指南
-categories: [技术文章]
+categories: rvm ruby
 ---
 
 RVM安装
