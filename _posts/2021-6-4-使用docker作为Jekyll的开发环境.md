@@ -8,17 +8,18 @@ Jekyll是一个静态网站生成器，使用ruby语言编写，可以把Markdow
 docker hub上有jekyll的镜像
 
 新建Jekyll网站
-```bash
+{% highlight bash %}
 docker run --rm -v $PWD:/srv/jekyll -it jekyll/minimal jekyll new blog
-```
+{% endhighlight %}
 
 开发
-```bash
+{% highlight bash %}
 cd blog
 docker run --rm -v $PWD:/srv/jekyll -p 4000:4000 -it jekyll/minimal jekyll s -wD
-```
+{% endhighlight %}
 
 编译
-```bash
+{% highlight bash %}
+docker run --rm -v $PWD:/srv/jekyll -it jekyll/minimal jekyll new blog
 docker run --rm -v $PWD:/srv/jekyll -it jekyll/minimal jekyll b
-```
+{% endhighlight %}

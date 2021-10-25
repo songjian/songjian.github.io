@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "《Ruby基础教程v4》 学习笔记"
-categories: 技术文章 ruby
+categories: 笔记本 ruby
 ---
 
 ## 第5章 条件判断

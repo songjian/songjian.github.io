@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用dd命令迁移磁盘数据
-categories: [linux, 数据]
+categories: linux 数据
 image: /assets/img/dd-command.png
 ---
 

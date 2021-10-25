@@ -1,3 +1,4 @@
 pages:
   - {name: 'Home', url: '/'}
   - {name: 'Archive', url: '/archive'}
+  - {name: '收藏', url: '/favorites'}
