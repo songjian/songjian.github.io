@@ -3,7 +3,7 @@ analytics-id: #leave blank to not use Analytics
 
 #Subtitle
 subtitle:
-  active: true
+  active: false
   text: Windows、Linux、Debian、Ubuntu、Docker、Nginx、Vim、PHP、Python、Ruby、Gogo、Bash、Fish、Office、git、Wsl、IoT、MQTT知识记录
 
 #Nav 
