@@ -3,8 +3,9 @@ analytics-id: #leave blank to not use Analytics
 
 #Subtitle
 subtitle:
-  active: false
-  text: Windows、Linux、Debian、Ubuntu、Docker、Nginx、Vim、PHP、Python、Ruby、Gogo、Bash、Fish、Office、git、Wsl、IoT、MQTT知识记录
+  active: true
+  #text: Windows、Linux、Debian、Ubuntu、Docker、Nginx、Vim、PHP、Python、Ruby、Gogo、Bash、Fish、Office、git、Wsl、IoT、MQTT知识记录
+  text: 工作、生活、DIY
 
 #Nav 
 nav:
