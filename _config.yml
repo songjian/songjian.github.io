@@ -1,6 +1,6 @@
 # Site settings
-title: Codeorder
-description: "OpenSource 软件爱好者，ruby、python、php、bashscript"
+title: 宋健
+description: "开源软件爱好者，ruby、python、php、bashscript"
 url:  "" # Actual base url of the website
 baseurl: "/"           # url of the jekyll blog. e.g. if you set url to "mysite.com" and baseurl to "blog", the jekyll website will work on "mysite.com/blog"
 author:

@@ -1,5 +1,6 @@
 pages:
-  - {name: '主页', url: '/'}
-  - {name: '博客', url: '/archive'}
-  - {name: '收藏', url: '/favorites'}
-  - {name: '简历', url: '/resume'}
+  - {name: 'About', url: '/resume.html'}
+  - {name: 'Work', url: '/work.html'}
+  - {name: 'Blog', url: '/archive.html'}
+  - {name: 'Collection', url: '/favorites.html'}
+  - {name: 'GitHub', url: 'https://github.com/songjian'}
