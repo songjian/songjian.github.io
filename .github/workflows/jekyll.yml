@@ -27,5 +27,5 @@ jobs:
         ARGS: -az --exclude=/.git/ --exclude=*.sh
         KEY: ${{secrets.DEPLOY_KEY}}
         SOURCE: ./_site/
-        TARGET: /home/sj/abc/
+        TARGET: ~/www-root/codeorder.cn/
 
