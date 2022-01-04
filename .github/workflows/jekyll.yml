@@ -26,5 +26,5 @@ jobs:
         args:
         - "-avzr --delete"
         - "--exclude *.sh"
-        - "_site/ sj@113.120.108.155:~/abc/"
+        - "sj@113.120.108.155:~/abc/"
 
