@@ -23,5 +23,5 @@ jobs:
       env: 
         DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
       with:
-        args: "-avzr --delete --exclude .htaccess --exclude /uploads/ sj@113.120.108.155:~/abc/"
+        args: "-avzr --delete --exclude *.sh _site/ sj@113.120.108.155:~/abc/"
 
