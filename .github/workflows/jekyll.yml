@@ -19,12 +19,12 @@ jobs:
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         songjian1984/jekyll:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
     - name: rsync deployments
-      uses: contention/rsync-deployments@v1.0.0
+      uses: up9cloud/action-rsync@master
       env: 
-        DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
-      with:
-        args:
-        - "-avzr --delete"
-        - "--exclude *.sh"
-        - "sj@113.120.108.155:~/abc/"
+        HOST: 113.120.108.155
+        PORT: 26022
+        USER: sj
+        KEY: ${{secrets.DEPLOY_KEY}}
+        SOURCE: ./site/
+        TARGET: /home/sj/abc/
 
