@@ -24,7 +24,7 @@ jobs:
         HOST: 113.120.108.155
         PORT: 26022
         USER: sj
-        ARGS: -az --exclude=/.git/ --exclude=*.sh
+        ARGS: -az --delete --exclude=/.git/ --exclude=*.sh
         KEY: ${{secrets.DEPLOY_KEY}}
         SOURCE: ./_site/
         TARGET: ~/www-root/codeorder.cn/
