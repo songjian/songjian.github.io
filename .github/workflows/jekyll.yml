@@ -25,6 +25,6 @@ jobs:
         PORT: 26022
         USER: sj
         KEY: ${{secrets.DEPLOY_KEY}}
-        SOURCE: ./site/
+        SOURCE: site/
         TARGET: /home/sj/abc/
 
