@@ -19,24 +19,17 @@ paginate_path: "/page:num/"
 timezone: Asia/Shanghai
 
 exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - Dockerfile
-  - docker-compose.yml
-  - docker-compose.override.yml
-  - LICENSE
-  - LICENSE.txt
+  - CNAME
+  - README*
+  - Gemfile*
+  - node_modules/
+  - vendor/
+  - Dockerfile*
+  - docker-compose*
+  - LICENSE*
   - CHANGELOG.md
   - jekyll-yamt.gemspec
-  - reset.sh
-  - dev.sh
-  - publish-to-github.io.sh
+  - /*.sh
 
 #SEO
 twitter:
