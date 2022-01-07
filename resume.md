@@ -9,10 +9,9 @@ permalink: /resume
 ## 基本信息
 
 * 姓名: 宋健
-* 年龄: 36
-* 学历: 中专
+* 出生年月: 1984/11
 * 手机/微信: 13361285504
-* 邮箱：boss@codeorder.cn
+* 邮箱：songjian@codeorder.cn
 
 ## 工作经历&项目经验
 
