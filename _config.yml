@@ -1,16 +1,28 @@
 # Site settings
 title: 宋健
-description: "开源软件爱好者，ruby、python、php、bashscript"
-url:  "" # Actual base url of the website
-baseurl: "/"           # url of the jekyll blog. e.g. if you set url to "mysite.com" and baseurl to "blog", the jekyll website will work on "mysite.com/blog"
+description: "Free Software,ruby,python,php,bashscript"
+url:  "www.codeorder.cn" # Actual base url of the website
+baseurl: "/blog"           # url of the jekyll blog. e.g. if you set url to "mysite.com" and baseurl to "blog", the jekyll website will work on "mysite.com/blog"
 author:
   name: "sj"
-  email: "boss@codeorder.cn"
+  email: "songjian@codeorder.cn"
   url: "https://github.com/songjian"
 permalink: /:year/:month/:day/:title:output_ext
 
+owner: sj
+year: 2022
+
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+- jekyll-remote-theme
+- jekyll-paginate
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-sitemap
+
+
 #Plugins
-plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
+# plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
 
 #Pagination
 paginate: 5

@@ -4,8 +4,8 @@ title: 使用dd命令迁移磁盘数据
 categories: linux 数据
 image: /assets/img/dd-command.png
 ---
+``` bash
 
-{% highlight bash %}
 # 查看分区
 sudo fdisk -l
 
@@ -20,7 +20,8 @@ sudo dd if=/dev/sda of=~/data/ssd.img
 
 # 使用dd命令恢复镜像
 sudo dd if=~/data/ssd.img of=/dev/sda
-{% endhighlight %}
+
+```
 
 ## 总结
 
