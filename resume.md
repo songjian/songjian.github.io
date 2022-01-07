@@ -4,7 +4,7 @@ title: 简历
 permalink: /resume
 ---
 
-![](/assets/img/gnu.png)
+![](assets/img/gnu.png)
 
 ## 基本信息
 
