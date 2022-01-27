@@ -20,3 +20,6 @@ group: navigation2
 * [Docker — 从入门到实践](https://vuepress.mirror.docker-practice.com/)
 * https://easylist.to/ - 广告规则集
 * https://beyondgrep.com/ - ack is a grep-like source code search tool.
+
+## 网站
+* [鸠摩搜索](https://www.jiumodiary.com/)
