@@ -1,6 +1,6 @@
 ---
 layout: post
-title: linux安装gogs
+title: 二进制方式安装gogs
 categories: linux git gogs
 ---
 
