@@ -3,9 +3,21 @@ layout: default
 title: 作品
 ---
 # 案例
+
 ## 格桑花西部助学网
 ![](assets/img/gesanghua.png)
-国内老牌的资助西部贫困学生的项目
+* 负责网站架构设计
+* 主要逻辑代码的编写
+* 使用rails5+postgres开发
+
+---
+
+## 青基会茁壮成长
+![](assets/img/anta.png)
+* 负责网站架构设计
+* 主要逻辑代码的编写
+* 使用rails5+postgres开发
+
 ---
 
 ## Rails
