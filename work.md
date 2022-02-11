@@ -6,6 +6,7 @@ title: 作品
 
 ## 格桑花西部助学网
 ![](assets/img/gesanghua.png)
+[格桑花西部助学网](http://www.gesanghua.org/)
 * 负责网站架构设计
 * 主要逻辑代码的编写
 * 使用rails5+postgres开发
@@ -17,6 +18,28 @@ title: 作品
 * 负责网站架构设计
 * 主要逻辑代码的编写
 * 使用rails5+postgres开发
+
+---
+
+## 亿木课堂
+![](assets/img/yi-mooc.png)
+* 类慕课网项目
+* 负责网站架构设计
+* 主要逻辑代码的编写
+* 使用rails5+postgres开发
+* 视频点播对接腾讯云
+
+---
+
+## 潍坊商务局二维码追溯系统
+
+---
+
+## 海尔创客实验室
+
+* 负责网站架构设计
+* 主要逻辑代码的编写
+* 使用Laravel5+MySQL开发
 
 ---
 
