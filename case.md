@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 作品
+title: 案例
 ---
 # 案例
 
