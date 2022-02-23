@@ -3,5 +3,5 @@ pages:
   - {name: 'Case', url: '/case.html'}
   - {name: 'Blog', url: '/archive.html'}
   - {name: 'Collection', url: '/favorites.html'}
-  - {name: 'Economic Kanban', url: 'economic-kanban.html'}
+  - {name: 'Economic Data', url: 'economic-data.html'}
   - {name: 'GitHub', url: 'https://github.com/songjian'}
