@@ -21,7 +21,7 @@ python3 -m venv venv
 . venv/bin/activate
 ```
 
-### 推出虚拟环境
+### 退出虚拟环境
 
 ```bash
 deactivate
