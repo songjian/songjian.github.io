@@ -1,10 +1,10 @@
 ---
 layout: default
 title: 经济数据
-permalink: /economic-data
+permalink: /economic-kanban
 ---
 
-# 经济数据
+# 经济看板
 
 ## 2022年1月M1-M2剪刀差为-11.7
 
