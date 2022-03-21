@@ -1,6 +1,7 @@
 ---
 layout: post
 title: python虚拟环境和requirements文件生成与使用
+categories: python
 ---
 
 ## Python虚拟环境
