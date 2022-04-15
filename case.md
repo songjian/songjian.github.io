@@ -3,9 +3,10 @@ layout: default
 title: Work
 ---
 
-## 开源项目
+## Python包
 
-* [cn-stats](https://github.com/songjian/cnstats) - 获取中国国家统计局网站数据Python包
+* [cn-stats](https://pypi.org/project/cn-stats/) - 获取中国国家统计局网站数据Python包
+* [economic-data-tools](https://pypi.org/project/economic-data-tools/) - 从多个数据源获取经济数据的汇总Python包
 
 # 案例
 
