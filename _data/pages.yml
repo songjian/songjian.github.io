@@ -1,6 +1,6 @@
 pages:
   - {name: 'Resume', url: '/resume.html'}
-  - {name: 'Case', url: '/case.html'}
+  - {name: 'Work', url: '/work.html'}
   - {name: 'Blog', url: '/archive.html'}
   - {name: 'Collection', url: '/favorites.html'}
   - {name: 'GitHub', url: 'https://github.com/songjian'}
