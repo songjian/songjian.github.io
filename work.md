@@ -3,16 +3,24 @@ layout: default
 title: Work
 ---
 
-# 开源
-
-## Python
+## 开源Python项目
 
 * [cn-stats](https://pypi.org/project/cn-stats/) - 获取中国国家统计局网站数据Python包
 * [economic-data-tools](https://pypi.org/project/economic-data-tools/) - 从多个数据源获取经济数据的汇总Python包
 
-## PHP
+## 开源PHP项目
 
 * [fulusdk](https://github.com/songjian/fulusdk) - 实现的调用福禄API的SDK
+
+## Rails项目
+
+* [格桑花西部助学网](http://www.gesanghua.org/) - 国内老牌的公益网站改版项目，使用rails5+postgres开发。
+* [青基会茁壮成长](http://zzcz.wikiflyer.cn/) - 安踏公益捐助项目
+* [亿木课堂](http://www.ymooc.com.cn/) - 类慕课网视频学习网站
+
+## PHP项目
+
+* [m-lab海尔创客实验室](http://lab.haier.com/) - Laravel5+MySQL开发
 
 # 案例
 
