@@ -5,14 +5,14 @@ analytics-id: #leave blank to not use Analytics
 subtitle:
   active: true
   #text: Windows、Linux、Debian、Ubuntu、Docker、Nginx、Vim、PHP、Python、Ruby、Gogo、Bash、Fish、Office、git、Wsl、IoT、MQTT知识记录
-  text: 工作、生活、DIY
+  text: 本博客作者是一个经验丰富的Web开发者
 
 #Nav 
 nav:
   pages:
     active: true
   social:
-    active: false
+    active: true
 
 #Featured images in homepage
 featured-img:
