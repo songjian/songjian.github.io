@@ -4,12 +4,12 @@ description: "Free Software,ruby,python,php,bashscript"
 url:  "" # Actual base url of the website
 baseurl: ""           # url of the jekyll blog. e.g. if you set url to "mysite.com" and baseurl to "blog", the jekyll website will work on "mysite.com/blog"
 author:
-  name: "songj"
+  name: "sj"
   email: "songjian@codeorder.cn"
   url: "https://github.com/songjian"
 permalink: /:year/:month/:day/:title:output_ext
 
-owner: songj
+owner: sj
 year: 2022
 
 remote_theme: pages-themes/hacker@v0.2.0
