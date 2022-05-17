@@ -36,10 +36,30 @@
     {% endif %}
   </div>
 
+  <div id="gitalk-container"></div>
+
 {%- include footer.html -%}
 
 {% if site.data.settings.mathjax.active %}
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{% endif %}
+
+{% if site.data.settings.gitalk.active %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '06c294a093091992f7d5',
+      clientSecret: '6899b632a7b6edf4ff5171e1493154ed2658cf2d',
+      repo: 'https://github.com/songjian/blogtalk',
+      owner: 'songjian',
+      admin: ['songjian'],
+      id: location.pathname,      // Ensure uniqueness and length less than 50
+      distractionFreeMode: false  // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+  </script>
 {% endif %}
 </body>
 </html>
