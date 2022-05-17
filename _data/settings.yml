@@ -30,6 +30,10 @@ date-under-post:
 mathjax:
   active: true
 
+#gitalk
+gitalk:
+  active: true
+
 #Show related posts based on categories
 related-posts:
   active: true
