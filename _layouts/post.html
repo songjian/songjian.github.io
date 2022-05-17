@@ -34,9 +34,11 @@
     {% if site.data.settings.disqus.disqus_shortname %}
       {% include disqus.html %}
     {% endif %}
-  </div>
 
-  <div id="gitalk-container"></div>
+    {% if site.data.settings.gitalk.active %}
+      <div id="gitalk-container"></div>
+    {% endif %}
+  </div>
 
 {%- include footer.html -%}
 
@@ -51,7 +53,7 @@
     var gitalk = new Gitalk({
       clientID: '06c294a093091992f7d5',
       clientSecret: '6899b632a7b6edf4ff5171e1493154ed2658cf2d',
-      repo: 'https://github.com/songjian/blogtalk',
+      repo: 'blogtalk',
       owner: 'songjian',
       admin: ['songjian'],
       id: location.pathname,      // Ensure uniqueness and length less than 50
