@@ -22,8 +22,8 @@ permalink: /resume
 * 因为工作需要研究了RSA算法
 * 多做记录、多做文档，为同事之间的沟通提供基础
 * Docker镜像瘦身
-* 熟悉Go、Python、Ruby、PHP等语言
-* 日常维护一个用Jekyll搭建的博客
+* 除了PHP语言之外，还熟悉Ruby、Python和Go语言
+* 日常自己维护一个用Jekyll搭建的博客
 
 ## 基本信息
 
