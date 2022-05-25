@@ -11,7 +11,7 @@ permalink: /resume
 * 熟悉CI/CD
 * 熟悉项目管理流程
 * 熟悉敏捷开发——Scrum
-* 熟悉docker构建、发布和部署
+* 熟悉Docker构建、发布和部署
 * 使用ssh端口转发，打通内网网站的公网访问
 * 熟悉Git使用，Git服务搭建
 * 通过使用JWT，实现了管理后台的登录验证，将开发周期缩短了3周
@@ -22,6 +22,8 @@ permalink: /resume
 * 因为工作需要研究了RSA算法
 * 多做记录、多做文档，为同事之间的沟通提供基础
 * Docker镜像瘦身
+* 熟悉Go、Python、Ruby、PHP等语言
+* 日常维护一个用Jekyll搭建的博客
 
 ## 基本信息
 
