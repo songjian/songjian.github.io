@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 简历
-permalink: /resume
 ---
 
 ![](assets/img/gnu.png)
