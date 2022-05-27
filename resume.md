@@ -8,8 +8,6 @@ permalink: /
 
 [songjian@codeorder.cn](songjian@codeorder.cn)
 
-## 自我评价
-
 * 熟悉CI/CD
 * 熟悉项目管理流程
 * 熟悉敏捷开发——Scrum
@@ -26,6 +24,17 @@ permalink: /
 * Docker镜像瘦身
 * 除了PHP语言之外，还熟悉Ruby、Python和Go语言
 * 日常自己维护一个用Jekyll搭建的博客
+
+
+
+
+
+
+
+
+
+
+
 
 ## 基本信息
 

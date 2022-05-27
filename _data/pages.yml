@@ -1,6 +1,6 @@
 pages:
   - {name: 'About', url: '/'}
   - {name: 'Work', url: '/work.html'}
-  - {name: 'Blog', url: '/archive.html'}
+  - {name: 'Blog', url: '/blog.html'}
   - {name: 'Collection', url: '/favorites.html'}
   # - {name: 'GitHub', url: 'https://github.com/songjian'}
