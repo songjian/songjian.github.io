@@ -6,6 +6,8 @@ permalink: /
 
 ![](assets/img/gnu.png)
 
+[songjian@codeorder.cn](songjian@codeorder.cn)
+
 ## 自我评价
 
 * 熟悉CI/CD
