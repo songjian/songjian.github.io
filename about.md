@@ -9,6 +9,8 @@ permalink: /
 1984 年出生 <br />
 [songjian@codeorder.cn](songjian@codeorder.cn)
 
+## v0.0.1
+
 * 熟悉CI/CD
 * 熟悉项目管理流程
 * 熟悉敏捷开发——Scrum
@@ -25,3 +27,12 @@ permalink: /
 * Docker镜像瘦身
 * 除了PHP语言之外，还熟悉Ruby、Python和Go语言
 * 日常自己维护一个用Jekyll搭建的博客
+
+## v0.0.2
+
+* 2008 年开始接触 PHP ，一直作为主要开发语言；
+* 2014 年开始接触 Ruby on Rails；
+* 2014 年开始接触敏捷开发 —— Scrum；
+* 2019 年开始接触 Docker ；
+* 2021 年开始接触 Golang；
+* 2021 年因为工作需要，研究了RSA算法；
