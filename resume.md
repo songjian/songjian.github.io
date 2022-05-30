@@ -6,6 +6,10 @@ permalink: /
 
 ![](assets/img/gnu.png)
 
+宋健
+
+1984年出生
+
 [songjian@codeorder.cn](songjian@codeorder.cn)
 
 * 熟悉CI/CD
