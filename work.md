@@ -9,7 +9,7 @@ title: Work
 * [economic-data-tools](https://pypi.org/project/economic-data-tools/) - 从多个数据源获取经济数据的汇总Python包。
 * [fulusdk](https://github.com/songjian/fulusdk) - 用PHP实现的调用福禄API的SDK。
 * [软著工具](https://github.com/songjian/ruanzhu) - 整理申请软著用源代码文件的工具。
-* [IPV6-DDNS](https://github.com/songjian/ipv6-ddns) - 阿里云 IPV6 DDNS 脚本。
+* [IPV6-DDNS](https://github.com/songjian/ipv6-ddns) - 阿里云 IPV6 DDNS 动态域名解析。
 
 ## Ruby on Rails
 
