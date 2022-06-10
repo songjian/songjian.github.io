@@ -25,3 +25,4 @@ permalink: /
 * Docker镜像瘦身
 * 除了PHP语言之外，还熟悉Ruby、Python和Go语言
 * 日常自己维护一个用Jekyll搭建的博客
+* 精通 WordPress 网站的搭建和维护。
