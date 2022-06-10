@@ -7,7 +7,7 @@ permalink: /
 ![](assets/img/gnu.png) <br />
 宋健 <br />
 1984 年出生 <br />
-[songjian@codeorder.cn](songjian@codeorder.cn)
+songjian@codeorder.cn
 
 * 熟悉CI/CD
 * 熟悉项目管理流程
