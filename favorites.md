@@ -13,6 +13,7 @@ group: navigation2
 * [Rich：Python开发者的完美终端工具！](https://zhuanlan.zhihu.com/p/394105084)
 * [“纵向关系”解构为“横向关系”](https://www.zhihu.com/question/427148747/answer/1608548370)
 * [一档专注在 Emacs 社区的中文播客](https://emacstalk.github.io/)
+* [](https://cf020031308.github.io/blog/)
 
 ## 在线教程
 * [Docker — 从入门到实践](https://vuepress.mirror.docker-practice.com/)
