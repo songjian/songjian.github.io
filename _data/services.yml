@@ -1,0 +1,9 @@
+services:
+  - {service: 'linux运维'}
+  - {service: '网站部署'}
+  - {service: '旧网站搬家'}
+  - {service: '私有Git仓库'}
+  - {service: '持续集成环境'}
+  - {service: 'docker容器化'}
+  - {service: '网站开发'}
+  - {service: '网站运维'}
