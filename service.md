@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: IT服务
 header: service
 group: navigation
