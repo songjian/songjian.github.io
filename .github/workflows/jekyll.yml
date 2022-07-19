@@ -21,7 +21,6 @@ jobs:
     - name: rsync deployments
       uses: up9cloud/action-rsync@master
       env: 
-#         HOST: 123.168.94.138
         HOST: s2.local.codeorder.cn
         PORT: 26022
         USER: sj
@@ -29,4 +28,3 @@ jobs:
         KEY: ${{secrets.DEPLOY_KEY}}
         SOURCE: ./_site/
         TARGET: ~/www-root/codeorder.cn/
-
