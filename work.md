@@ -35,6 +35,7 @@ title: Work
 
 * [M-Lab海尔创客实验室](http://lab.haier.com/) - Laravel5 + MySQL 开发，负责架构设计和主要代码开发。
 
-## 其他
+## Python
 
-* 使用 `Python` 编写定时爬取非小号资讯的爬虫程序。
+* 爬取非小号资讯的爬虫程序。
+* 爬取 [AcNFT.xyz](https://acnft.xyz/) 上 `Free Mint` 数据的爬虫程序。
