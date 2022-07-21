@@ -4,6 +4,8 @@ title: 关于 宋健
 permalink: /
 ---
 
+热爱 **free software、open software! ruby、python、php、bashscript** 样样精通!!
+
 ![](assets/img/gnu.png) <br />
 宋健 <br />
 1984 年出生 <br />
