@@ -10,6 +10,7 @@ title: Work
 
 * [cn-stats](https://pypi.org/project/cn-stats/) - 获取中国国家统计局网站数据 Python 包。
 * [pynetease-finance](https://pypi.org/project/pynetease-finance/) - 获取网易财经网站数据的 Python 包。
+* [pysse](https://github.com/songjian/pysse) - 获取上海证券交易所网站数据的 Python 包。
 * [economic-data-tools](https://pypi.org/project/economic-data-tools/) - 从多个数据源获取经济数据的汇总 Python 包。
 
 ### Python
