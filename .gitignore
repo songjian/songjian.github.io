@@ -1,9 +1,7 @@
 vendor
 .bundle
-
 .sass-cache
 _site
-
 Thumbs.db
 .jekyll-cache
 *Zone.Identifier
