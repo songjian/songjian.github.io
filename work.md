@@ -12,6 +12,7 @@ title: Work
 * [pynetease-finance](https://pypi.org/project/pynetease-finance/) - 获取网易财经网站数据的 Python 包。
 * [pysse](https://github.com/songjian/pysse) - 获取上海证券交易所网站数据的 Python 包。
 * [pyszse](https://github.com/songjian/pyszse) - 获取深证证券交易所数据 Python 包。
+* [pychinamoney](https://github.com/songjian/pychinamoney) - 获取中国货币网数据的 Python 包。
 * [economic-data-tools](https://pypi.org/project/economic-data-tools/) - 从多个数据源获取经济数据的汇总 Python 包。
 
 ### Python
