@@ -23,9 +23,9 @@ title: Work
 
 * [fulusdk](https://github.com/songjian/fulusdk) - 用PHP实现的调用福禄 API 的 SDK 。
 
-### Bash
+### Shell
 
-* [整理软著申请代码的工具](https://github.com/songjian/ruanzhu) - 整理申请软著用源代码文件的工具。
+* [整理软著申请代码的工具](https://github.com/songjian/rz-tools) - `Bash`编写的整理软著用程序源代码文档的工具。
 
 ## 工作
 
