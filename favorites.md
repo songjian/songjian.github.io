@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 收藏
+title: 推荐
 header: jobs
 group: navigation2
 ---
@@ -14,18 +14,20 @@ group: navigation2
 * [“纵向关系”解构为“横向关系”](https://www.zhihu.com/question/427148747/answer/1608548370)
 * [一档专注在 Emacs 社区的中文播客](https://emacstalk.github.io/)
 
-## 在线教程
+## 教程
+* [计算机教育中缺失的一课](https://missing-semester-cn.github.io/)
 * [Docker — 从入门到实践](https://vuepress.mirror.docker-practice.com/)
 * https://easylist.to/ - 广告规则集
 * https://beyondgrep.com/ - ack is a grep-like source code search tool.
 
-## 网站
+
+## 电子书
 * [鸠摩搜索](https://www.jiumodiary.com/)
 
 ## 工具
 
 * [draw.io](https://app.diagrams.net/) - 画流程图的软件，可以在线使用。
 
-## 推荐博客
+## 博客
 
 * [https://cf020031308.github.io/blog/](https://cf020031308.github.io/blog/)
