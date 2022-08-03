@@ -22,6 +22,10 @@ group: navigation2
 ## 网站
 * [鸠摩搜索](https://www.jiumodiary.com/)
 
+## 工具
+
+* [draw.io](https://app.diagrams.net/) - 画流程图的软件，可以在线使用。
+
 ## 推荐博客
 
 * [https://cf020031308.github.io/blog/](https://cf020031308.github.io/blog/)
