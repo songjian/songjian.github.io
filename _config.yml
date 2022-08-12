@@ -1,11 +1,11 @@
 # Site settings
-title: 宋健
+title: 编码秩序
 description: "Free Software,ruby,python,php,bashscript"
 url:  "" # Actual base url of the website
 baseurl: ""           # url of the jekyll blog. e.g. if you set url to "mysite.com" and baseurl to "blog", the jekyll website will work on "mysite.com/blog"
 author:
   name: "sj"
-  email: "songjian@codeorder.cn"
+  email: "boss@codeorder.cn"
   url: "https://github.com/songjian"
 permalink: /:year/:month/:day/:title:output_ext
 
@@ -45,7 +45,7 @@ exclude:
 
 #SEO
 twitter:
-  username: 
+  username: songjia30256883
   card: 
 facebook:
   app_id: # Facebook app ID for Facebook insights
