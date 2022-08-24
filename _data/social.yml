@@ -4,7 +4,8 @@
 
 social:
   - {icon: 'github', type: "brand", link: 'https://www.github.com/songjian'}
+  - {icon: 'weixin', type: 'brand', link: 'shen2louweb'}
   - {icon: 'telegram', type: 'brand', link: 'https://t.me/l3mWdPJ'}
   # - {icon: 'linkedin', type: "brand", link: 'https://www.linkedin.com/in/健-宋-785785208/'}
-  - {icon: 'envelope', type: "solid", link: 'mailto:songjian@codeorder.cn'}
+  - {icon: 'envelope', type: "solid", link: 'mailto:boss@codeorder.cn'}
   - {icon: 'rss', type: "solid", link: "/feed.xml"}
