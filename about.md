@@ -11,6 +11,11 @@ permalink: /
 1984 年出生 <br />
 songjian@codeorder.cn
 
+* 数据爬取
+* 数据分析
+* Web开发
+* Telegram运营工具开发
+* Linux运维和Bash脚本开发
 * 熟悉CI/CD
 * 熟悉项目管理流程
 * 熟悉敏捷开发——Scrum
