@@ -8,7 +8,7 @@ permalink: /
 
 ![](assets/img/gnu.png)
 
-## 特长
+## 擅长
 
 * 数据爬取
 * 数据分析
