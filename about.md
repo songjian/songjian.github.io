@@ -1,15 +1,15 @@
 ---
 layout: default
-title: 关于 宋健
+title: 关于我
 permalink: /
 ---
 
-热爱 **free software、open software! ruby、python、php、bashscript** 样样精通!!
+<!-- 热爱 **free software、open software! ruby、python、php、bashscript** 样样精通!! -->
 
-![](assets/img/gnu.png) <br />
+<!-- ![](assets/img/gnu.png) <br />
 宋健 <br />
 1984 年出生 <br />
-songjian@codeorder.cn
+songjian@codeorder.cn -->
 
 ## 特长
 
@@ -17,7 +17,10 @@ songjian@codeorder.cn
 * 数据分析
 * Web开发
 * Telegram运营工具开发
-* Linux运维和Bash脚本开发
+* Linux运维和Shell脚本开发
+* Android自动化测试
+* Github Actions
+* Docker运维
 * 熟悉CI/CD
 * 熟悉项目管理流程
 * 熟悉敏捷开发——Scrum
