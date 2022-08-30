@@ -11,20 +11,17 @@ group: navigation2
 
 * [挖金子(Lode Runner)Web重制版](http://loderunnerwebgame.com/game/)
 
-## 教程
-
-* [命令行的艺术](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md) 一篇命令行的详细介绍，各种任务可以使用什么命令。
-
 ## 播客
 
 * [一档专注在 Emacs 社区的中文播客](https://emacstalk.github.io/)
 
 ## 教程
+
 * [计算机教育中缺失的一课](https://missing-semester-cn.github.io/)
 * [Docker — 从入门到实践](https://vuepress.mirror.docker-practice.com/)
 * https://easylist.to/ - 广告规则集
 * https://beyondgrep.com/ - ack is a grep-like source code search tool.
-
+* [命令行的艺术](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md) 一篇命令行的详细介绍，各种任务可以使用什么命令。
 
 ## 电子书
 
