@@ -1,6 +1,6 @@
 ---
 layout: post
-title: win10安装指南
+title: win10安装笔记
 categories: win10
 ---
 
