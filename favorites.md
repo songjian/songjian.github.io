@@ -26,6 +26,7 @@ group: navigation2
 ## 进阶教程
 
 * [Python进阶](https://eastlakeside.gitbook.io/interpy-zh/)
+* [Python Cookbook 3rd Edition Documentation](https://python3-cookbook.readthedocs.io/zh_CN/latest/index.html)
 
 ## 电子书
 
