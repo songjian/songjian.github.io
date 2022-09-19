@@ -5,3 +5,4 @@ pages:
   # - {name: 'Service', url: 'service.html'}
   - {name: '推荐', url: '/favorites.html'}
   # - {name: 'GitHub', url: 'https://github.com/songjian'}
+  - {name: 'Telegram', url: '/telegram'}
