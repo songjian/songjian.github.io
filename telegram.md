@@ -17,6 +17,6 @@ title: Telegram
 
 ## 购买方式
 
-* QQ群: [点击链接加入群聊【Telegram直登号协议号】](https://jq.qq.com/?_wv=1027&k=4w1c5epq)
+* QQ群: [Telegram直登号协议号](https://jq.qq.com/?_wv=1027&k=4w1c5epq)
 * 微信: shen2louweb
 * [TG直登号购买&使用交流群](https://t.me/tg_zdh_group)
