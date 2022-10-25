@@ -1,6 +1,6 @@
 ---
 layout: post
-title: windows创建软链接的命令mklink
+title: Windows创建软链接的命令mklink
 categories: windows
 ---
 最近在windows系统上做开发。通常在Linux系统上如果有几个项目公用一部分资源文件，可以创建一个资源的"链接"到需要使用的目录，但是在我印象里window只有“快捷方式”这么个东西。于是在网上搜索了一下。用于在windows系统上创建链接的命令是mklink。
