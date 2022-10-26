@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 关于我
-permalink: /
+permalink: /about
 ---
 
 <!-- 热爱 **free software、open software! ruby、python、php、bashscript** 样样精通!! -->
