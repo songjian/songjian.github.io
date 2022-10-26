@@ -5,7 +5,7 @@ url:  "" # Actual base url of the website
 baseurl: ""           # url of the jekyll blog. e.g. if you set url to "mysite.com" and baseurl to "blog", the jekyll website will work on "mysite.com/blog"
 author:
   name: "sj"
-  email: "boss@codeorder.cn"
+  email: "songjian@codeorder.cn"
   url: "https://github.com/songjian"
 permalink: /:year/:month/:day/:title:output_ext
 
@@ -13,12 +13,14 @@ owner: sj
 year: 2022
 
 remote_theme: pages-themes/hacker@v0.2.0
+# theme: minima
 plugins:
 - jekyll-remote-theme
 - jekyll-paginate
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-sitemap
+- rouge
 
 
 #Plugins
@@ -66,16 +68,17 @@ webmaster_verifications:
 lang: en_US
 
 #Highlighter
+markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-
   syntax_highlighter_opts:
-    css_class: 'highlight'
+    css_class: highlight
+    default_lang: console
     span:
       line_numbers: false
     block:
-      line_numbers: false
+      line_numbers: true
       start_line: 1
 
 #Sass

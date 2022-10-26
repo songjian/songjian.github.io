@@ -10,7 +10,7 @@ categories: windows WSL
 
 查看 WSL 版本 `wsl --version`，返回了wsl的使用帮助
 
-```sh
+```ruby
 PS C:\Users\001> wsl --version
 命令行选项无效: --version
 版权所有(c) Microsoft Corporation。保留所有权利。
