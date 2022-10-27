@@ -1,5 +1,0 @@
-{% assign split_symbol = '' %}
-{% for item in site.data.pages.pages %}
-{{ split_symbol }}&nbsp;&nbsp;<a href="{{ item.url | relative_url}}">{{ item.name }}</a> 
-{% assign split_symbol = '/' %}
-{% endfor %}
