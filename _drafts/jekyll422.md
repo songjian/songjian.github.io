@@ -9,7 +9,7 @@ categories: ruby jekyll
 /usr/gem/gems/jekyll-4.2.2/lib/jekyll/commands/serve/servlet.rb:3:in `require': cannot load such fil/usr/gem/gems/jekyll-4.2.2/lib/jekyll/commands/serve/servlet.rb:3:in `require': cannot load such file -- webrick (LoadError)
 ```
 
-原因是Webrick已从Ruby 3.0.0中删除，需要单独安装webrich:
+原因是Webrick已从Ruby 3.0.0中删除，需要单独安装webrick:
 
 ```sh
 bundle add webrick
