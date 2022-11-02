@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用Certbot更新SSL证书
-categories: ssl certbot
+categories: ssl certbot 'Let's Encrypt'
 ---
 
 ## Certbot
