@@ -3,9 +3,16 @@ layout: post
 title: gettext国际化
 categories: gettext
 ---
-[gettext](https://www.gnu.org/software/gettext/)是自由软件常用的国际化方案。
+[gettext](https://www.gnu.org/software/gettext/)是自由软件国际化的事实标准。
 
-## 安装
+
+#### 文件说明
+
+* `pot` 是模板文件
+* `po` 给翻译人员用的语言文件
+* `mo` 二级制语言文件，给程序读取用
+
+### 安装
 
 ```sh
 # Ubuntu
@@ -33,6 +40,7 @@ printf(_("My name is %s.\n"), my_name); // same, but shorter
 
 ## 参考
 
+* [GNU gettext 手册](https://www.gnu.org/software/gettext/manual/html_node/index.html)
 * [gettext - Wikipedia](https://en.wikipedia.org/wiki/Gettext)
 * [GNU gettext工具简介](https://www.atjiang.com/gnu-gettext-intro/)
 

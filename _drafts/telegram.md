@@ -83,3 +83,9 @@ Telegram要求新用户需要通过手机App用短信验证码注册。也就是
 #### 检测手机号的思路
 
 可以调用 `send_code_request` 接口，对 `banned`、`flood`和已注册的账号进行初步筛选。通过检测的手机号再调用 `import_contacts` 接口，进行二次检测。但是 `import_contacts` 接口调用有限制，而且需要一个用于检测的账号。
+
+-----
+
+最近有一个做telegram自动注册账号的工作，搞的非常头疼。
+
+先查了自动化的方案，telegram官方有pc、Android、iOS、网页客户端和。新版的PC客户端去掉了注册功能。
