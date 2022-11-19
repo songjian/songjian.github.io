@@ -7,41 +7,56 @@ categories: WordPress
 
 `WordPress` 使用开源软件中常用的 [gettext](https://www.gnu.org/software/gettext/) 做国际化。
 
-gettext 中有三种文件：
+#### gettext 用到三类文件：pot、po、mo
 
 * pot 语言文件模板
 * po 翻译人员能看懂的文本文档
-* mo 给程序读取的二进制文件
 
-## 制作
+### 安装gettext
 
-###  
+```sh
+sudo apt install gettext
+```
 
-官网或者网上下载的插件和主题包解压后，一般在 `languages` 目录里有 `.pot` 后缀的文件，这是插件或主题的语言模板文件，用命令使用 `pot` 制作 `po` 文件：
+### 获得pot
+
+`pot` 是语言的模板文件，用于制作不同语言的语言文件。一般存放在下载的插件或者主题的 `languages` 目录下。
+
+### 制作po
+
+`po` 文件是人类能看懂的文本格式文档。
+
+使用 `msginit` 命令和 `pot` 文件制作语言文件 `po`，例如，制作中文语言文件:
 
 ```sh
 msginit -i plugin.pot -l zh_CN -o plugin-zh_CN.po 
 ```
 
-`po` 文件是人类能看懂的文本格式文档。
+### 翻译语言文件
 
 可以使用文本编辑器或者GUI编辑工具编辑 `po` 文件，常用GUI编辑工具有：[Poedit](https://poedit.net/) 。
 
-语言文件翻译完，把 `po` 转成 `mo` 文件：
+### 制作mo
+
+语言文件翻译完，把 `po` 转成 `mo` 文件，`mo` 是给程序读取的二进制文件。
 
 ```sh
 msgfmt plugin-zh_CN.po -o plugin-zh_CN.mo
 ```
 
-最后上传制作好的语言文件
+### 上传mo
 
-插件语言文件上传路径：
+最后上传制作好的语言文件。
+
+#### 路径
+
+插件的语言文件路径：
 
 ```sh
 wp-content/languages/plugins/
 ```
 
-主题语言文件上传路径：
+主题的语言文件路径：
 
 ```sh
 wp-content/languages/themes/

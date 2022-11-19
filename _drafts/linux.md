@@ -192,3 +192,47 @@ https://docs.github.com/cn/developers/overview/managing-deploy-keys
 * [https://docs.victoriametrics.com/](https://docs.victoriametrics.com/)
 * [[推荐]你还在手撕微服务？快试试 go-zero 的微服务自动生成神器，这可能是我见过最简单好用的微服务框架](https://github.com/ruanyf/weekly/issues/1397)
 
+### 设置静态IP
+
+例如设置ip地址为 192.168.31.6
+
+sudo vim /etc/netplan/00-installer-config.yaml
+
+```
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    eno1:
+      dhcp4: false
+      addresses: [192.168.31.6/24]
+      optional: true
+      gateway4: 192.168.31.1
+      nameservers:
+              addresses: [223.5.5.5,223.6.6.6]
+  version: 2
+```
+
+### 其他
+
+[Linux自动挂载（配置/etc/fatab）详解](http://c.biancheng.net/view/900.html)
+
+[新建分区](https://blog.csdn.net/arenn/article/details/78866251)
+
+## Linux 终端快捷键
+
+```sh
+Ctrl+p # shell 中上一个命令，或者文本中移动到上一行
+Ctrl+n # shell 中下一个命令，或者文本中移动到下一行
+Ctrl+r # 往后搜索历史命令
+Ctrl+s # 往前搜索历史命令
+Ctrl+f # 光标前移
+Ctrl+b # 光标后退
+Ctrl+a # 到行首
+Ctrl+e # 到行尾
+Ctrl+d # 删除一个字符，删除一个字符，相当于通常的 Delete 键
+Ctrl+h # 退格删除一个字符，相当于通常的 Backspace 键
+Ctrl+u # 删除到行首
+Ctrl+k # 删除到行尾
+Ctrl+l # 类似 clear 命令效果
+Ctrl+y # 粘贴
+```
