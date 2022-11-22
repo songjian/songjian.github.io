@@ -1,12 +1,15 @@
 ---
 layout: post
-title: 使用Certbot更新SSL证书
+title: Let’s Encrypt和Certbot的使用
 categories: ssl certbot 'Let's Encrypt'
 ---
+[Let’s Encrypt](https://letsencrypt.org/)是免费颁发TLS证书的机构（CA）。支持使用 [ACME 协议](https://www.rfc-editor.org/rfc/rfc8555) 的软件获取证书。
 
-## Certbot
+[Certbot](https://certbot.eff.org/)是Let’s Encrypt推荐的ACME客户端。
 
-### 自动更新
+## Certbot使用
+
+### 安装
 
 1. 安装 Certbot 环境
 
@@ -26,7 +29,7 @@ categories: ssl certbot 'Let's Encrypt'
     /opt/certbot/bin/pip install --upgrade pip
     ```
 
-1. 安装certbot
+1. 安装Certbot
 
     ```sh
     /opt/certbot/bin/pip install certbot certbot-nginx
@@ -38,23 +41,23 @@ categories: ssl certbot 'Let's Encrypt'
     ln -s /opt/certbot/bin/certbot /usr/bin/certbot
     ```
 
-1. 配置
+1. 配置Nginx
 
     ```sh
     certbot --nginx
     ```
 
-1. 设置自动更新
+### 自动更新
 
-    ```sh
-    echo "0 0,12 * * * root /opt/certbot/bin/python -c 'import random; import time; time.sleep(random.random() * 3600)' && certbot renew -q" | tee -a /etc/crontab > /dev/null
-    ```
+```sh
+echo "0 0,12 * * * root /opt/certbot/bin/python -c 'import random; import time; time.sleep(random.random() * 3600)' && certbot renew -q" | tee -a /etc/crontab > /dev/null
+```
 
-1. 测试
+#### 测试
 
-    ```sh
-    certbot renew --dry-run
-    ```
+```sh
+certbot renew --dry-run
+```
 
 ### 手动更新
 
