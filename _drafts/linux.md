@@ -236,3 +236,30 @@ Ctrl+k # 删除到行尾
 Ctrl+l # 类似 clear 命令效果
 Ctrl+y # 粘贴
 ```
+
+## History 历史记录
+
+### 查看历史命令
+
+```sh
+history
+```
+
+### 前后查找命令
+
+```sh
+history | less
+```
+
+### 过滤命令
+
+```sh
+history | grep command
+```
+
+### 快速执行历史命令
+
+```sh
+!1991
+```
+
