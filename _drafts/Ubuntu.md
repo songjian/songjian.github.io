@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RedmiBook Pro 15 @Ubuntu
-categories: Linux Ubuntu 'RedmiBook Pro 15'
+categories: Linux 
 ---
 周末把工作用的电脑RedmiBook Pro 15换成Ubuntu 22.04系统。
 
