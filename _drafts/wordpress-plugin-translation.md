@@ -1,16 +1,17 @@
 ---
 layout: post
-title: 制作WordPress语言文件
+title: 制作WordPress的语言文件
 categories: WordPress
 ---
 `WordPress` 有很多插件和主题可以下载使用，但有时候插件或者主题中没有提供你需要的语言，这个时候我们就需要自己动手制作语言文件。
 
-`WordPress` 使用开源软件中常用的 [gettext](https://www.gnu.org/software/gettext/) 做国际化。
+`WordPress` 做国际化使用开源软件中常用的 [gettext](https://www.gnu.org/software/gettext/) 工具。
 
 #### gettext 用到三类文件：pot、po、mo
 
-* pot 语言文件模板
-* po 翻译人员能看懂的文本文档
+* pot：语言模板文件。
+* po：翻译人员能看懂的文本文档。
+* mo：给程序读取的二进制文件。
 
 ### 安装gettext
 
