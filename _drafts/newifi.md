@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Newifi Mini @OpenWrt
-categories: OpenWrt
+categories: 软路由 OpenWrt
 ---
 ### 安装 OpenWrt
 
@@ -11,6 +11,12 @@ categories: OpenWrt
 4. 在浏览器中输入 192.168.1.1 进入恢复模式页面，选择之前下载的 bin 文件即可开始刷机
 5. 将 PC 端设备 IP 重置为自动获取模式，即可开始常规 OpenWrt 配置了
 
+### 常用操作
+
+#### 更新软件包
+```sh
+opkg update
+```
 
 ### 参考
 
