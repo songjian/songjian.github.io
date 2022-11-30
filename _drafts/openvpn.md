@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 安装和配置OpenVPN
+title: OpenVPN设置
 categories: OpenVPN
 ---
 ## 参考
@@ -14,18 +14,39 @@ categories: OpenVPN
 * [Setting up a VPN client IBM Cloud Docs](https://cloud.ibm.com/docs/vpc?topic=vpc-setting-up-vpn-client)
 * [How To Set Up an OpenVPN Server on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-14-04)
 
-## 安装OpenVPN和EasyRSA
+## 安装
 
-1. 安装`OpenVPN`
+#### 安装OpenVPN
+
 ```sh
-apt install openvpn
+sudo apt install openvpn
 ```
-2. 安装`EasyRSA`
-  * [https://github.com/OpenVPN/easy-rsa](https://github.com/OpenVPN/easy-rsa)
+#### 安装easy-rsa
 
-3. gnome 任务栏通知
+[https://github.com/OpenVPN/easy-rsa](https://github.com/OpenVPN/easy-rsa)
+
+#### 安装Gnome任务栏通知（可选）
 ```sh
-apt install network-manager-openvpn-gnome
+sudo apt install network-manager-openvpn-gnome
+```
+
+## Systemd
+
+#### Server端开机启动
+```sh
+sudo systemctl enable openvpn@server
+```
+#### Client端开机启动
+```sh
+sudo systemctl enable openvpn@client
+```
+
+### 启动停止
+```sh
+# 启动
+sudo systemctl start openvpn@server
+# 停止
+sudo systemctl stop openvpn@server
 ```
 
 ## 配置文件
@@ -34,8 +55,9 @@ apt install network-manager-openvpn-gnome
 * 客户端配置文件在 `/etc/openvpn/client`
 * 并且每种模式都有自己的systemd单元，即 `openvpn@client.service` 和 `openvpn@server.service`
 
-## 制作证书
+## easy-rsa
 
+### 生成和签名服务器ca证书
 ```sh
 ./easyrsa init-pki
 ./easyrsa build-ca
@@ -45,20 +67,25 @@ apt install network-manager-openvpn-gnome
 openvpn --genkey --secret ta.key
 ```
 
-### 制作客户端证书
-
+### 生成和签名客户端证书
+有密码证书
 ```sh
 ./easyrsa gen-req a-client
-./easyrsa gen-req b-client
 ./easyrsa sign client a-client
+```
+无密码证书
+```sh
+./easyrsa gen-req b-client nopass
 ./easyrsa sign client b-client
 ```
 
-### 客户端证书文件打包
+### 打包证书文件
 
 ```sh
 cd /etc/openvpn
-tar cvf client.tar ta.key easy-rsa/pki/ca.crt easy-rsa/pki/private/client.key easy-rsa/pki/issued/client.crt
+tar cvf client.tar ta.key easy-rsa/pki/ca.crt \
+    easy-rsa/pki/private/client.key \
+    easy-rsa/pki/issued/client.crt
 ```
 
 ## 配置文件示例
@@ -66,26 +93,13 @@ tar cvf client.tar ta.key easy-rsa/pki/ca.crt easy-rsa/pki/private/client.key ea
 * [客户端配置文件示例](https://github.com/OpenVPN/openvpn/blob/master/sample/sample-config-files/client.conf)
 * [服务端配置文件示例](https://github.com/OpenVPN/openvpn/blob/master/sample/sample-config-files/server.conf)
 
-## 启动OpenVPN服务器
-
-```sh
-# 启动
-systemctl start openvpn@server
-# 检查状态
-systemctl status openvpn@server
-```
-
 ## 问题
 
-Ubuntu开机提示输入"Enter Private Key Password:"
+#### Ubuntu开机提示: `Enter Private Key Password:`
 
-### Ubuntu客户端配置
-
-systemd启动时需要密码，可以使用下面命令输入
+系统启动时需要输入证书密码
 
 ```sh
-sudo  systemd-tty-ask-password-agent
+sudo systemd-tty-ask-password-agent
 ```
-
-
 
