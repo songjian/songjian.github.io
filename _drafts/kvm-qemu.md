@@ -27,6 +27,18 @@ QEMU可以作为计算机模拟器或者虚拟机使用。
 
 `virsh` 是kvm一个管理工具包。
 
+查看网络有关的命令帮助
+
+```sh
+virsh help newwork
+```
+
+编辑网络配置文件
+
+```sh
+virsh net-edit <default>
+```
+
 查看网络名称
 
 ```sh
