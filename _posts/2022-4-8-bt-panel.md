@@ -1,17 +1,20 @@
 ---
 layout: post
-title: 手动调用宝塔acme_v2.py获取证书
-categories: acme python
+title: 宝塔面板使用记录
+categories: Linux
 ---
+#### 查看默认登录地址
 
-## 生成证书
-
-```bash
-/www/server/panel/pyenv/bin/python /www/server/panel/class/acme_v2.py --domain codeorder.cn,www.codeorder.cn --type http --path /www/wwwroot/codeorder.cn
+```sh
+/etc/init.d/bt default
 ```
 
-## 复制到cert目录
+#### 手动调用 acme_v2.py 获取证书
 
-```bash
-cp -r /www/server/panel/vhost/letsencrypt/codeorder.cn /www/server/panel/vhost/cert/
+```sh
+# 生成证书
+/www/server/panel/pyenv/bin/python /www/server/panel/class/acme_v2.py --domain example.cn,www.example.cn --type http --path /www/wwwroot/example.cn
+
+# 复制证书到cert目录
+cp -r /www/server/panel/vhost/letsencrypt/example.cn /www/server/panel/vhost/cert/
 ```
