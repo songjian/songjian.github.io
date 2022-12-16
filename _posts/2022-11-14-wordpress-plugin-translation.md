@@ -33,6 +33,14 @@ sudo apt install gettext
 msginit -i plugin.pot -l zh_CN -o plugin-zh_CN.po 
 ```
 
+### 合并po
+
+如果翻译文件有新版本，可以合并新旧版po文件。
+
+```sh
+msgcat -o plugin-zh_CN.po old.po new.po
+```
+
 ### 翻译语言文件
 
 可以使用文本编辑器或者GUI编辑工具编辑 `po` 文件，常用GUI编辑工具有：[Poedit](https://poedit.net/) 。
