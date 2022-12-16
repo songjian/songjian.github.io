@@ -4,8 +4,7 @@ title: 使用dd命令迁移磁盘数据
 categories: linux 数据
 image: /assets/img/dd-command.png
 ---
-``` bash
-
+``` sh
 # 查看分区
 sudo fdisk -l
 
@@ -23,7 +22,7 @@ sudo dd if=~/data/ssd.img of=/dev/sda
 
 ```
 
-## 总结
+### 感受
 
-* 使用dd命令迁移硬盘数据速度较慢，250g硬盘制作镜像加恢复用时10小时
-* Windows的磁盘工具不能把空白空间划到现有分区里，需要使用第三方工具
+1. 使用dd命令迁移硬盘数据速度较慢，250g硬盘制作镜像和恢复用时10小时；
+2. Windows的磁盘工具不能把空白空间划到现有分区里，还需要使用第三方工具。
