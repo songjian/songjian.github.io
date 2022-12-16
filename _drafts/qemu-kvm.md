@@ -1,19 +1,17 @@
 ---
 layout: post
-title: KVM/QEMU
+title: QEMU/KVM
 categories: KVM
 ---
 KVM是Kernel-based Virtual Machine的缩写，意思是基于内核的虚拟机。
+
+QEMU可以作为计算机模拟器或者虚拟机使用。
 
 ## 安装
 
 ```sh
 sudo apt install qemu-kvm libvirt-bin bridge-utils virt-manager virtinst virt-viewer
 ```
-
-## QEMU
-
-QEMU可以作为计算机模拟器或者虚拟机使用。
 
 ## 工具
 
@@ -27,6 +25,12 @@ QEMU可以作为计算机模拟器或者虚拟机使用。
 
 `virsh` 是kvm一个管理工具包。
 
+列出所有虚拟机
+
+```sh
+virsh list --all
+```
+
 查看网络有关的命令帮助
 
 ```sh
@@ -36,7 +40,7 @@ virsh help newwork
 编辑网络配置文件
 
 ```sh
-virsh net-edit <default>
+virsh net-edit default
 ```
 
 查看网络名称

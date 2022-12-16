@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 宋健的博客
+title: 编码秩序的博客
 email: songjian@codeorder.cn
 description: >- # this means to ignore newlines until "baseurl:"
-  Linux/Python/PHP/Ruby。
+  GNU/Linux,Vim,Ruby,Python,Golang,Rusy,PHP,JavaScript,HTML都懂点。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: songjia30256883

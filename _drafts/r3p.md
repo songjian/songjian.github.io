@@ -1,6 +1,6 @@
 ---
 layout: post
-title: R3P
+title: R3P @OpenWrt
 categories: OpenWrt
 ---
 ### 安装OpenWrt
@@ -17,6 +17,22 @@ PubkeyAcceptedAlgorithms +ssh-rsa
 
 #### 下载固件
 
-[下载固件](https://firmware-selector.openwrt.org/?version=22.03.2&target=ramips%2Fmt7621&id=xiaomi_mi-router-3-pro)
+[https://firmware-selector.openwrt.org/?version=22.03.2&target=ramips%2Fmt7621&id=xiaomi_mi-router-3-pro](https://firmware-selector.openwrt.org/?version=22.03.2&target=ramips%2Fmt7621&id=xiaomi_mi-router-3-pro)
 
 第一次安装选择Factory
+
+#### 安装
+
+* 下载的固件放入U盘根目录；
+* 拔掉电源插头再插入，按住reset按钮，等待指示灯黄色闪烁，松开reset按钮；
+* 等到指示灯蓝色长亮，用网线接入路由器，访问192.168.1.1。
+
+#### Dynamic DNS
+
+安装DDNS
+
+```sh
+opkg install ddns-scripts-cloudflare luci-app-ddns
+reboot
+```
+
