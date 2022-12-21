@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: 友情链接
 ---
 [William Goodspeed 的博客](https://hackflow.org/)
