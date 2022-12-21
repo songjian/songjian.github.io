@@ -5,7 +5,7 @@ categories: WordPress
 ---
 # 服务器配置记录(8.218.143.243)
 
-## 操作系统信息
+### 操作系统信息
 
 ```sh
 lsb_release -a
@@ -16,7 +16,7 @@ Release:        20.04
 Codename:       focal
 ```
 
-## 创建 www 用户
+### 创建 www 用户
 
 ```sh
 useradd -m -s /bin/bash www
@@ -25,7 +25,7 @@ useradd -m -s /bin/bash www
 usermod -a -G sudo www
 ```
 
-## 安装 ruby 环境
+### 安装 ruby 环境
 
 国外
 ```sh
@@ -38,13 +38,13 @@ usermod -a -G sudo www
 ./scripts/Debian_Ubuntu/install_rvm-cn.sh
 ```
 
-## 安装 PostgreSQL
+### 安装 PostgreSQL
 
 ```sh
 ./scripts/Debian_Ubuntu/install_postgresql.sh
 ```
 
-### 设置 PostgreSQL 密码
+#### 设置 PostgreSQL 密码
 
 ```sh
 su postgres -c psql
@@ -63,14 +63,14 @@ chown -R www:www /wwwruby/
 
 ## PHP
 
-### 安装 PHPENV
+### 安装PHPENV和PHP
 
 ```sh
 cd gnu-linux-scripts/
 ./scripts/Debian_Ubuntu/install_phpenv_php-build.sh
 ```
 
-### 安装依赖
+#### 安装依赖
 
 ```sh
 apt install -y libxml2-dev libbz2-dev libcurl4-openssl-dev libpng-dev libjpeg-dev libonig-dev libtidy-dev libxslt-dev libzip-dev imagemagick redis-server libpq-dev pkg-config libsqlite3-dev libedit-dev libreadline-dev openssl libssl-dev gnupg2 nginx nodejs npm
@@ -78,7 +78,7 @@ apt install -y libxml2-dev libbz2-dev libcurl4-openssl-dev libpng-dev libjpeg-de
 apt install libxml2-dev libbz2-dev libpcre3-dev libssl-dev zlib1g-dev libmcrypt-dev libmhash-dev libmhash2 libcurl4-openssl-dev libpq-dev libpq5 libncurses5-dev  libglib2.0-dev lsb-release ca-certificates apt-transport-https libpng-dev libjpeg-dev libxml2 libxml2-dev openssl bison autoconf sqlite bzip2 libicu-dev libxslt1-dev libzip-dev libtidy-dev libtool
 ```
 
-### 安装常用 PHP 版本
+#### 安装常用 PHP 版本
 
 ```sh
 phpenv install -s 7.4.29
@@ -93,7 +93,7 @@ phpenv install -s 7.4.29 --with-openssl=/usr/local/opt/openssl@1.0/lib64
 
 7.4.29 需要 OpenSSL1.1，Ubuntu2204 自带 OpenSSL3.0，无法编译成功。
 
-### 修改 PHP 上传文件大小
+#### 修改 PHP 上传文件大小
 
 修改 `php.ini`
 ```INI
@@ -101,31 +101,31 @@ upload_max_filesize = 50M
 post_max_size = 50M
 ```
 
-### 创建 PHP 工作目录
+#### 创建PHP工作目录
 
 ```sh
 mkdir /wwwphp
 chown -R www:www /wwwphp/
 ```
 
-### 运行 PHP-FPM
+#### 运行 PHP-FPM
 
-修改 php-fpm 运行身份
+找到PHP-FPM配置文件
 
 ```sh
 find / -name php-fpm.conf  
 ```
 
+启动PHP-FPM
+
 ```sh
 php-fpm
 ```
 
-## 安装数据库
-
-### MySQL
+### 安装数据库MySQL
 
 ```sh
-apt install mysql-server
+sudo apt install mysql-server
 ```
 
 创建管理用户
@@ -140,16 +140,16 @@ GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost';
 create database icoin123;
 ```
 
-## WordPress 站点
+### 安装WordPress站点
 
-### 下载 WordPress 程序
+下载 WordPress 程序
 
 ```sh
 wget https://cn.wordpress.org/latest-zh_CN.tar.gz
 tar -xzvf latest-zh_CN.tar.gz
 ```
 
-### 新建 WordPress 站点
+新建 WordPress 站点
 
 ```sh
 su - www
@@ -160,7 +160,7 @@ cd [PROJECT_NAME]
 phpenv local 7.4.29
 ```
 
-### 新建 Nginx 配置文件
+#### 新建 Nginx 配置文件
 
 `root` 身份执行
 
@@ -209,15 +209,14 @@ ln -s /etc/nginx/sites-available/teleworld.app /etc/nginx/sites-enabled/
 nginx -t && nginx -s reload
 ```
 
-## 备份
+### 备份
 
-### tar 完整备份服务器重要目录
+tar完整备份服务器重要目录
 
 ```sh
 tar -czvf /backup/backup.tar.gz /root/ /home/ /var/spool/mail/ /etc/
 ```
-
-### tar 完整备份整个服务器（排除不需要备份的目录）
+tar 完整备份整个服务器（排除不需要备份的目录）
 
 ```sh
 tar -czvf /backup/full-backup.tar.gz --exclude=/backup \
@@ -226,7 +225,7 @@ tar -czvf /backup/full-backup.tar.gz --exclude=/backup \
 --exclude=/tmp --exclude=/swapfile /
 ```
 
-### tar 增量备份整个服务器
+tar 增量备份整个服务器
 
 #### 完整
 
