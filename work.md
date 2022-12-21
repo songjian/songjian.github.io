@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Work
+title: 我的工作
 ---
-# Works
+# 我的工作
 
-## 开源项目
+## 开源
 
 ### PyPI
 
