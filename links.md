@@ -1,10 +1,7 @@
 ---
-layout: post
-title: 关注的Blog
-categories: follows
+layout: default
+title: 友情链接
 ---
-## 关注
-
 [William Goodspeed 的博客](https://hackflow.org/)
 
 [Elmagnifico's Blog](http://elmagnifico.tech)

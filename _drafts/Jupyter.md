@@ -1,0 +1,86 @@
+---
+layout: post
+title: Jupyter配置
+categories: Android
+---
+## 设置密码
+```sh
+jupyter notebook password
+```
+
+### 通用服务器后台运行
+```sh
+nohup jupyter notebook --ip=0.0.0.0 --notebook-dir=~/workspace/workspace_python > jupyter.log 2>&1 &
+```
+
+## 结束进程-方法1
+```sh
+ps -aux | grep jupyter
+kill -9 [进程id]
+```
+
+## 结束进程-方法2
+页面顶部点击【Quit】按钮
+ 
+## matplotlib图表显示中文
+拷贝字体
+
+```sh
+# 本地
+rsync -av /mnt/c/Windows/Fonts/simhei.ttf /home/sj/.local/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/
+
+# 远程
+scp /mnt/c/Windows/Fonts/simhei.ttf sj@192.168.31.93:/home/sj/.local/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/
+```
+
+得到matplotlib缓存路径
+
+```Python
+import matplotlib as plt
+plt.get_cachedir()
+```
+
+删除matplotlib缓存
+```sh
+rm -rf ~/.cache/matplotlib/
+```
+
+获得配置文件路径
+
+```Python
+plt.matplotlib_fname()
+```
+
+修改配置文件
+```sh
+vim /home/sj/.local/lib/python3.8/site-packages/matplotlib/mpl-data/matplotlibrc
+```
+
+修改内容
+```
+font.family         : sans-serif
+font.sans-serif     : SimHei
+axes.unicode_minus  : False
+```
+
+#### 开机启动文章参考
+
+[https://xu-jinzhong.gitee.io/2019/12/20/jupyterlab-startup/](https://xu-jinzhong.gitee.io/2019/12/20/jupyterlab-startup/)
+
+### Nginx配置
+
+```nginx
+location /jupyter/ {
+        proxy_pass http://jupyter;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-Scheme $scheme;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+# WebSocket support
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+proxy_read_timeout 120s;
+        proxy_next_upstream error;
+    }
+```

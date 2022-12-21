@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 记录一个weditor安装错误
+title: 记一个weditor安装错误
 categories: Python weditor
 ---
 weditor是用于Android元素定位的Python软件包。

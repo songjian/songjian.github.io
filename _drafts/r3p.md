@@ -3,6 +3,12 @@ layout: post
 title: R3P @OpenWrt
 categories: OpenWrt
 ---
+### 获得SSH登录密码
+
+0. 去[miwifi.com](http://www.miwifi.com/miwifi_download.html)下载小米路由器Pro 开发版ROM；
+0. 放入fat32格式U盘根目录；
+0. 路由器通电，按住RESET键。
+
 ### 安装OpenWrt
 
 #### 问题: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1,diffie-hellman-group14-sha1
@@ -36,3 +42,10 @@ opkg install ddns-scripts-cloudflare luci-app-ddns
 reboot
 ```
 
+#### aria2
+
+安装
+
+```sh
+opkg install luci-i18n-aria2-zh-cn
+```

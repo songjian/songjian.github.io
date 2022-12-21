@@ -1,13 +1,14 @@
 ---
 layout: post
-title: wordpress
+title: WordPress
 categories: WordPress
 ---
-### 认识
+### 架构
+
+WordPress是Core/Plugin架构。类似Vim，由程序和插件组成。
 
 #### 插件
 
-WordPress是Core/Plugin架构，类似架构有Vim，由主程序和插件组成。
 
 要实现的功能应该放在一个新的Plugin里面。如果修改Core代码，你新作的功能就没有可移植性。
 
