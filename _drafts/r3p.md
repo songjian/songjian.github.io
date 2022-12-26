@@ -49,3 +49,9 @@ reboot
 ```sh
 opkg install luci-i18n-aria2-zh-cn
 ```
+
+#### 备份nftables
+
+```sh
+ssh r3p nft list ruleset > r3p-nftables.nft
+```

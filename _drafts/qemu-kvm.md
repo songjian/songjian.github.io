@@ -3,7 +3,7 @@ layout: post
 title: QEMU/KVM
 categories: KVM
 ---
-KVM是Kernel-based Virtual Machine的缩写，意思是基于内核的虚拟机。
+KVM是Kernel-based Virtual Machine的缩写，意思是基于内核的虚拟机。从2.6.20版开始加入Linux内核。
 
 QEMU可以作为计算机模拟器或者虚拟机使用。
 
@@ -72,3 +72,4 @@ virsh net-destroy default
 ```sh
 virsh autostart [虚拟机名称]
 ```
+
