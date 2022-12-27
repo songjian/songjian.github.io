@@ -41,7 +41,10 @@ title: 我的工作
 
 * 爬取非小号资讯的爬虫程序。
 * 爬取 [AcNFT.xyz](https://acnft.xyz/) 上 `Free Mint` 数据的爬虫程序。
+* 制作WordPress [WorkScout](https://themeforest.net/item/workscout-job-board-wordpress-theme/13591801)主题翻译文件，Github仓库[workscout-theme-translation](https://github.com/songjian/workscout-theme-translation)
 
-#### 其他
+#### Telegram
 
-* Telegram自动注册程序。
+* 批量注册账号工具。
+* 群成员采集工具。
+
