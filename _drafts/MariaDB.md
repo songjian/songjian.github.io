@@ -3,6 +3,14 @@ layout: post
 title: MariaDB
 categories: DB
 ---
+### 安装
+
+```sh
+sudo apt install mariadb-server
+```
+
+### 常用命令
+
 ```sql
 -- 创建用户
 CREATE USER 'username'@'host' IDENTIFIED BY 'password';

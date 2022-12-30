@@ -13,39 +13,39 @@ categories: ssl certbot 'Let's Encrypt'
 
 1. 安装 Certbot 环境
 
-    ```sh
-    # Debian,Ubuntu
-    apt update
-    apt install python3 python3-venv libaugeas0
+```sh
+# Debian,Ubuntu
+apt update
+apt install python3 python3-venv libaugeas0
 
-    # Fedora,CentOS
-    dnf install python3 augeas-libs
-    ```
+# Fedora,CentOS
+dnf install python3 augeas-libs
+```
 
 1. 设置Python虚拟环境
 
-    ```sh
-    python3 -m venv /opt/certbot/
-    /opt/certbot/bin/pip install --upgrade pip
-    ```
+```sh
+python3 -m venv /opt/certbot/
+/opt/certbot/bin/pip install --upgrade pip
+```
 
 1. 安装Certbot
 
-    ```sh
-    /opt/certbot/bin/pip install certbot certbot-nginx
-    ```
+```sh
+/opt/certbot/bin/pip install certbot certbot-nginx
+```
 
 1. 准备
 
-    ```sh
-    ln -s /opt/certbot/bin/certbot /usr/bin/certbot
-    ```
+```sh
+ln -s /opt/certbot/bin/certbot /usr/bin/certbot
+```
 
 1. 配置Nginx
 
-    ```sh
-    certbot --nginx
-    ```
+```sh
+certbot --nginx
+```
 
 ### 自动更新
 

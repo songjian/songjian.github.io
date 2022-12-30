@@ -137,6 +137,11 @@ root# iptables -t nat -A PREROUTING --in-interface eth_int -p tcp -j REDSOCKS
 
 ```sh
 nft add chain ip nat REDSOCKS
+nft add rule ip nat REDSOCKS counter return
+nft add rule ip nat REDSOCKS ip daddr 10.0.0.0/8 counter return
+nft add rule ip nat REDSOCKS ip daddr 100.64.0.0/10 counter return
+nft add rule ip nat REDSOCKS ip daddr 127.0.0.0/8 counter return
+nft add rule ip nat REDSOCKS ip daddr 169.254.0.0/16 counter return
 ```
 
 
