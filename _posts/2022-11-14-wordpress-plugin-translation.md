@@ -21,7 +21,11 @@ sudo apt install gettext
 
 ### 获得pot
 
-`pot` 是语言的模板文件，用于制作不同语言的语言文件。一般存放在下载的插件或者主题的 `languages` 目录下。
+`pot` 是语言的模板文件，用于制作不同语言的语言文件。一般存放在下载的插件或者主题的 `languages` 目录下。如果没有，可以用xgettext命令生成:
+
+```sh
+xgettext -k__ -p languages/ -o tgchannels.pot --from-code=UTF-8 tgchannels.php
+```
 
 ### 制作po
 
