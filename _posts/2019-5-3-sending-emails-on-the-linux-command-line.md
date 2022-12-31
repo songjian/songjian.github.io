@@ -19,7 +19,7 @@ TLS_CA_FILE=/etc/ssl/certs/ca-certificates.crt
 UseTLS=Yes
 UseSTARTTLS=Yes
 AuthUser=no-reply@codeorder.cn
-AuthPass=jU2AappVymBPRxs9gGMzdlvYkPxmd
+AuthPass=******************************
 AuthMethod=LOGIN
 FromLineOverride=yes
 ```
