@@ -6,7 +6,7 @@ categories: Linux
 ### 安装
 
 ```sh
-apt install -y mailutils ssmtp
+sudo apt install -y mailutils ssmtp
 ```
 
 编辑 `/etc/ssmtp/ssmtp.conf`
