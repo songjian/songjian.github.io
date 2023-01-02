@@ -55,3 +55,14 @@ opkg install luci-i18n-aria2-zh-cn
 ```sh
 ssh r3p nft list ruleset > r3p-nftables.nft
 ```
+
+### 开机自动挂载硬盘
+
+```sh
+vi /etc/fstab
+```
+写入
+```sh
+UUID=50261A4D261A3486 /mnt/sda2 ntfs-3g defaults 0 0
+UUID=6AF46653F4662215 /mnt/sdb2 ntfs-3g defaults 0 0
+```
