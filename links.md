@@ -4,9 +4,9 @@ title: 友情链接
 ---
 ### 博客
 
-[Free Software Fans](https://fsfans.club/)
-
 [William Goodspeed 的博客](https://hackflow.org/)
+
+[UlyC](https://ulyc.github.io/)
 
 [Elmagnifico's Blog](http://elmagnifico.tech)
 
@@ -16,7 +16,9 @@ title: 友情链接
 
 [鲁晨光的科学和哲学研究](https://blog.sciencenet.cn/?2056)
 
-[UlyC](https://ulyc.github.io/)
+### 社区
+
+[Free Software Fans](https://fsfans.club/)
 
 ### 工具
 
