@@ -27,11 +27,12 @@ title: 我的工作
 
 ### 工作
 
-#### RoR
+#### Ruby on Rails
 
 * [格桑花西部助学网](http://www.gesanghua.org/) - 老牌公益网站改版项目，使用 rails5 + postgres 开发，把原本使用“论坛帖子”管理的捐助用程序把捐助流程标准化。我负责需求分析、架构设计和主要代码的编写。
 * [青基会茁壮成长](http://zzcz.wikiflyer.cn/) - 青基会和安踏合作的公益项目，每年为山区孩子捐助一批运动服装和鞋子，受捐助学校通过网站申请和反馈捐助情况；我负责网站流程、架构的设计，和主要代码的开发。
 * [亿木课堂](http://www.ymooc.com.cn/) - 亿木课堂是类慕课网的视频学习网站，视频点播对接了腾讯云。
+* 相亲婚恋管理平台
 
 #### PHP
 
@@ -42,9 +43,3 @@ title: 我的工作
 * 爬取非小号资讯的爬虫程序。
 * 爬取 [AcNFT.xyz](https://acnft.xyz/) 上 `Free Mint` 数据的爬虫程序。
 * 制作WordPress [WorkScout](https://themeforest.net/item/workscout-job-board-wordpress-theme/13591801)主题翻译文件，Github仓库[workscout-theme-translation](https://github.com/songjian/workscout-theme-translation)
-
-#### Telegram
-
-* 批量注册账号工具。
-* 群成员采集工具。
-
