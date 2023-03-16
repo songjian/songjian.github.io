@@ -5,4 +5,4 @@ _site
 Thumbs.db
 .jekyll-cache
 *Zone.Identifier
-.swp
+*.swp
