@@ -17,7 +17,7 @@ title: 我的工作
 
 * [songjian/ddns](https://github.com/songjian/ddns) - 阿里云DDNS。
 * [songjian/pyvCard](https://github.com/songjian/pyvCard) - Python操作Android手机联系人的包。
-* [songjian/aurora-android-app](https://github.com/songjian/aurora-android-app) - 用Python写的管理极光VPN的Android客户端软件。
+* [songjian/aurora-android-app](https://github.com/songjian/aurora-android-app) - 用Python写的管理极光Android客户端软件。
 
 #### Composer
 
