@@ -1,7 +1,6 @@
 ---
 layout: post
-title: 自制投影仪
-categories: DIY
+title: 自制手机投影仪
 image: /assets/img/projector01.jpg
 ---
 
