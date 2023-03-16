@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 制作WordPress的语言文件
+title: 自己动手制作WordPress的语言文件
 categories: WordPress
 ---
 `WordPress` 有很多插件和主题可以下载使用，但有时候插件或者主题中没有提供你需要的语言，这个时候我们就需要自己动手制作语言文件。
