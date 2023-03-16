@@ -15,7 +15,9 @@ title: 我的工作
 
 #### Python
 
-* [songjian/ddns](https://github.com/songjian/ddns) - 阿里云DDNS
+* [songjian/ddns](https://github.com/songjian/ddns) - 阿里云DDNS。
+* [songjian/pyvCard](https://github.com/songjian/pyvCard) - Python操作Android手机联系人的包。
+* [songjian/aurora-android-app](https://github.com/songjian/aurora-android-app) - 用Python写的管理极光VPN的Android客户端软件。
 
 #### Composer
 
@@ -24,6 +26,10 @@ title: 我的工作
 #### Shell
 
 * [整理软著申请代码的工具](https://github.com/songjian/rz-tools) - `Bash`编写的整理软著用程序源代码文档的工具。
+
+#### WordPress
+
+* [wp-theme-workscout-language-pack](https://github.com/songjian/wp-theme-workscout-language-pack) - WordPress主题，WorkScout语言包。
 
 ### 工作
 
@@ -38,8 +44,11 @@ title: 我的工作
 
 * [M-Lab海尔创客实验室](http://lab.haier.com/) - Laravel5 + MySQL 开发，负责架构设计和主要代码开发。
 
+#### webman
+
+* 凤凰汇商城后端
+
 #### Python
 
 * 爬取非小号资讯的爬虫程序。
 * 爬取 [AcNFT.xyz](https://acnft.xyz/) 上 `Free Mint` 数据的爬虫程序。
-* 制作WordPress [WorkScout](https://themeforest.net/item/workscout-job-board-wordpress-theme/13591801)主题翻译文件，Github仓库[workscout-theme-translation](https://github.com/songjian/workscout-theme-translation)
