@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Windows Subsystem for Linux 使用总结
-categories: products
+categories: WSL
 ---
 
 Windows Subsystem for Linux 简称 wsl
