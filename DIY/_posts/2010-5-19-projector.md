@@ -4,6 +4,8 @@ title: 自制手机投影仪
 image: /assets/img/projector01.jpg
 ---
 
+Github仓库地址：[songjian/diy-mobile-phone-projector](https://github.com/songjian/diy-mobile-phone-projector)
+
 ![示意图](/assets/img/projector00.png)
 自制投影仪的文章网上挺多的，但是看文章的介绍，大多使用鞋盒（体积较大），另外需要播放软件支持做画面镜像，不然投出的画面是左右颠倒的。
 
