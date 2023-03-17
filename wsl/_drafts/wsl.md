@@ -3,6 +3,7 @@ layout: post
 title: WSL入门指南
 categories: WSL
 ---
+## Forward
 
 这系列文章是帮助你了解在Windows上使用WSL（Windows子系统）作为开发环境，来开发原本是运行在Linux下的程序。如果你的技术栈一直是基于Windows系统，可能你不需要阅读这篇文章，如果你用到的技术栈依赖Linux或者你想把开发环境从MacOS和Linux等类Unix系统转到Windows，这篇文章可能对你有用。
 
