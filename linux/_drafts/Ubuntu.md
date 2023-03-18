@@ -3,6 +3,12 @@ layout: post
 title: RedmiBook Pro 15 @Ubuntu
 categories: RedmiBookPro15
 ---
+## Windows
+
+原机带了Win10系统，后来升级了Win11
+
+## Linux
+
 ## 换系统的原因
 
 周末把公司配的RedmiBook Pro 15笔记本电脑换成了Ubuntu 22.04系统。我平时主要工作偏向后端开发，Windows日常使用不太方便，开发时需要通过Docker Desktop和WSL，系统用久了，WSL磁盘读取速度会很慢，因为Docker Desktop和WSL都依赖Hyper-v，属于磁盘的使用效率不搞
