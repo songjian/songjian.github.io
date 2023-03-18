@@ -1,20 +1,11 @@
 ---
 layout: post
 title: RedmiBook Pro 15 @Ubuntu
-categories: Linux Ubuntu
+categories: RedmiBookPro15
 ---
-```sh
-$ stat /lost+found/
-  文件：/lost+found/
-  大小：16384     	块：32         IO 块：4096   目录
-设备：10302h/66306d	Inode：11          硬链接：2
-权限：(0700/drwx------)  Uid：(    0/    root)   Gid：(    0/    root)
-最近访问：2022-10-30 13:07:02.000000000 +0800
-最近更改：2022-10-30 13:07:02.000000000 +0800
-最近改动：2022-10-30 13:07:02.000000000 +0800
-创建时间：2022-10-30 13:07:02.000000000 +0800
-```
-周末把工作用的电脑RedmiBook Pro 15换成Ubuntu 22.04系统。
+## 换系统的原因
+
+周末把公司配的RedmiBook Pro 15笔记本电脑换成了Ubuntu 22.04系统。我平时主要工作偏向后端开发，Windows日常使用不太方便，开发时需要通过Docker Desktop和WSL，系统用久了，WSL磁盘读取速度会很慢，因为Docker Desktop和WSL都依赖Hyper-v，属于磁盘的使用效率不搞
 
 安装过程非常顺畅，官网下载ISO文件，写入U盘，使用图形安装引导程序，没有遇到问题，网络网卡也能正确驱动。
 
