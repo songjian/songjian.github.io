@@ -3,17 +3,6 @@ layout: post
 title: OpenVPN设置
 categories: OpenVPN
 ---
-## 参考
-
-* [UbuntuHelp:OpenVPN/zh](https://wiki.ubuntu.com.cn/UbuntuHelp:OpenVPN/zh)
-* [使用 OpenVPN 实现远程访问](https://shaocheng.li/posts/2019/07/02/)
-* [利用OpenVPN搭建简单VPN](https://james-yip.github.io/2017/11/23/construct-VPN/)
-* [openvpn2.3.12安装与easy-rsa3的使用](https://blog.51cto.com/icenycmh/1867641)
-* [2x HOW TO](https://openvpn.net/community-resources/how-to/)
-* [Easy-RSA 3 Quickstart README](https://github.com/OpenVPN/easy-rsa/blob/master/README.quickstart.md)
-* [Setting up a VPN client IBM Cloud Docs](https://cloud.ibm.com/docs/vpc?topic=vpc-setting-up-vpn-client)
-* [How To Set Up an OpenVPN Server on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-14-04)
-
 ## 安装
 
 #### 安装OpenVPN
@@ -103,3 +92,13 @@ tar cvf client.tar ta.key easy-rsa/pki/ca.crt \
 sudo systemd-tty-ask-password-agent
 ```
 
+## 参考
+
+* [UbuntuHelp:OpenVPN/zh](https://wiki.ubuntu.com.cn/UbuntuHelp:OpenVPN/zh)
+* [使用 OpenVPN 实现远程访问](https://shaocheng.li/posts/2019/07/02/)
+* [利用OpenVPN搭建简单VPN](https://james-yip.github.io/2017/11/23/construct-VPN/)
+* [openvpn2.3.12安装与easy-rsa3的使用](https://blog.51cto.com/icenycmh/1867641)
+* [2x HOW TO](https://openvpn.net/community-resources/how-to/)
+* [Easy-RSA 3 Quickstart README](https://github.com/OpenVPN/easy-rsa/blob/master/README.quickstart.md)
+* [Setting up a VPN client IBM Cloud Docs](https://cloud.ibm.com/docs/vpc?topic=vpc-setting-up-vpn-client)
+* [How To Set Up an OpenVPN Server on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-14-04)

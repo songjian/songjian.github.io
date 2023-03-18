@@ -3,24 +3,6 @@ layout: post
 title: 网络安全、加密、数字签名、SSH、SSL
 categories: 网络
 ---
-## 参考
-
-### 入门
-
-* [数字签名是什么？](http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)
-* [图解SSL/TLS协议](http://www.ruanyifeng.com/blog/2014/09/illustration-ssl.html)
-* [SSL/TLS协议运行机制的概述](https://www.ruanyifeng.com/blog/2014/02/ssl_tls.html)
-* [密码学笔记](http://www.ruanyifeng.com/blog/2006/12/notes_on_cryptography.html)
-* [RSA算法原理（一）](http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html)
-* [RSA算法原理（二）](http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html)
-
-### 进阶
-
-* [SSH、SSL与HTTPS](https://www.jianshu.com/p/5e3f9dfd2cb4)
-* [openssl制作免费SSL证书](https://www.jianshu.com/p/1448fb8ff0ad)
-* [自己制作SSL证书的方法](https://zhuanlan.zhihu.com/p/371804469)
-* [rfc5246](https://datatracker.ietf.org/doc/html/rfc5246)
-
 ## 涉及概念
 
 * 非对称加密
@@ -64,3 +46,16 @@ categories: 网络
 * `.crt` 证书文件，certificate 的缩写。
 * `.crl` 证书吊销列表，Certificate Revocation List 的缩写。
 * `.pem` 用于导出，导入证书时候的证书的格式，有证书开头，结尾的格式。
+
+## 参考
+
+* [数字签名是什么？](http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)
+* [图解SSL/TLS协议](http://www.ruanyifeng.com/blog/2014/09/illustration-ssl.html)
+* [SSL/TLS协议运行机制的概述](https://www.ruanyifeng.com/blog/2014/02/ssl_tls.html)
+* [密码学笔记](http://www.ruanyifeng.com/blog/2006/12/notes_on_cryptography.html)
+* [RSA算法原理（一）](http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html)
+* [RSA算法原理（二）](http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html)
+* [SSH、SSL与HTTPS](https://www.jianshu.com/p/5e3f9dfd2cb4)
+* [openssl制作免费SSL证书](https://www.jianshu.com/p/1448fb8ff0ad)
+* [自己制作SSL证书的方法](https://zhuanlan.zhihu.com/p/371804469)
+* [rfc5246](https://datatracker.ietf.org/doc/html/rfc5246)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Arch Linux
+title: 安装ArchLinux
 categories: Linux
 ---
 ### 参考
