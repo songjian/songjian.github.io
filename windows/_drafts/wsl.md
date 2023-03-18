@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WSL入门指南
-categories: WSL
+categories: wsl
 ---
 ## Forward
 
