@@ -1,20 +1,15 @@
 ---
 layout: post
-title: 安装ArchLinux
+title: ArchLinux安装记录
 categories: Linux
 ---
-### 参考
-
-* [Installation guide](https://wiki.archlinux.org/title/Installation_guide)
-* [2021年 Arch Linux 中文安装教程 \| 超详细解说](https://www.youtube.com/watch?v=NLVNFHGyBEU)
-
-### 要点
+### 概念
 
 * UEFI 规范要求支持 FAT12、FAT16 和 FAT32 文件系统（[参见 UEFI 规范 2.9 版 13.3.1.1 小节](https://uefi.org/sites/default/files/resources/UEFI_Spec_2_9_2021_03_18.pdf#G17.1019485)），但每个符合规范的厂商可以选择添加对其他文件系统的支持；比如，苹果公司（Apple）的 Mac 支持（并默认使用）他们自己的 HFS+ 或 APFS 文件系统。
 * vmlinux 是一个包括 linux kernel 的静态链接的可运行文件。文件类型是 linux 接受的可运行文件格式之中的一个(ELF、COFF或a.out)。
 * vmlinuz 是可引导的，压缩的 linux 内核，“vm” 代表的 “virtual memory” 。vmlinuz是vmlinux经过gzip和objcopy(*)制作出来的压缩文件。vmlinuz不仅是一个压缩文件，并且在文件的开头部分内嵌有gzip解压缩代码。所以你不能用gunzip 或 gzip –dc解包vmlinuz。vmlinuz是一个统称。有两种详细的表现形式：zImage和bzImage(big zImage)。zImage和bzImage的差别在于本身的大小和载入到内存的地址不同。zImage是0~640KB，bzImage是1M以上。假设内核比較小。那么能够採用zImage 或bzImage之中的一个，两种方式引导的系统运行时是同样的。大的内核採用bzImage。不能採用zImage。
 
-### 准备
+### 准备安装U盘
 
 #### 镜像写入U盘
 
@@ -22,9 +17,17 @@ categories: Linux
 dd if=archlinux-2022.06.01-x86_64.iso of=/dev/sdc bs=1M
 ```
 
-#### 连接 SSH 安装
+### 连接 SSH 安装
 
-使用 `passwd` 创建一个简单密码，然后查询 IP，可以通过终端登录安装。
+使用U盘引导进入系统后就可以开始安装了，如果觉得在电脑上操作不方便，可以给root账号设置一个密码，然后查询 IP，就可以通过SSH远程登录安装。
+
+```sh
+# 设置密码
+passwd
+
+# 查询ip地址
+ip a
+```
 
 #### 硬盘分区
 
@@ -144,3 +147,8 @@ umount -R /mnt
 ```sh
 reboot
 ```
+
+### 参考
+
+* [Installation guide](https://wiki.archlinux.org/title/Installation_guide)
+* [2021年 Arch Linux 中文安装教程 \| 超详细解说](https://www.youtube.com/watch?v=NLVNFHGyBEU)
