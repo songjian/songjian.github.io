@@ -1,8 +1,43 @@
 ---
 layout: post
-title: SSH端口转发
-categories: SSH
+title: 使用ssh端口转发，将局域网内主机端口转发到公网服务器上
+categories: ssh
 ---
+### 更新 2022年4月9日
+
+周末邻居装修导致我家突然断电了，服务器断电关机，之前家里NAS和阿里云服务器上搭了几条SSH隧道，使用autossh -R port:host:port host2 -Nf这种方式，后台运行的隧道多了就有点乱，正好借着这次服务器关机，把之前的隧道整理一下，统一写入客户端ssh的config配置文件中，以后链接到同一台服务器上的多条隧道就可以执行像这样的一条语句autossh host-tunnel -Nf，比之前简洁不少。
+
+#### 整理前
+
+```sh
+# nextcloud
+autossh -R 23408:localhost:3002 betterhr -Nf
+# nginx
+autossh -R 23409:localhost:80 betterhr -Nf
+```
+
+#### 整理后
+
+```conf
+# ~/.ssh/config
+Host s2-tunnel
+  Hostname 47.104.128.147
+  User yy
+  RemoteForward 23408 localhost:3002
+  RemoteForward 23409 localhost:80
+```
+
+执行
+```sh
+autossh s2-tunnel -Nf
+```
+
+#### 动态代理
+
+```sh
+ssh -D 2121 shop -N
+```
+
 ### 参考
 
 * [SSH 端口转发](https://wangdoc.com/ssh/port-forwarding.html#%E8%BF%9C%E7%A8%8B%E8%BD%AC%E5%8F%91)
@@ -36,27 +71,4 @@ autossh -R 23409:localhost:80 betterhr -Nf
 
 * AutoSSH 是一种用以对 SSH 登录进行安全地自动化的软件。
 
-### 更新 2022年4月9日
 
-周末邻居装修导致我家突然断电了，服务器断电关机，之前家里NAS和阿里云服务器上搭了几条SSH隧道，使用autossh -R port:host:port host2 -Nf这种方式，后台运行的隧道多了就有点乱，正好借着这次服务器关机，把之前的隧道整理一下，统一写入客户端ssh的config配置文件中，以后链接到同一台服务器上的多条隧道就可以执行像这样的一条语句autossh host-tunnel -Nf，比之前简洁不少。
-
-#### 整理前
-
-```sh
-# nextcloud
-autossh -R 23408:localhost:3002 betterhr -Nf
-# nginx
-autossh -R 23409:localhost:80 betterhr -Nf
-```
-
-#### 整理后
-
-```sh
-autossh s2-tunnel -Nf
-```
-
-#### 动态代理
-
-```sh
-ssh -D 2121 shop -N
-```
