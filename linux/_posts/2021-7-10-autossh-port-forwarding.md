@@ -21,7 +21,7 @@ autossh -R 23409:localhost:80 betterhr -Nf
 ```conf
 # ~/.ssh/config
 Host s2-tunnel
-  Hostname 47.104.128.147
+  Hostname 47.104.128.157
   User yy
   RemoteForward 23408 localhost:3002
   RemoteForward 23409 localhost:80
