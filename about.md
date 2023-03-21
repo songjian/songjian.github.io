@@ -7,6 +7,11 @@ permalink: /about/
 
 程序员，自由软件爱好者！
 
+有问题欢迎交流，联系方式：
+
+* email: root at mail.codeorder.cn
+* TG: [telegram me](https://t.me/kw3p9)
+
 #### 给自己打个广告
 
 * 数据爬取
