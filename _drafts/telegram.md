@@ -17,7 +17,13 @@ categories: Telegram
 15:12
  
 Telegram官网MTProto协议介绍的`Creating an Authorization Key`部分有提到用户注册时按键的间隔时间会作为生成`Authorization Key`的随机数。
- 
+
+解决方案
+
+1. 使用tg官方接口注册
+2. tportable(tg pc客户端) + PyAutoGUI(操作鼠标键盘的Python包)
+3. Android客户端 + uiautomator2(Android应用自动化测试工具)
+
 ### 尝试过的方案
 
 * PyAutoGUI + tportable （PC客户端）;
@@ -83,9 +89,3 @@ Telegram要求新用户需要通过手机App用短信验证码注册。也就是
 #### 检测手机号的思路
 
 可以调用 `send_code_request` 接口，对 `banned`、`flood`和已注册的账号进行初步筛选。通过检测的手机号再调用 `import_contacts` 接口，进行二次检测。但是 `import_contacts` 接口调用有限制，而且需要一个用于检测的账号。
-
------
-
-最近有一个做telegram自动注册账号的工作，搞的非常头疼。
-
-先查了自动化的方案，telegram官方有pc、Android、iOS、网页客户端和。新版的PC客户端去掉了注册功能。
