@@ -7,10 +7,17 @@ permalink: /about/
 
 程序员，自由软件爱好者！
 
+勉强算是全栈工程师，PHP，Python，Ruby，Rust都能写，爬虫，CRUD，Bootstrap，Bash脚本，Vim插件开发都略懂一些，各种Web框架，Rails，Django，Flask，webman，ThinkPHP，Laravel基本精通，基于Linux和Docker的运维也算精通。
+
 有问题欢迎交流，联系方式：
 
 * email: root at mail.codeorder.cn
 * TG: [telegram me](https://t.me/kw3p9)
+
+期待成为的角色：
+
+* Technical experts
+* Full Stack Engineer
 
 #### 给自己打个广告
 
