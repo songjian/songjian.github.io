@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 代理
+title: VPN的操作代理
 ---
 ## 大纲
 
