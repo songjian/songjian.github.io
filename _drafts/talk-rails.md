@@ -2,6 +2,12 @@
 layout: post
 title: 如何部署一个旧Rails项目？
 ---
+## 大纲
+
+* 自动打包Docker镜像
+* 使用Github Actions自动部署
+* 拉取镜像重启docker-compose
+
 ## 起因
 
 Ubuntu22.04系统上带的Ruby3.0,如果需要旧版Ruby，一般需要使用RVM或者rbenv下载Ruby源代码，然后编译。
