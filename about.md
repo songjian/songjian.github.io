@@ -3,6 +3,9 @@ layout: page
 title: 关于我
 permalink: /about/
 ---
+我是codeorder
+
+程序员，自由软件爱好者！
 
 #### 给自己打个广告
 
@@ -31,4 +34,3 @@ permalink: /about/
 * 除了PHP语言之外，还熟悉Ruby、Python和Go语言
 * 日常自己维护一个用Jekyll搭建的博客
 * 精通 WordPress 网站的搭建和维护。
-
