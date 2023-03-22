@@ -1,7 +1,7 @@
 ---
 layout: post
 title: wsl安装指南
-categories: wsl 
+categories: wsl
 ---
 
 ## 安装
