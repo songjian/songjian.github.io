@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 操作代理软件的Python包
+title: 自己写了一个操作代理软件的Python包
 categories: python
 ---
 ## Forward
