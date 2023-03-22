@@ -1,9 +1,9 @@
 ---
 layout: post
 title: WSL开启Systemd支持
-categories: windows WSL
+tags: wsl
+categories: wsl
 ---
-
 9月份的时候网上看新闻，说WSL（Linux子系统）已经支持Systemd。
 
 按照网上的介绍WSL需要 0.67.6 或更高版本。
