@@ -4,15 +4,15 @@ title: 使用podman-compose部署Rails5.1
 tags: podman docker rails
 categories: podman
 ---
+## Forward
+
 我工作的电脑上已经用Podman替换了Docker，Docker内置compose（容器编排工具），Podman没有，需要单独安装一个[podman-compose](https://github.com/containers/podman-compose)，podman-compose可以兼容docker-compose.yml配置文件，只是podman因为没有root权限的守护进程，所以 `restart: always` 这项用不了。
 
-## 前言
-
-Rails5.1可以用Ruby2.3或者Ruby2.4的镜像。
-
-## 配置
+## Podman compose配置
 
 Dockerfile
+
+Rails5.1可以用Ruby2.3或者Ruby2.4的镜像。
 
 ```dockerfile
 FROM ruby:2.4
@@ -106,13 +106,22 @@ services:
       - ./public/uploads:/app/public/uploads
 ```
 
-## 开发环境
+## 日常使用
 
-设置一个方便本地调用的脚本：localenv
+设置一个方便本地调用的脚本
 
 ```sh
+# localenv
+export http_proxy=http://192.168.1.202:19180
+export https_proxy=http://192.168.1.202:19180
 alias rake='podman-compose run app rake'
 alias rails='podman-compose run app rails'
 alias bundle='podman-compose run app bundle'
 alias bash='podman-compose run app bash'
+```
+
+本地开发前先执行
+
+```sh
+. localenv
 ```
