@@ -16,3 +16,9 @@ sudo apt install -t ${VERSION_CODENAME}-backports cockpit
 [http://localhost:9090](http://localhost:9090)
 
 ![Cockpit](/assets/images/Cockpit/cockpit.jpg)
+
+Podman容器
+
+```sh
+sudo apt install cockpit-podman
+```
