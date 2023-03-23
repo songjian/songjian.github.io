@@ -1,7 +1,8 @@
 ---
 layout: post
-title: ArchLinux安装记录
-categories: Linux
+title: 记录Arch Linux安装
+tags: ["Arch Linux"]
+categories: arch
 ---
 ### 概念
 
