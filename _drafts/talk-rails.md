@@ -1,23 +1,118 @@
 ---
 layout: post
-title: 如何部署一个旧Rails项目？
+title: 使用podman-compose部署Rails5.1
+tags: podman docker rails
+categories: podman
 ---
-## 大纲
+我工作的电脑上已经用Podman替换了Docker，Docker内置compose（容器编排工具），Podman没有，需要单独安装一个[podman-compose](https://github.com/containers/podman-compose)，podman-compose可以兼容docker-compose.yml配置文件，只是podman因为没有root权限的守护进程，所以 `restart: always` 这项用不了。
 
-* 自动打包Docker镜像
-* 使用Github Actions自动部署
-* 拉取镜像重启docker-compose
+## 前言
 
-## 起因
+Rails5.1可以用Ruby2.3或者Ruby2.4的镜像。
 
-Ubuntu22.04系统上带的Ruby3.0,如果需要旧版Ruby，一般需要使用RVM或者rbenv下载Ruby源代码，然后编译。
+## 配置
 
-Ruby2.3我在Ubuntu20.04系统上编译成功过，但是在Ubuntu22.04解决了所有编译报错之后，使用中还是有问题。最终我还是选择使用Docker部署项目。
+Dockerfile
 
-## Forward
+```dockerfile
+FROM ruby:2.4
 
-最近公司要开一个新项目，人手不足，项目中一些功能，以前开发的项目已经实现过，所以准备在以前的项目基础上进行开发。
+WORKDIR /app
+VOLUME ["/app/log", "/app/public/images", "/app/public/uploads"]
 
-旧项目使用的是Rails 5，Ruby版本2.3，Ubuntu 22.04系统上使用旧版Ruby比较麻烦。虽然有RVM和rbenv等Ruby环境管理工具。编译旧版Ruby还是遇到了一些困难。
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
+    && apt-get install -y --no-install-recommends \
+        nodejs \
+    && apt-get install -y ghostscript fonts-freefont-otf \
+    && rm -rf /var/lib/apt/lists/* \
+    && npm i -g yarn \
+    && gem install bundler -v 1.16.6
 
-Ruby 2.3需要openssl1.0，Ubuntu 22.04带的openssl3.0，openssl新版和旧版变动很大，不能使用新版编译，所以需要先下载openssl1.0进行编译，再在编译Ruby 2.3时指定openssl1.0目录。修复所有编译中的报错之后，终于编译成功，但是使用中还是报了一些错误。最后还是选择Docker作为开发和部署的环境。
+
+COPY Gemfile* ./
+RUN bundle install
+COPY . .
+RUN bundle exec rake assets:precompile
+```
+
+docker-compose.yml
+```yml
+version: '3'
+services:
+  app:
+    image: songjiancodeorder/teletop.org:latest
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    env_file: .env
+    depends_on:
+      - redis
+      - db
+    ports:
+      - 3000:3000
+  sidekiq:
+    image: songjian/testimage:latest
+    command: bundle exec sidekiq
+    depends_on:
+      - redis
+    env_file: .env
+    volumes:
+      - ./public/images:/app/public/images
+  db:
+    image: postgres
+    env_file: .env
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+  redis:
+    image: redis:6.2.6
+    command: redis-server /usr/local/redis/redis.conf
+    volumes:
+      - ./docker/redis/redis.conf:/usr/local/redis/redis.conf
+      - redis-data:/data
+
+volumes:
+  pg-data:
+  redis-data:
+```
+
+docker-compose.override.yml
+
+```yml
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+  sidekiq:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+```
+
+docker-compose.prod.yml
+
+```yml
+version: '3'
+services:
+  app:
+    volumes:
+      - ./log:/app/log
+      - ./public/images:/app/public/images
+      - ./public/uploads:/app/public/uploads
+```
+
+## 开发环境
+
+设置一个方便本地调用的脚本：localenv
+
+```sh
+alias rake='podman-compose run app rake'
+alias rails='podman-compose run app rails'
+alias bundle='podman-compose run app bundle'
+alias bash='podman-compose run app bash'
+```
