@@ -1,11 +1,64 @@
 ---
 layout: post
-title: 使用Github Actions构建Docker镜像
+title: 使用Github actions构建、发布和部署Docker镜像
+tags: ["Github Actions", "docker", "Actions Cache"]
+categories: docker
 ---
-## 大纲
+```yml
+name: Docker Image CI
 
-* action可以复用
-* github，docker官方提供了构建镜像的action 
-* docker hub 上创建仓库
-* 创建github actions的workflow文件： .github/workflow
-* 使用github caches加速docker构建
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Cache Docker layers
+        uses: actions/cache@v3
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-buildx-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-buildx-
+          
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          push: true
+          file: Dockerfile
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/IMAGENAME:latest
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache-new
+
+      - name: Move cache
+        run: |
+          rm -rf /tmp/.buildx-cache
+          mv /tmp/.buildx-cache-new /tmp/.buildx-cache
+      - name: SSH deploy
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.AWS_HOST }}
+          username: ${{ secrets.AWS_HOST_USERNAME }}
+          key: ${{ secrets.AWS_HOST_KEY }}
+          port: ${{ secrets.AWS_HOST_PORT }}
+          script: |
+            docker system prune --all -f
+            cd /var/www/rails_app/
+            docker compose -f docker-compose.yml -f docker-compose.prod.yml pull
+            docker compose -f docker-compose.yml -f docker-compose.prod.yml run app rake db:migrate
+            docker compose -f docker-compose.yml -f docker-compose.prod.yml down
+            docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+```
