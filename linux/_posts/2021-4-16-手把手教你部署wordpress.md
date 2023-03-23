@@ -1,7 +1,8 @@
 ---
 layout: post
-title: WordPress配置
-categories: WordPress
+title: 从头到尾，手把手教你在一台Linux服务器上部署WordPress
+tags: php wordpress
+categories: wordpress
 ---
 # 服务器配置记录(8.218.143.243)
 
@@ -135,9 +136,9 @@ mysql
 ```
 
 ```SQL
-create user 'admin'@'localhost' identified by '6ubUY,fc';
+create user 'admin'@'localhost' identified by '6ubUY,fccowch';
 GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost';
-create database icoin123;
+create database mydomain;
 ```
 
 ### 安装WordPress站点
@@ -166,7 +167,7 @@ phpenv local 7.4.29
 
 ```sh
 cd /etc/nginx/site-available/
-cp icoin123.com teleworld.app
+cp mydomain.com teleworld.app
 ```
 
 ```nginx
@@ -279,7 +280,7 @@ upload_max_filesize = 50M
 
 * 配置 Python 运行环境
 * 安装 Jupyter
-* [http://jupyter.icoin123.com/](http://jupyter.icoin123.com/)
+* [http://jupyter.mydomain.com/](http://jupyter.mydomain.com/)
 
 ```sh
 # root 用户
@@ -304,7 +305,7 @@ server {
         listen 80;
         listen [::]:80;
 
-        server_name jupyter.icoin123.com;
+        server_name jupyter.mydomain.com;
 
         location / {
                 proxy_pass http://jupyter;
