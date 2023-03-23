@@ -6,4 +6,4 @@ categories: X-Bows
 ---
 ![X-Bows Lite](/assets/images/X-BowsLite/X-Bows-Lite.jpg)
 
-入手了X-Bows Lite，期望TFCC处的疼痛能有所缓解。
+入手了X-Bows Lite，期望缓解TFCC处疼痛。
