@@ -17,8 +17,16 @@ sudo apt install -t ${VERSION_CODENAME}-backports cockpit
 
 ![Cockpit](/assets/images/Cockpit/cockpit.jpg)
 
-Podman容器
+## 还可以安装应用
+
+搜索应用
 
 ```sh
-sudo apt install cockpit-podman
+sudo apt search cockpit
+```
+
+安装Podman和machines
+
+```sh
+sudo apt install cockpit-{podman,machines}
 ```
