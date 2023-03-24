@@ -3,7 +3,7 @@ layout: post
 title: 使用Netsh命令做Windows端口转发
 categories: Windows端口转发
 ---
-### Forward
+### Foreword
 
 有时候软件提供了访问端口，可能受网络限制或者提供的端口是回送地址，无法让运行软件的机器之外访问，这个时候可以通过端口转发，把原本只能在本机访问的端口转发到局域网或者公网上。
 
