@@ -4,7 +4,7 @@ title: 使用podman-compose部署Rails5.1
 tags: podman docker rails
 categories: podman
 ---
-## Forward
+## Foreword
 
 我工作的电脑上已经用Podman替换了Docker，Docker内置compose（容器编排工具），Podman没有，需要单独安装一个[podman-compose](https://github.com/containers/podman-compose)，podman-compose可以兼容docker-compose.yml配置文件，只是podman因为没有root权限的守护进程，所以 `restart: always` 这项用不了。
 
