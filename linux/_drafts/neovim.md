@@ -1,6 +1,6 @@
 ---
 layout: post
-title: neovim
+title: Neovim
 ---
 https://github.com/neovim/neovim/releases/tag/stable
 
