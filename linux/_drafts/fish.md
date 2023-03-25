@@ -1,6 +1,6 @@
 ---
 layout: post
-title: fish
+title: fish shell
 categories: fish shell linux wsl nvm
 ---
 ## 安装
@@ -14,6 +14,7 @@ sudo apt install -y fish
 第2步 安装oh-my-fish
 
 git方式安装
+
 ```sh
 git clone https://github.com/oh-my-fish/oh-my-fish /tmp/omf
 $ cd /tmp/omf
@@ -41,11 +42,13 @@ export NVM_DIR="$HOME/.nvm" && (
 第5步 配置nvm
 
 创建fish配置文件
+
 ```sh
 touch ~/.config/fish/config.fish
 ```
 
 在config.fish添加
+
 ```sh
 function nvm
     bass source ~/.nvm/nvm.sh ';' nvm $argv
