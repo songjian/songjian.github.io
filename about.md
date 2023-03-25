@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 关于我
-permalink: /about/
+title: About
+# permalink: /about/
 ---
 我是codeorder
 
