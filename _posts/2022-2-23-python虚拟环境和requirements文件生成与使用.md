@@ -1,9 +1,9 @@
 ---
 layout: post
 title: python虚拟环境和requirements文件生成与使用
-categories: python
+tags: python pip
+categories: python pip
 ---
-
 ## Python虚拟环境
 
 Python 3 内置了用于创建虚拟环境的 venv 模块。
