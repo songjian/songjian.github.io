@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 学习 Github Actions
-categories: Github
+tags: ['git', 'github', 'github actions']
+categories: github
 date:   2021-12-16 11:25:07 +0800
 ---
 ### 参考
