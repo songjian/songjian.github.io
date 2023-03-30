@@ -1,7 +1,10 @@
-# Arch Linux
-
-```sh
-To install Arch Linux follow the installation guide:
+---
+layout: post
+title: Arch Linux
+tags: linux arch
+categories: arch
+---
+```sh To install Arch Linux follow the installation guide:
 https://wiki.archlinux.org/title/Installation_guide
 
 For Wi-Fi, authenticate to the wireless network using the iwctl utility.
