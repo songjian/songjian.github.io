@@ -29,3 +29,7 @@ title: Links
 [计算机教育中缺失的一课](https://missing-semester-cn.github.io/)
 
 [快乐的 Linux 命令行](https://billie66.github.io/TLCL/index.html) - 本书是 The Linux Command Line 的中文版
+
+## 电子书
+
+[《预测： 方法与实践》](https://otexts.com/fppcn/) - 在线预测教材。
