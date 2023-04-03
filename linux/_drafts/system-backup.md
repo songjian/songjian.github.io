@@ -49,3 +49,9 @@ tar -g /backup/snapshot.snar -czvf /backup/backup_`date +%Y%m%d`_incr.tar.gz --e
 ```sh
 rsync -av a:/backup/ /mnt/c/backups/8.218.143.243/
 ```
+
+## 参考
+
+> [Linux数据备份与恢复](https://www.cnblogs.com/lizhouwei/p/10145783.html)
+> 
+> [Linux数据备份与恢复 dump、restore、dd命令](https://www.cnblogs.com/lizhouwei/p/10146092.html)
