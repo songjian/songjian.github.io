@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 体验Cursor AI编程
+tags: chatgpt gpt-4
 ---
 > https://www.cursor.so/
 >
