@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 使用Netsh命令做Windows端口转发
-categories: Windows端口转发
+title: Windows端口转发
+tags: 端口转发
+categories: 技巧
 ---
 ### Foreword
 
@@ -54,3 +55,9 @@ curl ipinfo.io -x socks5://10.8.0.18:19181
 设置防火墙：添加【`入站规则`】->【`VPN端口转发`】，`TCP` 允许`19180,19181`端口访问。
 
 为了转发的端口在局域网正常方法，可能需要更改防火墙设置。如果局域网是家庭环境，直接关闭防火墙更简单一些。
+
+## 参考
+
+> https://developer.aliyun.com/article/464193
+>
+> https://www.jianshu.com/p/9bfb92e8fc26
