@@ -1,7 +1,8 @@
 ---
 layout: post
 title: OpenVPN设置
-categories: OpenVPN
+tags: openvpn
+categories: openvpn
 ---
 ## 安装
 
