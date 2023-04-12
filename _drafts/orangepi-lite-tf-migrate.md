@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Orangepi Lite TF卡数据迁移到新TF卡
+tags: oragenpi arm
 categories: orangepi
 ---
 1. 使用win32diskimager迁移数据
