@@ -10,7 +10,7 @@ Cockpit是一个免费的开源的基于web的Linux服务器管理工具。Podma
 
 ## 安装
 
-卸载本机的Docker
+卸载本机的Docker（如果机器上安装了Docker，执行这一步）
 
 ```sh
 sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-compose-plugin
@@ -24,7 +24,7 @@ sudo rm -rf /var/lib/containerd
 sudo apt install podman
 ```
  
-安装podman-compose
+安装podman-compose（可以不装）
 
 ```sh
 pip3 install podman-compose
@@ -44,7 +44,7 @@ sudo apt install -t ${VERSION_CODENAME}-backports cockpit
 
 ![Cockpit](/assets/images/Cockpit/cockpit.jpg)
 
-## 安装Cockpit应用
+## 安装Cockpit的应用
 
 Cockpit支持安装应用，可以使用命令搜索应用
 
