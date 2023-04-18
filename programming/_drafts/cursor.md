@@ -26,3 +26,7 @@ Rails框架migration文件补充表注释
 ![Cursor3](/assets/images/Cursor/cursor3.png)
 
 编辑器给出建议，可以选择接受或者拒绝。
+
+## Copilot
+
+
