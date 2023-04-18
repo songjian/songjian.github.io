@@ -21,7 +21,7 @@
 title: CODEORDER 的博客
 email: root@mail.codeorder.cn
 description: >- # this means to ignore newlines until "baseurl:"
-  程序员，自由软件爱好者！
+  PHPer，自由软件爱好者！
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: songjia30256883
