@@ -9,6 +9,8 @@ tags: ChatGPT GPT-4
 >
 > https://github.com/getcursor/cursor
 
+我是2023年3月31日下载的Cursor 0.1.12版编辑器。
+
 Cursor是使用GPT做后端的AI编辑器，我体验的版本是0.1.12版。界面和VSCode很像。
 
 ![Cursor1](/assets/images/Cursor/editor1.png)
@@ -70,6 +72,10 @@ Cursor定位是写、编辑和聊天的全功能AI。
 从我自己的体验来说，先使用AI搭起项目的骨架，然后在处理具体的业务逻辑，这可能是比较好的工作流。
 
 搭项目骨架方面，copilot帮不上忙。
+
+
+
+Copilot neovim安装和配置
 
 
 
