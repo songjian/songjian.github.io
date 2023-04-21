@@ -1,21 +1,31 @@
 ---
 layout: post
-title: OpenVPN设置
+title: 记录OpenVPN设置
 tags: openvpn
 categories: openvpn
 ---
-## 安装
+> https://openvpn.net/
 
-#### 安装OpenVPN
+## Foreword
+
+需要在公司访问放在家里NAS上的文件。
+
+首先需要一台公网服务器，也就是有公网IP的电脑。
+
+需要一台能在公网访问的电脑。
+
+## 安装OpenVPN
 
 ```sh
 sudo apt install openvpn
 ```
-#### 安装easy-rsa
+
+安装easy-rsa, 用于生成证书
 
 [https://github.com/OpenVPN/easy-rsa](https://github.com/OpenVPN/easy-rsa)
 
-#### 安装Gnome任务栏通知（可选）
+安装Gnome任务栏通知（可选）
+
 ```sh
 sudo apt install network-manager-openvpn-gnome
 ```
@@ -54,7 +64,7 @@ sudo systemctl stop openvpn@server
 ./easyrsa gen-req xx-server nopass
 ./easyrsa sign server xx-server
 ./easyrsa gen-dh
-openvpn --genkey --secret ta.key
+openvpn --genkey secret ta.key
 ```
 
 ### 生成和签名客户端证书
@@ -95,11 +105,11 @@ sudo systemd-tty-ask-password-agent
 
 ## 参考
 
-* [UbuntuHelp:OpenVPN/zh](https://wiki.ubuntu.com.cn/UbuntuHelp:OpenVPN/zh)
-* [使用 OpenVPN 实现远程访问](https://shaocheng.li/posts/2019/07/02/)
-* [利用OpenVPN搭建简单VPN](https://james-yip.github.io/2017/11/23/construct-VPN/)
-* [openvpn2.3.12安装与easy-rsa3的使用](https://blog.51cto.com/icenycmh/1867641)
-* [2x HOW TO](https://openvpn.net/community-resources/how-to/)
-* [Easy-RSA 3 Quickstart README](https://github.com/OpenVPN/easy-rsa/blob/master/README.quickstart.md)
-* [Setting up a VPN client IBM Cloud Docs](https://cloud.ibm.com/docs/vpc?topic=vpc-setting-up-vpn-client)
-* [How To Set Up an OpenVPN Server on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-14-04)
+> * [UbuntuHelp:OpenVPN/zh](https://wiki.ubuntu.com.cn/UbuntuHelp:OpenVPN/zh)
+> * [使用 OpenVPN 实现远程访问](https://shaocheng.li/posts/2019/07/02/)
+> * [利用OpenVPN搭建简单VPN](https://james-yip.github.io/2017/11/23/construct-VPN/)
+> * [openvpn2.3.12安装与easy-rsa3的使用](https://blog.51cto.com/icenycmh/1867641)
+> * [2x HOW TO](https://openvpn.net/community-resources/how-to/)
+> * [Easy-RSA 3 Quickstart README](https://github.com/OpenVPN/easy-rsa/blob/master/README.quickstart.md)
+> * [Setting up a VPN client IBM Cloud Docs](https://cloud.ibm.com/docs/vpc?topic=vpc-setting-up-vpn-client)
+> * [How To Set Up an OpenVPN Server on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-14-04)
