@@ -13,3 +13,4 @@ group :jekyll_plugins do
   gem 'jekyll-tagging'
 end
 gem "minima", "~> 2.5"
+gem 'jekyll_image_encode'

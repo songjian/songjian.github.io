@@ -1,0 +1,11 @@
+---
+layout: post
+title: ChatGPT平替——Claude
+tags: Claude
+categories: ai
+---
+B站写的ChatGPT注册的文章审核不通过，再发一个体验Claude的动态，Claude是和GPT类似的模型，Ubuntu系统上体验很容易，应用商店里搜索安装Slack，然后在Slack里安装Claude应用，就可以体验了。
+
+![](/assets/images/Claude/Claude1.png)
+
+![](/assets/images/Claude/Claude2.png)
