@@ -4,7 +4,7 @@ title: About
 ---
 我是sj
 
-程序员，自由软件爱好者！
+PHPer，自由软件爱好者！
 
 勉强算是全栈工程师，PHP，Python，Ruby，Rust都能写，爬虫，CRUD，Bootstrap，Vim插件开发都略懂一些，各种Web框架，Rails，Django，Flask，webman，ThinkPHP，Laravel基本精通，基于Linux、Shell脚本和Docker的运维也算精通。
 
