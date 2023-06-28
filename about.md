@@ -2,28 +2,115 @@
 layout: page
 title: About
 ---
-我是sj
+## 关于我
 
-PHPer，自由软件爱好者！
+我是一名软件工程师，目前就职于青岛的一家软件公司，主要从事后端开发工作。
 
-勉强算是全栈工程师，PHP，Python，Ruby，Rust都能写，爬虫，CRUD，Bootstrap，Vim插件开发都略懂一些，各种Web框架，Rails，Django，Flask，webman，ThinkPHP，Laravel基本精通，基于Linux、Shell脚本和Docker的运维也算精通。
+## 关于本站
 
-有问题欢迎交流，联系方式：
+本站主要用于记录一些学习笔记，以及一些个人的想法。
 
-* email: root at mail.codeorder.cn
-* TG: [telegram me](https://t.me/kw3p9)
+## 联系我
 
-期待成为的角色：
+- QQ:  724385768
+- Telegram:  [@kw3p9](https://t.me/kw3p9)
 
-* Technical experts
-* Full Stack Engineer
+## 我的技能
 
-ChatGPT生成的自我介绍
+### 编程语言
 
-> 您好，我是一名全栈工程师，能够熟练掌握PHP、Python、Ruby、Rust等多种编程语言，并且能够使用各种Web框架进行开发。我有丰富的爬虫、CRUD、Bootstrap、Vim插件开发经验，并能够应用在项目中。
-> 
-> 在Web框架方面，我精通多种框架，包括Rails、Django、Flask、webman、ThinkPHP、Laravel等，能够根据项目需求选择最适合的框架进行开发。同时，我也熟悉前端开发技术，能够使用JavaScript、CSS和HTML等技术开发出具有良好用户体验的Web应用。
-> 
-> 此外，我也精通基于Linux、Shell脚本和Docker的运维技术，能够快速部署和管理Web应用，并保障应用的高可用性和稳定性。我也熟悉数据库管理和优化技术，能够优化数据库性能，并确保数据的安全性和可靠性。
-> 
-> 总的来说，我是一名技术全面、经验丰富的全栈工程师，能够应对各种技术挑战，并将自己的技术能力应用到项目中，为团队的成功做出贡献。
+- Ruby
+- Python
+- PHP
+
+### 框架
+
+- Ruby on Rails
+- Django
+- Laravel
+- ThinkPHP
+- Webman
+
+### 数据库
+
+- MySQL
+- PostgreSQL
+- Redis
+- SQLite
+
+### 其他
+
+- Git
+- Linux
+- Docker
+- Kubernetes
+- Nginx
+- Apache
+- Caddy
+
+## 我的服务器
+
+### 云服务器
+
+- 阿里云
+- 腾讯云
+
+### 实体服务器
+
+- 华为RH1288 V3
+
+```bash
+ubuntu@ubuntu:~$ neofetch
+            .-/+oossssoo+/-.               ubuntu@ubuntu 
+        `:+ssssssssssssssssss+:`           ------------- 
+      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 22.04.2 LTS x86_64 
+    .ossssssssssssssssssdMMMNysssso.       Host: RH1288 V3 V100R003 
+   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 5.15.0-75-generic 
+  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 6 days, 19 hours, 54 mins 
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 902 (dpkg), 4 (snap) 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 5.1.16 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   Terminal: /dev/pts/0 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   CPU: Intel Xeon E5-2666 v3 (40) @ 2.900GHz 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   GPU: Intelligent Management system chip w/VGA support] 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   Memory: 632MiB / 63982MiB 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.
+ /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/                            
+  +sssssssssdmydMMMMMMMMddddyssssssss+                             
+   /ssssssssssshdmNNNNmyNMMMMhssssss/
+    .ossssssssssssssssssdMMMNysssso.
+      -+sssssssssssssssssyyyssss+-
+        `:+ssssssssssssssssss+:`
+            .-/+oossssoo+/-.
+```
+
+- 联想B490（笔记本电脑改）
+
+## 我的电脑
+
+### 笔记本
+
+```bash
+sj@RedmiBookPro15:~$ neofetch
+            .-/+oossssoo+/-.               sj@RedmiBookPro15 
+        `:+ssssssssssssssssss+:`           ----------------- 
+      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 22.04.2 LTS x86_64 
+    .ossssssssssssssssssdMMMNysssso.       Host: RedmiBook Pro 15 
+   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 5.19.0-45-generic 
+  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 23 hours, 27 mins 
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 2723 (dpkg), 21 (snap) 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 5.1.16 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 3200x2000 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   DE: GNOME 42.5 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Mutter 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   WM Theme: Adwaita 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Theme: Yaru [GTK2/3] 
+ /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/    Icons: Yaru [GTK2/3] 
+  +sssssssssdmydMMMMMMMMddddyssssssss+     Terminal: gnome-terminal 
+   /ssssssssssshdmNNNNmyNMMMMhssssss/      CPU: 11th Gen Intel i5-11300H (8) @ 4.400GHz 
+    .ossssssssssssssssssdMMMNysssso.       GPU: Intel TigerLake-LP GT2 [Iris Xe Graphics] 
+      -+sssssssssssssssssyyyssss+-         Memory: 9302MiB / 15771MiB 
+        `:+ssssssssssssssssss+:`
+            .-/+oossssoo+/-.                                       
+                                                                                                                   
+```
+
