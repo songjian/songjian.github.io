@@ -1,2 +1,0 @@
-1. 在 Windows 10 上安装 Hyper-V，参考[在 Windows 10 上安装 Hyper-V](onenote:#在%20Windows%2010%20上安装%20Hyper-V&section-id={605A8367-B519-4AAA-BD72-28C6EF148ADF}&page-id={A4A84B51-CFF4-4B4A-9F52-9AF4D517A39C}&end&base-path=https://d.docs.live.net/d20e030886dac3aa/文档/健%20的笔记本/快速笔记.one)
-2. 安装VMware Workstation，参考[VMware Workstation Pro 15.1.0 官方版+激活密钥](onenote:#VMware%20Workstation%20Pro%2015.1.0%20官方版+激活密钥&section-id={605A8367-B519-4AAA-BD72-28C6EF148ADF}&page-id={D4635AA6-A9D1-4503-AC9A-2139BC4BF551}&end&base-path=https://d.docs.live.net/d20e030886dac3aa/文档/健%20的笔记本/快速笔记.one)

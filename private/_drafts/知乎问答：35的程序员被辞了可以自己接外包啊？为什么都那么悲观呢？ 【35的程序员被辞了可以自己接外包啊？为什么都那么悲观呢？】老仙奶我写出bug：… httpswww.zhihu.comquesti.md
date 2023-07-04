@@ -1,1 +1,0 @@
-知乎问答：35的程序员被辞了可以自己接外包啊？为什么都那么悲观呢？: 【35的程序员被辞了可以自己接外包啊？为什么都那么悲观呢？】老仙奶我写出bug：… https://www.zhihu.com/question/423307803/answer/1506545544?utm_source=it.niedermann.owncloud.notes&utm_medium=social&utm_oi=27662575730688 （分享自知乎网）
