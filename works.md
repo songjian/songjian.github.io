@@ -57,4 +57,4 @@ title: Works
 
 ### 运维
 
-* [X-Panel](https://x-panel.co/)
+* [X-Panel.co](https://x-panel.co/)
