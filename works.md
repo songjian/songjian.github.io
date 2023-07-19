@@ -6,6 +6,7 @@ title: Works
 
 #### PyPI
 
+* [pyeastmoney](https://pypi.org/project/pyeastmoney/) - 获取东方财富网站数据的 Python 包。
 * [cn-stats](https://pypi.org/project/cn-stats/) - 获取中国国家统计局网站数据 Python 包。
 * [pynetease-finance](https://pypi.org/project/pynetease-finance/) - 获取网易财经网站数据的 Python 包。
 * [pysse](https://github.com/songjian/pysse) - 获取上海证券交易所网站数据的 Python 包。
