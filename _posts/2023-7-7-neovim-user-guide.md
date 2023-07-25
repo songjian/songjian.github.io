@@ -41,7 +41,6 @@ sudo update-alternatives --config editor
 
 ```bash
 cp /path/to/your/Hack*.ttf ~/.local/share/fonts/
-
 ```
 
 然后，更新字体缓存
