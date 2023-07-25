@@ -37,7 +37,14 @@ sudo update-alternatives --config editor
 
 ### 安装Hack Nerd Font
 
-在[https://github.com/ryanoasis/nerd-fonts/releases](https://github.com/ryanoasis/nerd-fonts/releases)下载Hack.zip字体，解压后把Hack开头的ttf文件复制到~/.local/share/fonts/，然后，更新字体缓存
+在[https://github.com/ryanoasis/nerd-fonts/releases](https://github.com/ryanoasis/nerd-fonts/releases)下载Hack.zip字体，解压后把Hack开头的ttf文件复制到~/.local/share/fonts/
+
+```bash
+cp /path/to/your/Hack*.ttf ~/.local/share/fonts/
+
+```
+
+然后，更新字体缓存
 
 ```bash
 sudo fc-cache -f -v
