@@ -55,36 +55,11 @@ title: About
 - 阿里云 ECS
 - AWS EC2
 
-### 实体服务器
+## 实体服务器
 
-- 华为RH1288 V3
+### 华为RH1288 V3
 
-```bash
-ubuntu@ubuntu:~$ neofetch
-            .-/+oossssoo+/-.               ubuntu@ubuntu 
-        `:+ssssssssssssssssss+:`           ------------- 
-      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 22.04.2 LTS x86_64 
-    .ossssssssssssssssssdMMMNysssso.       Host: RH1288 V3 V100R003 
-   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 5.15.0-75-generic 
-  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 6 days, 19 hours, 54 mins 
- /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 902 (dpkg), 4 (snap) 
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 5.1.16 
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   Terminal: /dev/pts/0 
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   CPU: Intel Xeon E5-2666 v3 (40) @ 2.900GHz 
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   GPU: Intelligent Management system chip w/VGA support] 
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   Memory: 632MiB / 63982MiB 
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.
- /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/                            
-  +sssssssssdmydMMMMMMMMddddyssssssss+                             
-   /ssssssssssshdmNNNNmyNMMMMhssssss/
-    .ossssssssssssssssssdMMMNysssso.
-      -+sssssssssssssssssyyyssss+-
-        `:+ssssssssssssssssss+:`
-            .-/+oossssoo+/-.
-```
-
-- 联想B490（笔记本电脑改）
-
+![](/assets/img/neofetch-rh1288v3-ubuntu22.04.png)
 
 ## Laptop
 
