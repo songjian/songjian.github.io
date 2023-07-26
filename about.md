@@ -85,31 +85,9 @@ ossyNMMMNyMMhsssssssssssssshmmmhssssssso   GPU: Intelligent Management system ch
 
 - 联想B490（笔记本电脑改）
 
-## 我的电脑
 
-### 笔记本
+## Laptop
 
-```bash
-sj@RedmiBookPro15:~$ neofetch
-            .-/+oossssoo+/-.               sj@RedmiBookPro15 
-        `:+ssssssssssssssssss+:`           ----------------- 
-      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 22.04.2 LTS x86_64 
-    .ossssssssssssssssssdMMMNysssso.       Host: RedmiBook Pro 15 
-   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 5.19.0-45-generic 
-  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 23 hours, 27 mins 
- /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 2723 (dpkg), 21 (snap) 
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 5.1.16 
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 3200x2000 
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   DE: GNOME 42.5 
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Mutter 
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   WM Theme: Adwaita 
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Theme: Yaru [GTK2/3] 
- /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/    Icons: Yaru [GTK2/3] 
-  +sssssssssdmydMMMMMMMMddddyssssssss+     Terminal: gnome-terminal 
-   /ssssssssssshdmNNNNmyNMMMMhssssss/      CPU: 11th Gen Intel i5-11300H (8) @ 4.400GHz 
-    .ossssssssssssssssssdMMMNysssso.       GPU: Intel TigerLake-LP GT2 [Iris Xe Graphics] 
-      -+sssssssssssssssssyyyssss+-         Memory: 9302MiB / 15771MiB 
-        `:+ssssssssssssssssss+:`
-            .-/+oossssoo+/-.                                       
-                                                                                                                   
-```
+### rbp15
+
+![](/assets/img/neofetch-rbp15-ubuntu22.04.png)
