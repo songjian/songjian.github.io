@@ -60,4 +60,4 @@ public static function generateSignature(array $data, string $key): string
 }
 ```
 
-我的修改已经提交到[github](https://github.com/songjian/acg-faka)，可以直接下载使用。
+我的修改已经提交到[github](https://github.com/songjian/acg-faka/commit/a57f6c02deca0c4b108bec70d8044ec4b19ab351)，可以直接下载使用。
