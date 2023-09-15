@@ -1,12 +1,21 @@
 ---
 layout: post
-title: 开关代理的工具脚本
+title: 打开或关闭代理设置的脚本
 tags: Linux proxy
 categories: Linux 
 ---
-在`.bashrc`中添加一段开关代理的代码，方便日常在命令行中操作。
 
-```shell
+```bash
+# 打开 Proxy
+toggle_proxy on
+
+# 关闭 proxy
+toggle_proxy off
+```
+
+在`.bashrc`中添加下面代码：
+
+```bash
 # 打开或关闭代理设置
 # 参数:
 #   $1: 操作类型，"on"表示打开，"off"表示关闭
@@ -27,10 +36,3 @@ function toggle_proxy() {
 }
 ```
 
-```bash
-# 打开proxy
-toggle_proxy on
-
-# 关闭proxy
-toggle_proxy off
-```
