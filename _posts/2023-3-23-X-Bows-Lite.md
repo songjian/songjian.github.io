@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 重学打字——体验X-Bows Lite
+title: 体验X-Bows Lite
 tags: 键盘 手腕健康 "X-Bows"
 categories: 手腕健康 
 ---
