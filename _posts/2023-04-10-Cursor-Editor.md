@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 体验AI编程：Cursor
+title: 体验AI编程：Cursor编辑器
 tags: ChatGPT GPT-4 Cursor
 categories: "AI Programming"
 ---
