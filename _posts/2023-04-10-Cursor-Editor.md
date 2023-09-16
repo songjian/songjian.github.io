@@ -3,14 +3,13 @@ layout: post
 title: 体验AI编程：Cursor编辑器
 tags: ChatGPT GPT-4 Cursor
 categories: "AI Programming"
+date: 2023-04-10 10:21:22 +0800
 ---
 ## Cursor
 
 > https://www.cursor.so/
 >
 > https://github.com/getcursor/cursor
-
-我是2023年3月31日下载的Cursor 0.1.12版编辑器。
 
 Cursor是使用GPT做后端的AI编辑器，我体验的版本是0.1.12版。界面和VSCode很像。
 
