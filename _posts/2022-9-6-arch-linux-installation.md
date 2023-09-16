@@ -2,7 +2,7 @@
 layout: post
 title: 安装Arch Linux
 tags: ["Arch Linux"]
-categories: arch
+categories: Linux arch
 ---
 ## 概念
 

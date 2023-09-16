@@ -2,7 +2,7 @@
 layout: post
 title: 尝试Cockpit
 tags: cockpit podman kvm qeum machines
-categories: cockpit
+categories: Linux cockpit
 date: 2023-3-15 12:00:00 +0800
 ---
 ## Foreword

@@ -2,7 +2,7 @@
 layout: post
 title: 从头到尾，手把手教你配置一台新Linux服务器和在上面部署WordPress
 tags: php wordpress 运维
-categories: 运维
+categories: Linux 运维
 ---
 服务器配置记录：8.218.143.243
 
