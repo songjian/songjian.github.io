@@ -2,7 +2,7 @@
 layout: post
 title: 使用nmap查找局域网主机
 tags: rdesktop win11
-catetories: rdesktop
+catetories: Linux rdesktop
 ---
 ## Foreword
 

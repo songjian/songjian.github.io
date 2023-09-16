@@ -2,7 +2,7 @@
 layout: post
 title: Newifi Mini刷OpenWrt
 tags: ["Lenovo Y1", "Newifi Mini", "openwrt"]
-categories: openwrt
+categories: Linux openwrt
 date: 2021-10-8
 ---
 ## 刷机
