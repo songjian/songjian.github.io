@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 配置Linux命令行下发送邮件
-categories: email
+categories: Linux email
 ---
 ### 安装
 
