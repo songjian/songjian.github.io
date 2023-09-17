@@ -2,7 +2,7 @@
 layout: post
 title: fish shell
 tags: fish shell linux
-categories: shell fish
+categories: Linux
 ---
 ## 安装fish
 

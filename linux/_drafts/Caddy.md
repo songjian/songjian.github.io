@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Caddy
+title: Caddy：友好的Web服务器
 tags: caddy
 categories: caddy
 ---
