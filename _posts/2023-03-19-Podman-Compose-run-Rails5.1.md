@@ -1,18 +1,16 @@
 ---
 layout: post
-title: 使用podman-compose部署Rails5.1
-tags: podman docker rails
-categories: podman
+title: 使用Podman Compose运行Rails 5.1
+tags: podman-compose podman docker rails
+categories: programming podman
+date: 2023-03-19 10:12:21 +0800
 ---
-## Foreword
+
+手上有个老的Rails 5.1项目需要修改功能，clone代码到本地后，发现代码运行在ruby3.0下问题很多，懒得折腾ruby环境了，最后用Podman来运行。
 
 我工作的电脑上已经用Podman替换了Docker，Docker内置compose（容器编排工具），Podman没有，需要单独安装一个[podman-compose](https://github.com/containers/podman-compose)，podman-compose可以兼容docker-compose.yml配置文件，只是podman因为没有root权限的守护进程，所以 `restart: always` 这项用不了。
 
-## Podman compose配置
-
-Dockerfile
-
-Rails5.1可以用Ruby2.3或者Ruby2.4的镜像。
+编写Dockerfile，Rails5.1可以用Ruby2.3或者Ruby2.4的镜像。
 
 ```dockerfile
 FROM ruby:2.4
@@ -36,6 +34,7 @@ RUN bundle exec rake assets:precompile
 ```
 
 docker-compose.yml
+
 ```yml
 version: '3'
 services:
@@ -48,6 +47,10 @@ services:
       - db
     ports:
       - 3000:3000
+    volumes:
+      - ./log:/app/log
+      - ./public/images:/app/public/images
+      - ./public/uploads:/app/public/uploads
   sidekiq:
     image: songjian/testimage:latest
     command: bundle exec sidekiq
@@ -94,23 +97,9 @@ services:
       dockerfile: Dockerfile
 ```
 
-docker-compose.prod.yml
+为了日常调试项目方便，写一个配置环境的脚本：
 
-```yml
-version: '3'
-services:
-  app:
-    volumes:
-      - ./log:/app/log
-      - ./public/images:/app/public/images
-      - ./public/uploads:/app/public/uploads
-```
-
-## 日常使用
-
-设置一个方便本地调用的脚本
-
-```sh
+```bash
 # localenv
 export http_proxy=http://192.168.1.202:19180
 export https_proxy=http://192.168.1.202:19180
@@ -120,8 +109,5 @@ alias bundle='podman-compose run app bundle'
 alias bash='podman-compose run app bash'
 ```
 
-本地开发前先执行
+调试项目前先执行脚本 `. localenv`
 
-```sh
-. localenv
-```
