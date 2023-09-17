@@ -4,6 +4,7 @@ title: 安装Nerd Fonts
 tags: ["Nerd Fonts", "Neovim", "Linux", "icon"]
 categories: neovim nerdfonts
 ---
+
 > https://github.com/ryanoasis/nerd-fonts
 
 ## Foreword
