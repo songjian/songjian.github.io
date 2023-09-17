@@ -10,10 +10,10 @@ date: 2023-03-19 10:12:21 +0800
 
 我工作的电脑上已经用Podman替换了Docker，Docker内置compose（容器编排工具），Podman没有，需要单独安装一个[podman-compose](https://github.com/containers/podman-compose)，podman-compose可以兼容docker-compose.yml配置文件，只是podman因为没有root权限的守护进程，所以 `restart: always` 这项用不了。
 
-编写Dockerfile，Rails5.1可以用Ruby2.3或者Ruby2.4的镜像。
+编写Dockerfile：
 
 ```dockerfile
-FROM ruby:2.4
+FROM ruby:2.3
 
 WORKDIR /app
 VOLUME ["/app/log", "/app/public/images", "/app/public/uploads"]
@@ -97,7 +97,7 @@ services:
       dockerfile: Dockerfile
 ```
 
-为了日常调试项目方便，写一个配置环境的脚本：
+为了日常调试项目方便，写一个配置环境的脚本，调试项目前先执行这个脚本 `. localenv`
 
 ```bash
 # localenv
@@ -108,6 +108,4 @@ alias rails='podman-compose run app rails'
 alias bundle='podman-compose run app bundle'
 alias bash='podman-compose run app bash'
 ```
-
-调试项目前先执行脚本 `. localenv`
 
