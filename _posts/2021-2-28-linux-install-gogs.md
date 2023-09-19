@@ -21,9 +21,17 @@ sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE gogs TO gogs;"
 
 ### 第 3 步: 下载安装gogs二进制安装包
 
-* 下载二进制包
-  * [https://gogs.io/docs/installation/install_from_binary.html](https://gogs.io/docs/installation/install_from_binary.html)
-* 解压目录 `/home/git/gogs`
+> 二进制文件下载页面
+> [https://gogs.io/docs/installation/install_from_binary.html](https://gogs.io/docs/installation/install_from_binary.html)
+
+下载二进制包
+
+```bash
+wget https://github.com/gogs/gogs/releases/download/v0.12.4/gogs_0.12.4_linux_amd64.tar.gz
+```
+
+解压目录 `/home/git/gogs`
+
 
 ### 第 4 步: 配置gogs开机启动
 
