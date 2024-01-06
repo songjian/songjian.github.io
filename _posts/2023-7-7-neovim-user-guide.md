@@ -1,56 +1,55 @@
 ---
 layout: post
-title: Neovim使用指南
+title: Neovim 使用指南
 tags: [Neovim, nvim, vi, vim]
 categories: [Neovim]
 date: 2023-07-25 10:02:15 +0800
 ---
-## 视频教程
+## 安装
 
-【【全程讲解】Neovim从零配置成属于你的个人编辑器】 [https://www.bilibili.com/video/BV1Td4y1578E/?share_source=copy_web&vd_source=9ac42cf3f70b167e73c61a9cf1563e1e](https://www.bilibili.com/video/BV1Td4y1578E/?share_source=copy_web&vd_source=9ac42cf3f70b167e73c61a9cf1563e1e)
+我参考的这个[UP主](https://space.bilibili.com/327247876)的[视频教程](https://www.bilibili.com/video/BV1Td4y1578E/?share_source=copy_web&vd_source=9ac42cf3f70b167e73c61a9cf1563e1e)。
 
-## 使用技术蛋老师的配置
+UP主配置文件的 Github 仓库地址：[https://github.com/eggtoopain/Neovim-Configuration-Tutorial](https://github.com/eggtoopain/Neovim-Configuration-Tutorial)
 
-[https://github.com/eggtoopain/Neovim-Configuration-Tutorial](https://github.com/eggtoopain/Neovim-Configuration-Tutorial)
-仓库clone下来之后，把nvim目录移动到~/.config/下。
+### 安装插件
 
-## 使用
+在 `~/.config/nvim/lua/plugins/plugins-setup.lua` 文件中写上需要用的插件，保存文件的时候会自动安装插件。
 
-### 把vi和vim命令设为neovim
+## 方便日常使用的设置
 
-用`which nvim`查看nvim程序路径，一般是/usr/bin/nvim，
-然后把nvim链接到vi和vim
-
+### .bashrc 中添加 nvim 别名
+    
 ```bash
-sudo ln -sf /usr/bin/nvim /usr/bin/vi
-sudo ln -sf /usr/bin/nvim /usr/bin/vim
+# Neovim
+alias vi='nvim'
+alias vim='nvim'
 ```
 
-### 修改系统的默认编辑器
+### 修改系统的默认编辑器（可选）
 
-一般Neovim安装好后不在update-alternatives的选项列表中，先把Neovim加入选项列表，再设为默认编辑器
+如果你想把 Neovim 设置为系统的默认编辑器，可以按照下面的步骤操作。
 
 ```bash
 sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 100
 sudo update-alternatives --config editor
 ```
 
-### 安装Hack Nerd Font
+### 安装终端图标字体
 
-在[https://github.com/ryanoasis/nerd-fonts/releases](https://github.com/ryanoasis/nerd-fonts/releases)下载Hack.zip字体，解压后把Hack开头的ttf文件复制到~/.local/share/fonts/
+一些插件需要终端图标字体的支持，比如 nvim-tree 插件。
+
+#### 安装 Hack Nerd Font
+
+下载 GitHub 上的 Nerd Fonts 仓库 Releases 中的 Hack.zip ，解压后把 Hack 开头的 ttf 文件复制到 `~/.local/share/fonts/` 目录下。
 
 ```bash
+# 复制字体文件到 ~/.local/share/fonts/ 目录下
 cp /path/to/your/Hack*.ttf ~/.local/share/fonts/
+
+# 更新字体缓存
+fc-cache -f -v
 ```
 
-然后，更新字体缓存
+最后在终端里选择Hack Nerd Font作为终端字体。
 
-```bash
-sudo fc-cache -f -v
-```
-
-最后，在终端里选择Hack Nerd Font作为终端字体。
-
-### 安装插件
-
-打开`lua/plugins/plugins-setup.lua`文件自动安装插件。
+![Hack Nerd Font](/assets/img/2023-7-7-neovim-user-guide/hack-nerd-font.jpg)
