@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: CODEORDER 的博客
-email: 6q2lk1@gmail.com
+title: 老宋的编程世界
+email: 724385768@qq.com
 description: >- # this means to ignore newlines until "baseurl:"
   自由软件爱好者！
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: songjia30256883
 github_username:  songjian
+telegram_username: https://t.me/kw3p9
 
 # Build settings
 theme: minima
