@@ -1,19 +1,13 @@
 ---
 layout: post
-title: 打开或关闭代理设置的脚本
-tags: Linux proxy
-categories: Linux 
+title: Linux中如何使用脚本切换代理设置
+tags: [Linux, Proxy]
+categories: [Linux] 
 ---
 
-```bash
-# 打开 Proxy
-toggle_proxy on
+在Linux中，我们经常需要切换代理设置，例如，当我们安装pypi、gem的时候，我们需要打开代理；当我们安装完之后，我们需要关闭代理。为了简化这个过程，我创建了一个名为`toggle_proxy`的函数，你可以在`.bashrc`文件中添加这个函数。
 
-# 关闭 proxy
-toggle_proxy off
-```
-
-在`.bashrc`中添加下面代码：
+以下是`toggle_proxy`函数的代码：
 
 ```bash
 # 打开或关闭代理设置
@@ -36,3 +30,12 @@ function toggle_proxy() {
 }
 ```
 
+可以通过以下命令来使用这个函数：
+
+```bash
+# 打开 Proxy
+toggle_proxy on
+
+# 关闭 proxy
+toggle_proxy off
+```
