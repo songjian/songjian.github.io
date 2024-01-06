@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Neovim 使用指南
-tags: [Neovim, nvim, vi, vim]
+title: Ubuntu 下 Neovim 的配置和使用指南
+tags: [Neovim, nvim, vi, vim, Ubuntu, Linux, 配置, 插件, 教程, 使用指南]
 categories: [Neovim]
 date: 2023-07-25 10:02:15 +0800
 ---
@@ -9,7 +9,7 @@ date: 2023-07-25 10:02:15 +0800
 
 我参考的这个[UP主](https://space.bilibili.com/327247876)的[视频教程](https://www.bilibili.com/video/BV1Td4y1578E/?share_source=copy_web&vd_source=9ac42cf3f70b167e73c61a9cf1563e1e)。
 
-UP主配置文件的 Github 仓库地址：[https://github.com/eggtoopain/Neovim-Configuration-Tutorial](https://github.com/eggtoopain/Neovim-Configuration-Tutorial)
+UP主配置文件 Github 仓库地址：[https://github.com/eggtoopain/Neovim-Configuration-Tutorial](https://github.com/eggtoopain/Neovim-Configuration-Tutorial)
 
 ### 安装插件
 
@@ -18,7 +18,7 @@ UP主配置文件的 Github 仓库地址：[https://github.com/eggtoopain/Neovim
 ## 方便日常使用的设置
 
 ### .bashrc 中添加 nvim 别名
-    
+
 ```bash
 # Neovim
 alias vi='nvim'
