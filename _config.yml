@@ -33,6 +33,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate
 
 # Tag配置
 tag_page_layout: tag_page
@@ -44,6 +45,7 @@ tag_page_dir: tag
 
 # 分页设置
 paginate: 5
+paginate_path: /page:num/
 
 
 # Exclude from processing.
