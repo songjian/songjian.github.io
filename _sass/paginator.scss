@@ -34,3 +34,22 @@
         background-color: $light-grey;
     }
 }
+
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination a {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #0056b3;
+}
