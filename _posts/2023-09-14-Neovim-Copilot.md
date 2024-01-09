@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Neovim使用GitHub Copilot
+title: Neovim使用Copilot
 tags: [Neovim, nvim, vi, vim, Copilot]
 categories: [Neovim]
 date: 2023-09-14 21:41:00 +0800
