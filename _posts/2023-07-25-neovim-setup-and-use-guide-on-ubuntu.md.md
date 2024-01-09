@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Ubuntu 下 Neovim 的配置和使用指南
+title: Ubuntu下Neovim 的配置和使用指南
 tags: [Neovim, nvim, vi, vim, Ubuntu, Linux, 配置, 插件, 教程, 使用指南]
 categories: [Neovim]
 date: 2023-07-25 10:02:15 +0800
 ---
+![Neovim](/assets/img/2023-7-7-neovim-user-guide/nvim.jpg)
+
 ## 安装
 
 我参考的这个[UP主](https://space.bilibili.com/327247876)的[视频教程](https://www.bilibili.com/video/BV1Td4y1578E/?share_source=copy_web&vd_source=9ac42cf3f70b167e73c61a9cf1563e1e)。
 
-UP主配置文件 Github 仓库地址：[https://github.com/eggtoopain/Neovim-Configuration-Tutorial](https://github.com/eggtoopain/Neovim-Configuration-Tutorial)
+UP主的配置文件 Github 仓库地址：[https://github.com/eggtoopain/Neovim-Configuration-Tutorial](https://github.com/eggtoopain/Neovim-Configuration-Tutorial)
 
 ### 安装插件
 
