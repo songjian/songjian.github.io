@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Linux备份数据的方法
-tags: 系统备份 工具
-categories: Linux
-date: Mon Apr 3 11:01:45 2023 +0800
+tags: [Linux]
+categories: [Linux]
+date: 2023-04-04 11:01:45 +0800
 ---
 
 tar完整备份服务器重要目录
