@@ -34,11 +34,8 @@ title: 作品
 * 凤凰汇商城后端 - webman + MySQL + Redis 开发，负责架构设计和主要代码开发。
 * [wp-theme-workscout-language-pack](https://github.com/songjian/wp-theme-workscout-language-pack) - WordPress 主题 WorkScout 的中文语言包。
 
-## Shell
+## 其他
 
 * [整理软著申请代码的工具](https://github.com/songjian/rz-tools) - 用于整理软著申请代码的工具，使用 Shell 编写。
 * [Linux常用脚本](https://github.com/songjian/gnu-linux-scripts) - Linux常用脚本，使用 Shell 编写。
-
-## 运维
-
-* [X-Panel.co](https://x-panel.co/)
+* [修复acg-faka用epusdt收款验签失败的错误](https://github.com/lizhipay/acg-faka/pull/63)
