@@ -1,6 +1,8 @@
 ---
 layout: post
-categories: docker gitea
+title: 使用docker安装gitea
+categories: [docker]
+tags: [docker, gitea]
 ---
 ## 拉取gitea镜像
 

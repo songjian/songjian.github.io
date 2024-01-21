@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 使用RVM安装Ruby
-tags: rvm ruby
-categories: ruby
+categories: [ruby]
+tags: [ruby, rvm]
 ---
 官网
 

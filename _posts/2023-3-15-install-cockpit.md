@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 尝试Cockpit、Podman
-tags: cockpit podman kvm qeum
-categories: Linux cockpit
+categories: [Linux]
+tags: [Cockpit, Podman]
 ---
 ## Foreword
 

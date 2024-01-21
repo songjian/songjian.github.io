@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Nginx路径重写
-categories: [技术文章]
+categories: [nginx]
+tags: [nginx]
 ---
 {% highlight nginx %}
 server {

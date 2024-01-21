@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 使用Podman Compose运行Rails 5.1
-tags: podman-compose podman docker rails
-categories: programming podman
+categories: [Docker]
+tags: [Docker, Rails, Podman]
 date: 2023-03-19 10:12:21 +0800
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 使用Docker构建GitBook
+categories: [Docker]
+tags: [Docker, GitBook]
 date: 2021-7-29 12:00:00 -0500
-categories: Linux docker gitbook
-tags: docker gitbook
 ---
 拉取镜像 
 

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 获取宏观经济数据的方法
-categories: Quant 
+categories: [Python]
+tags: [Python, 数据分析, 数据获取]
 ---
 
 作为一个量化投资爱好者，你可能需要宏观经济数据放入模型中去做分析，但是业余爱好者不太可能花钱买昂贵的商业数据，所以一般会选择免费的平台或者自己写爬虫爬取。

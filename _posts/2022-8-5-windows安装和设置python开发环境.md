@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Windows安装和设置Python开发环境
-categories: python
+categories: [Python]
+tags: [Python, Windows]
 ---
 
 ## 安装Python

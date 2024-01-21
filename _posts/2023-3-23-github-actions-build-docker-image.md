@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 使用Github Actions构建\缓存layer\发布\部署Docker镜像
-tags: ["Github Actions", "docker", "Actions Cache"]
-categories: Linux github docker
+categories: [Docker]
+tags: [Docker, Github Actions]
 ---
 ```yml
 name: Docker Image CI

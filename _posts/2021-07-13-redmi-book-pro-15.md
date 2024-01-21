@@ -1,8 +1,8 @@
 ---
 layout: post
 title: RedmiBook Pro 15
-tags: [RedmiBook Pro 15]
-categories: [笔记本电脑]
+categories: [笔记本]
+tags: [笔记本, RedmiBook]
 date: 2021-07-13 10:02:00 +0800
 ---
 ![RedmiBook Pro 15](/assets/img/rbp15/redmibook-pro-15-1.jpg)

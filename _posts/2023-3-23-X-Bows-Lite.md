@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 体验X-Bows Lite
-tags: 键盘 手腕健康 "X-Bows"
-categories: 手腕健康 
+categories: [键盘]
+tags: [键盘, X-Bows]
 ---
 ## Foreword
 

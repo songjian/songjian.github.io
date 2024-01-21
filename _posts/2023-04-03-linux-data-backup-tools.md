@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Linux备份数据的方法
-tags: [Linux]
 categories: [Linux]
+tags: [Linux, backup]
 date: 2023-04-04 11:01:45 +0800
 ---
 

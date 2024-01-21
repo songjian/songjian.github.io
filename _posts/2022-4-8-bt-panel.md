@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 宝塔面板使用记录
-categories: Linux
+categories: [宝塔]
+tags: [宝塔]
 ---
 #### 查看默认登录地址
 

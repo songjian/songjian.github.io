@@ -1,8 +1,8 @@
 ---
 layout: post
 title: python虚拟环境和requirements文件生成与使用
-tags: python pip
-categories: python pip
+categories: [python]
+tags: [python, 虚拟环境, requirements]
 ---
 ## Python虚拟环境
 

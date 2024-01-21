@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 二进制方式安装Gogs
-tags: git gogs linux
-categories: Linux git gogs
+categories: [linux]
+tags: [gogs]
 ---
 
 ### 第 1 步: 创建git用户
