@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 使用clip.exe将wsl的输出重定向到Windows剪贴板
-categories: WSL
+categories: [wsl]
+tags: [wsl, clip.exe]
 ---
 `Windows` 有个 `clip` 命令，可以把命令行的输出重定向到 `Windows` 剪贴板。
 

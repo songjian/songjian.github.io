@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 使用ssh端口转发，将局域网内主机端口转发到公网服务器上
-categories: Linux ssh
+categories: [Linux]
+tags: [Linux, ssh]
 ---
 ### 更新 2022年4月9日
 

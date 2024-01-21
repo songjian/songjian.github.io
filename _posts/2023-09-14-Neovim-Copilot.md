@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Neovim使用Copilot
-tags: [Neovim, nvim, vi, vim, Copilot]
-categories: [Neovim]
 date: 2023-09-14 21:41:00 +0800
+categories: [Neovim]
+tags: [Neovim, Copilot]
 ---
 GitHub Copilot支持Vim/Neovim，只需要下载插件或者加入插件管理其中，比如我的Neovim插件管理文件是`~/.config/nvim/lua/plugins/plugins-setup.lua`
 

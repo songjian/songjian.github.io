@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Linux中如何使用脚本切换代理设置
-tags: [Linux, Proxy]
-categories: [Linux] 
+categories: [Linux]
+tags: [bash, proxy]
 ---
 
 在Linux中，我们经常需要切换代理设置，例如，当我们安装pypi、gem的时候，我们需要打开代理；当我们安装完之后，我们需要关闭代理。为了简化这个过程，我创建了一个名为`toggle_proxy`的函数，你可以在`.bashrc`文件中添加这个函数。

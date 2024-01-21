@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 体验AI编程：Cursor编辑器
-tags: ChatGPT GPT-4 Cursor
-categories: "AI Programming"
 date: 2023-04-10 10:21:22 +0800
+categories: [AI]
+tags: [AI编程]
 ---
 ## Cursor
 

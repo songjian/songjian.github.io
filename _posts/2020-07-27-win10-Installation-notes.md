@@ -1,7 +1,8 @@
 ---
 layout: post
 title: win10安装笔记
-categories: win10
+categories: [windows]
+tags: [windows]
 ---
 
 第1步 制作安装u盘

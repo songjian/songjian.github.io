@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 使用phpenv管理PHP版本
-tags: php phpenv
-categories: PHP
+categories: [PHP]
+tags: [PHP, phpenv]
 ---
 [phpenv](https://github.com/phpenv/phpenv)是一个PHP语言的版本管理工具，可以方便管理多个PHP版本。
 

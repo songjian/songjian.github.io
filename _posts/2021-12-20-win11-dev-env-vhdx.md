@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 开发环境放入vhdx
-categories: 开发 vhdx win11
+categories: [Windows]
+tags: [Windows, WSL]
 ---
 
 每次重装系统都是一次痛苦的经历，安装常用软件、配置语言开发环境，为了减小重装系统带来的痛苦，所以想到将开发环境放入vhdx中，只要把制作好的vhdx文件放入外置存储设备（U盘、移动硬盘）或拷贝到电脑硬盘上，就能快速获得熟悉的开发环境。

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 使用rsync管理照片
-tags: [rsync, photo management, command line]
-categories: [Command Line Tools]
 date: 2024-01-06 16:08:00 +0800
+categories: [Linux]
+tags: [Linux, rsync]
 ---
 相机拍摄的照片通常是大文件，而且通常会有很多重复的照片，这使得照片管理变得非常困难。
 

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Ubuntu下Neovim 的配置和使用指南
-tags: [Neovim, nvim, vi, vim, Ubuntu, Linux, 配置, 插件, 教程, 使用指南]
-categories: [Neovim]
 date: 2023-07-25 10:02:15 +0800
+categories: [Neovim]
+tags: [Neovim, Vim]
 ---
 ![Neovim](/assets/img/2023-7-7-neovim-user-guide/nvim.jpg)
 

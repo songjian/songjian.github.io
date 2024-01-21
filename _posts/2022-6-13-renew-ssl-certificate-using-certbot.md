@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Let’s Encrypt和Certbot的使用
-categories: ssl certbot 'Let's Encrypt'
+categories: [SSL]
+tags: [SSL, Let’s Encrypt, Certbot]
 ---
 [Let’s Encrypt](https://letsencrypt.org/)是免费颁发TLS证书的机构（CA）。支持使用 [ACME 协议](https://www.rfc-editor.org/rfc/rfc8555) 的软件获取证书。
 

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Python协程笔记
-categories: 笔记 Python
+categories: [Python]
+tags: [Python, 协程]
 ---
 ### 参考
 

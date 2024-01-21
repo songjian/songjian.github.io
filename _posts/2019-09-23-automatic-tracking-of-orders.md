@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 外汇自动平仓程序
-categories: products
-published: false
+categories: [外汇]
+tags: [外汇, EA, MT4]
 ---
 ![mt4](/assets/img/mt4.png)
 
@@ -19,8 +19,3 @@ published: false
 ### 可根据设定的时间进行平仓
 
 例如：5分钟盈利超过10点(EURUSD的0.001点)平仓，在短期趋势快速运行的市场，可以设置平仓后在之前方向追加仓位，以保证在活跃的市场中保持利润并跟踪趋势。
-
-## 咨询
-
-* 微信：shen2louweb
-* 邮箱：[001@codeorder.cn](mailto:001@codeorder.cn)

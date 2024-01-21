@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 使用Docker镜像制作wsl发行版
-categories: docker wsl
+categories: [wsl]
+tags: [wsl, docker]
 ---
 
 ## 从Docker镜像导出发行版tar文件

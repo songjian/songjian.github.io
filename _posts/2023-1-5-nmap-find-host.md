@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 使用nmap查找局域网主机
-tags: rdesktop win11
-catetories: Linux rdesktop
+categories: [网络]
+tags: [nmap]
 ---
 ## Foreword
 

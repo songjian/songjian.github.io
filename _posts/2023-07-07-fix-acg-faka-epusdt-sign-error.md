@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 修复acg-faka用epusdt收款验签失败的错误
-tags: [acg-faka, epusdt, php, 发卡]
-categories: [发卡]
 date: 2023-07-07 09:29:15 +0800
+categories: [PHP]
+tags: [PHP, acg-faka]
 ---
 ## 问题描述
 
