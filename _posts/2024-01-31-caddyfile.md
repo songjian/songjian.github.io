@@ -9,7 +9,7 @@ tags: Caddy
 
 Caddy的官方文档：[https://caddyserver.com/docs/](https://caddyserver.com/docs/)
 
-Caddy可以使用api和caddyfile两种方式配置，我使用的是Caddyfile。
+Caddy可以使用api和Caddyfile两种方式配置，我使用的是Caddyfile。
 
 ### Caddyfile的配置
 
