@@ -56,7 +56,7 @@ handle和route指令互相排斥，流程上会先匹配handle指令，如果有
 
 ```caddy
 localhost {
-    [[reverse\_proxy]{.underline}](https://caddyserver.com/docs/caddyfile/directives/reverse_proxy)
+    [reverse\_proxy](https://caddyserver.com/docs/caddyfile/directives/reverse_proxy)
     localhost:9000 localhost:9001 {
         lb\_policy first
     }
