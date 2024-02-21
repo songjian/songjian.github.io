@@ -7,7 +7,7 @@ tags: Caddy
 ---
 都说Caddy的配置十分友好，正好有一个项目需要自动申请SSL证书，尝试一下Caddy的配置
 
-Caddy的官方文档：[[https://caddyserver.com/docs/]{.underline}](https://caddyserver.com/docs/)
+Caddy的官方文档：[https://caddyserver.com/docs/](https://caddyserver.com/docs/)
 
 Caddy可以使用api和caddyfile两种方式配置，我使用的是Caddyfile。
 
