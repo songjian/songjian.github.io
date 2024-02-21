@@ -78,13 +78,13 @@ lb\_policy是reverse\_proxy的子指令，用于负载均衡。
 
 # 站点配置
 localhost {
-    # 后端
+    # 后端API
     handle /api* {
         # 代理到后端
         reverse_proxy localhost:3000
     }
 
-    # 前端
+    # 前端Vue.js
     handle {
         encode {
             gzip 9
