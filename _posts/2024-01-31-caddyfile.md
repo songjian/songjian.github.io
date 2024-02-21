@@ -62,9 +62,7 @@ localhost {
 }
 ```
 
-lb\_policy是reverse\_proxy的子指令，用于负载均衡。
-
-[reverse_proxy](https://caddyserver.com/docs/caddyfile/directives/reverse_proxy)
+lb\_policy是[reverse_proxy](https://caddyserver.com/docs/caddyfile/directives/reverse_proxy)的子指令，用于负载均衡。
 
 #### 前端使用Vue.js的Route History模式加后端的配置
 
