@@ -58,14 +58,14 @@ handle和route指令互相排斥，流程上会先匹配handle指令，如果有
 localhost {
     [reverse_proxy](https://caddyserver.com/docs/caddyfile/directives/reverse_proxy)
     localhost:9000 localhost:9001 {
-        lb\_policy first
+        lb_policy first
     }
 }
 ```
 
 lb\_policy是reverse\_proxy的子指令，用于负载均衡。
 
-#### 前端使用Vue.j的route History模式加后端的配置
+#### 前端使用Vue.js的Route History模式加后端的配置
 
 ```caddy
 # 全局配置
