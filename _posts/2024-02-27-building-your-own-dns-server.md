@@ -3,7 +3,7 @@ layout: post
 title: 自己搭建DNS服务器
 categories: [dns]
 tags: [dns, bind9, godaddy]
-date: 2023-09-25 14:25:00 +0800
+date: 2024-02-27 14:45:00 +0800
 ---
 ## 背景
 
