@@ -2,7 +2,7 @@
 layout: page
 title: 作品
 ---
-## Ruby
+## Ruby on Rails
 
 * [格桑花西部助学网](http://www.gesanghua.org/) - 格桑花西部助学网是一个西部助学公益项目，每年为西部地区的孩子捐助一批学习用品，受捐助学校通过网站申请和反馈捐助情况；我负责网站流程、架构的设计，和主要代码的开发，网站分为Web端和公众号，使用 Ruby on Rails 开发。
 * [安踏茁壮成长](http://zzcz.wikiflyer.cn/) - 安踏茁壮成长是一个安踏的公益项目，每年为贫困地区学生捐助一批运动装备。网站为捐助者提供捐助信息查询，为受捐助学校提供申请捐助的功能，为捐助者和受捐助学校提供反馈捐助情况的功能；我负责网站流程、架构的设计，和主要代码的开发，网站使用 Ruby on Rails 开发。
@@ -32,10 +32,16 @@ title: 作品
 * [M-Lab海尔创客实验室](http://lab.haier.com/) - Laravel5 + MySQL 开发，负责架构设计和主要代码开发。
 * [fulusdk](https://github.com/songjian/fulusdk) - 福禄 API 的 Composer 包。
 * 凤凰汇商城后端 - webman + MySQL + Redis 开发，负责架构设计和主要代码开发。
+
+## WordPress
+
 * [wp-theme-workscout-language-pack](https://github.com/songjian/wp-theme-workscout-language-pack) - WordPress 主题 WorkScout 的中文语言包。
 
-## 其他
+## 其他(Shell)
 
 * [整理软著申请代码的工具](https://github.com/songjian/rz-tools) - 用于整理软著申请代码的工具，使用 Shell 编写。
 * [Linux常用脚本](https://github.com/songjian/gnu-linux-scripts) - Linux常用脚本，使用 Shell 编写。
+
+## 修复Bug
+
 * [修复acg-faka用epusdt收款验签失败的错误](https://github.com/lizhipay/acg-faka/pull/63)
