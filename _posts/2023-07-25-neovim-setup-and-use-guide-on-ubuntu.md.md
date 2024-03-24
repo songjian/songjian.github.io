@@ -13,13 +13,27 @@ tags: [Neovim, Vim]
 
 UP主的配置文件 Github 仓库地址：[https://github.com/eggtoopain/Neovim-Configuration-Tutorial](https://github.com/eggtoopain/Neovim-Configuration-Tutorial)
 
+### 安装 Neovim
+
+```bash
+wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux64.tar.gz
+```
+
+`~/.bashrc` 中添加环境变量
+
+```bash
+export PATH="$PATH:/opt/nvim-linux64/bin"
+```
+
 ### 安装插件
 
 在 `~/.config/nvim/lua/plugins/plugins-setup.lua` 文件中写上需要用的插件，保存文件的时候会自动安装插件。
 
 ## 方便日常使用的设置
 
-### .bashrc 中添加 nvim 别名
+### `~/.bashrc` 中添加 nvim 别名
 
 ```bash
 # Neovim
