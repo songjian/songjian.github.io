@@ -40,13 +40,17 @@ sudo update-alternatives --config editor
 
 一些插件需要终端图标字体的支持，比如 nvim-tree 插件。
 
-#### 安装 Hack Nerd Font
+#### 安装 Hack Nerd Font 字体
 
-下载 GitHub 上的 Nerd Fonts 仓库 Releases 中的 Hack.zip ，解压后把 Hack 开头的 ttf 文件复制到 `~/.local/share/fonts/` 目录下。
+下载 GitHub 上的 [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts) 仓库 Releases 中的 [Hack.tar.xz](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.tar.xz) ，解压后把 Hack 开头的 ttf 文件复制到 `~/.local/share/fonts/` 目录下。
 
 ```bash
-# 复制字体文件到 ~/.local/share/fonts/ 目录下
-cp /path/to/your/Hack*.ttf ~/.local/share/fonts/
+# 下载 Hack Nerd Font 字体
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.tar.xz
+
+# 解压 Hack Nerd Font 字体到 ~/.local/share/fonts/ 目录下
+mkdir -p ~/.local/share/fonts/
+tar -xf Hack.tar.xz -C ~/.local/share/fonts/
 
 # 更新字体缓存
 fc-cache -f -v
