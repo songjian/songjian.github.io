@@ -33,7 +33,7 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 
 ## 方便日常使用的设置
 
-### `~/.bashrc` 中添加 nvim 别名
+### .bashrc 中添加 nvim 别名
 
 ```bash
 # Neovim
