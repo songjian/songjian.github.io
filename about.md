@@ -15,7 +15,7 @@ title: 关于我
 ![TeleTop](/assets/img/teletop.png)
 
 - **网址**：[https://teletop.org](https://teletop.org)
-- **TeleTop**：TeleTop 是一个基于 Ruby on Rails 开发的Telegram频道、群组和机器人的中文索引平台。
+- **TeleTop**：TeleTop 是一个基于 Ruby on Rails 开发的 Telegram 频道、群组和机器人的中文索引平台。
 - **技术栈**：Ruby on Rails、PostgreSQL、Redis、Sidekiq、Docker。
 - **职责**：我负责 TeleTop 的架构设计和开发，参与了整个项目的开发和部署。
 
@@ -25,7 +25,7 @@ title: 关于我
 
 - **网址**：[https://maxpanel.cc](https://maxpanel.cc)
 - **MaxPanel**：MaxPanel 是一个基于 Ruby on Rails 开发的社交媒体营销平台。
-- **技术栈**：Ruby on Rails、PostgreSQL、Redis、Sidekiq、Docker。
+- **技术栈**：Ruby on Rails、PostgreSQL、Redis、Sidekiq、Docker、Caddy。
 - **职责**：我负责 MaxPanel 的架构设计和开发，参与了整个项目的开发和部署。
 
 ## 我的技能
