@@ -8,6 +8,26 @@ title: 关于我
 
 ![2005年软件学习毕业设计](/assets/img/ejob.jpg)
 
+## 2023年
+
+### TeleTop
+
+![TeleTop](/assets/img/teletop.png)
+
+- **网址**：[https://teletop.org](https://teletop.org)
+- **TeleTop**：TeleTop 是一个基于 Ruby on Rails 开发的Telegram频道、群组和机器人的中文索引平台。
+- **技术栈**：Ruby on Rails、PostgreSQL、Redis、Sidekiq、Docker。
+- **职责**：我负责 TeleTop 的架构设计和开发，参与了整个项目的开发和部署。
+
+### MaxPanel
+
+![MaxPanel](/assets/img/maxpanel.png)
+
+- **网址**：[https://maxpanel.cc](https://maxpanel.cc)
+- **MaxPanel**：MaxPanel 是一个基于 Ruby on Rails 开发的社交媒体营销平台。
+- **技术栈**：Ruby on Rails、PostgreSQL、Redis、Sidekiq、Docker。
+- **职责**：我负责 MaxPanel 的架构设计和开发，参与了整个项目的开发和部署。
+
 ## 我的技能
 
 在我多年的软件开发经验中，我掌握了多种技能和工具，包括：
