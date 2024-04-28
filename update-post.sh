@@ -1,5 +1,5 @@
 #!/bin/bash
-git pull origin master
+git pull origin main
 git add .
 git commit -m "update post"
-git push origin master
+git push origin main
