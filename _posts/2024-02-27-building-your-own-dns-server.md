@@ -13,7 +13,7 @@ date: 2024-02-27 14:45:00 +0800
 
 我使用的DNS服务器软件是BIND9，操作系统使用的是Ubuntu22.04。
 
-> The Berkeley Internet Name Domain (BIND 9) 是互联网域名服务器的实现。BIND 9是互联网上最广泛使用的域名服务器软件，且由互联网系统协会 www.isc.org 提供支持。
+> The Berkeley Internet Name Domain (BIND 9) 是互联网域名服务器的实现。BIND 9是互联网上最广泛使用的域名服务器软件，且由互联网系统协会 <www.isc.org> 提供支持。
 
 ### 安装Bind9
 
