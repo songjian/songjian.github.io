@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 自己搭建DNS服务器
+title: 使用Bind9给自己的域名搭建DNS服务器
 categories: [dns]
 tags: [dns, bind9, godaddy]
 date: 2024-02-27 14:45:00 +0800
