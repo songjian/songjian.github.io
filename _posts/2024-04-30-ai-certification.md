@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 微软和 LinkedIn（领英）联合认证的 “生成式 AI” 专业证书
+title: 花两天时间拿微软和 LinkedIn（领英）联合认证的 “生成式 AI” 专业证书
 date: 2024-04-30 10:37:00 +0800
 category: AI
 tags: [AI, 微软, LinkedIn Learning]
