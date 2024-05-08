@@ -1,10 +1,12 @@
 ---
 layout: post
-title: 使用Bind9给自己的域名搭建DNS服务器
+title: BIND 9 搭建 DNS 服务器
 categories: [dns]
 tags: [dns, bind9, godaddy]
 date: 2024-02-27 14:45:00 +0800
 ---
+> [https://www.isc.org/bind/](https://www.isc.org/bind/)
+
 ## 背景
 
 一般域名注册商都会提供DNS解析服务，但是有时候我们需要自己搭建DNS服务器，比如自己的服务器上有很多域名，或者是自己的服务器上有很多子域名，这时候就需要自己搭建DNS服务器。
@@ -15,7 +17,7 @@ date: 2024-02-27 14:45:00 +0800
 
 > The Berkeley Internet Name Domain (BIND 9) 是互联网域名服务器的实现。BIND 9是互联网上最广泛使用的域名服务器软件，且由互联网系统协会 <www.isc.org> 提供支持。
 
-### 安装Bind9
+### 安装 BIND 9
 
 ```sh
 sudo apt install bind
@@ -76,7 +78,7 @@ www     IN      CNAME   @
 
 ```
 
-### 重启Bind9
+### 重启 BIND 9
 
 ```sh
 sudo systemctl restart bind9
