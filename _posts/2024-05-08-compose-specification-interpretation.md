@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Compose Specification 解读（未完待续。。。）
+title: Compose 规范解读（未完待续。。。）
 date: 2024-05-08 15:09:00 +0800
 ---
-> Compose Specification 的 GitHub 仓库：https://github.com/compose-spec/compose-spec
+> Compose 规范的 GitHub 仓库：https://github.com/compose-spec/compose-spec
 > 
 > Docker Compose 文档：https://docs.docker.com/compose/compose-file/
 
