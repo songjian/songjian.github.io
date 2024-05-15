@@ -4,7 +4,7 @@ title: Nginx路径重写
 categories: [nginx]
 tags: [nginx]
 ---
-{% highlight nginx %}
+```nginx
 server {
     listen       80;
     server_name  www.nginx.org  nginx.org;
@@ -12,4 +12,4 @@ server {
         rewrite  (.*)  http://www.nginx.org$1;
     }
 }
-{% endhighlight %}
+```
