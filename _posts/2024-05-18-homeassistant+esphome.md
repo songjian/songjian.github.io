@@ -3,7 +3,7 @@ layout: post
 title: Home Assistant + ESPHome 入门
 date: 2024-05-18 16:45:00 +0800
 categories: iot
-tags: homeassistant esphome iot
+tags: [Home Assistant, ESPHome, ESP8266, ESP32]
 ---
 ![Home Assistant Logo](/assets/img/ha-esphome/ha-logo.png)
 
