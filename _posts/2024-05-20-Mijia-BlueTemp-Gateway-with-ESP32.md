@@ -1,9 +1,9 @@
 ---
 layout: post
-title: ESP32 米家蓝牙网关
+title: ESP32 蓝牙网关 + 米家温湿度计
 date: 2024-05-20 21:35:00
 categories: iot
-tags: [ESP32, ESPHome, Xiaomi, Bluetooth, BLE, NodeMCU ESP32S, LYWSD03MMC, Home Assistant]
+tags: [Home Assistant, ESPHome, NodeMCU ESP32S, ESP32, LYWSD03MMC, Xiaomi, Bluetooth, BLE]
 ---
 ![LYWSD03MMC](/assets/img/ESP32-Bluetooth-gateway/LYWSD03MMC.jpg)
 
@@ -18,6 +18,8 @@ tags: [ESP32, ESPHome, Xiaomi, Bluetooth, BLE, NodeMCU ESP32S, LYWSD03MMC, Home 
 | NodeMCU ESP32S | LYWSD03MMC | ESPHome |
 
 ## 开发板刷入 ESPHome 固件
+
+NodeMCU ESP32S 开发板：
 
 ![nodemcu esp32s](/assets/img/ESP32-Bluetooth-gateway/1.jpg)
 
@@ -88,7 +90,6 @@ MODEL:    miaomiaoce.sensor_ht.t2
 在 ESPHome 的 yml 配置文件中增加 `esp32_ble_tracker` 和 `sensor` 部分：
 
 ```yaml
-
 esp32_ble_tracker:
 
 sensor:
