@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 米家温湿度计2 + ESP32 蓝牙网关
+title: 米家温湿度计2 + ESPHome 蓝牙网关
 date: 2024-05-20 21:35:00
 categories: iot
 tags: [Home Assistant, ESPHome, NodeMCU ESP32S, ESP32, LYWSD03MMC, Xiaomi, Bluetooth, BLE]
