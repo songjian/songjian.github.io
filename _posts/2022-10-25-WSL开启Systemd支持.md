@@ -2,7 +2,7 @@
 layout: post
 title: WSL开启Systemd支持
 tags: wsl
-categories: wsl
+categories: [windows]
 ---
 9月份的时候网上看新闻，说WSL（Linux子系统）已经支持Systemd。
 

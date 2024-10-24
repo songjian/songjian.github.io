@@ -2,7 +2,7 @@
 layout: post
 title: Windows端口转发
 tags: [Windows, 端口转发, netsh]
-categories: [Windows技巧]
+categories: [windows]
 ---
 ## 背景
 

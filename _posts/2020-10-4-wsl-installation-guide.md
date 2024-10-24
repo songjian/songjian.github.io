@@ -1,7 +1,8 @@
 ---
 layout: post
 title: wsl安装指南
-categories: wsl
+categories: [windows]
+tags: [wsl]
 ---
 
 ## 安装

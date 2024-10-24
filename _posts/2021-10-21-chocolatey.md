@@ -2,7 +2,7 @@
 layout: post
 title: Chocolatey
 tags: chocolatey
-categories: chocolatey
+categories: [windows]
 date: 2021-10-21
 ---
 Chocolatey是Windows统一开发环境的基础。
