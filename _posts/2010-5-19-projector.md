@@ -2,6 +2,7 @@
 layout: post
 title: 自制手机投影仪
 image: /assets/img/projector01.jpg
+categories: [diy]
 date: 2010-05-19
 ---
 

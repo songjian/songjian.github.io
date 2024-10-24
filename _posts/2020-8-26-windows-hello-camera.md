@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 自制Windows Hello人脸解锁
-categories: DIY
+categories: [diy]
 image: /assets/img/dell-camera.jpg
 ---
 
