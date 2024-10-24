@@ -2,6 +2,7 @@
 layout: post
 title: 自制手机投影仪
 image: /assets/img/projector01.jpg
+date: 2010-05-19
 ---
 
 Github仓库地址：[songjian/diy-mobile-phone-projector](https://github.com/songjian/diy-mobile-phone-projector)
@@ -31,4 +32,3 @@ Github仓库地址：[songjian/diy-mobile-phone-projector](https://github.com/so
 手机放在托架上, 托架的把手通向外壳外面, 可以推拉把手调焦.
 ![投影仪-内部2](/assets/img/projector03.jpg)
 ![投影仪-内部3](/assets/img/projector04.jpg)
-
