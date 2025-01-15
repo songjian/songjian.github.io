@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Links
+title: 友链
 ---
 ### 博客
 
